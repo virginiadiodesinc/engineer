@@ -1,0 +1,5 @@
+﻿class,variable,value,exact
+System,Band,WR10,TRUE
+Testset,Approval,TRUE,TRUE
+System,Type,SGX,TRUE
+Test,test_name,High,FALSE
