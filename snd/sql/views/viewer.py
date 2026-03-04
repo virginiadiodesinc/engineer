@@ -1,4 +1,4 @@
-from viewer_gui import OrmViewerFrame
+from views.viewer_gui import OrmViewerFrame
 
 class OrmViewer(OrmViewerFrame):
 
@@ -43,15 +43,28 @@ class OrmViewer(OrmViewerFrame):
 
 		self.m_listBox4.Set(choices_list)
 
+	def filter_values(self, event):
+		event.Skip()
+
+		filter_string = self.m_textCtrl1.GetValue()
+
+		current_choices = self.m_listBox4.GetItems()
+
+		filtered_choices = [c for c in current_choices if filter_string in c]
+		self.m_listBox4.Set(filtered_choices)
+
+	def load_selected_table(self, event):
+		event.Skip()
+
+		my_table = self.get_selected_table()
+		self.controller.load_table(my_table)
+
+
 	def run_query(self, event):
 		event.Skip()
 
-		self.controller.join_tables()
+		my_table = self.get_selected_table()
+		my_col = self.get_selected_column()
+		my_value = self.get_listbox_selection(self.m_listBox4)
 
-		# my_table = self.get_selected_table()
-		# my_col = self.get_selected_column()
-		# my_value = self.m_textCtrl1.GetValue()
-
-		# obj_list = self.controller.run_query(my_table, my_col, my_value)
-
-		# self.m_listBox4.Set(obj_list)
+		self.controller.run_query(my_table, my_col, my_value)

@@ -9,6 +9,17 @@ import sys
 SSP_DB_FILE = "W:/durant/github/vdi_ssp/sql/db/SSP_DB_copy.db"
 SSP_DB_DATA_DIR = "W:/Python3/vdi_ssp/sql/db/files"
 
+class AutoMapManager:
+	def __init__(self):
+		pass
+
+	def get_columns(self, automapped_class):
+		mapper = inspect(automapped_class)
+
+		return list(mapper.columns)
+
+	
+
 class SQLHelper:
 
 	def __init__(self):

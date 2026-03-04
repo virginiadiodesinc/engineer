@@ -1,5 +1,6 @@
 from SQLHelper import SQLHelper
-from viewer import OrmViewer
+from views.viewer import OrmViewer
+from views.query import QueryView, QueryObject
 
 class Controller:
 
@@ -12,8 +13,10 @@ class Controller:
 		self.main_view = OrmViewer(parent=None, controller=self)
 		self.main_view.Show()
 
-		self.second_view = OrmViewer(parent=None, controller=self)
-		self.second_view.Show()
+		self.query_view = QueryView(parent=None, controller=self)
+		self.query_view.Show()
+
+		self.query_obj = QueryObject(self)
 
 		tables = self.get_tables()
 		strings = self.tables_to_strings(tables)
@@ -22,7 +25,11 @@ class Controller:
 			self.table_dictionary[s] = t
 
 		self.main_view.set_table_names(strings)
-		self.second_view.set_table_names(strings)
+
+	def load_table(self, table_str):
+
+		table_obj = self.table_dictionary[table_str]
+		self.query_view.load_table(table_obj)
 
 	def column_selected_event(self, table_str, column_str):
 		#table = self.table_dictionary[table_str]
@@ -117,7 +124,8 @@ class Controller:
 
 		self.object_list = self.sql_manager.executeSelect(sel)
 
-		return self.obj_list_to_str()
+		query_strings =  self.obj_list_to_str()
+		self.query_view.update_list(query_strings)
 	
 	def obj_list_to_str(self):
 		strings = []
