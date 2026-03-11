@@ -1,10 +1,9 @@
 import os
-import sys
-sys.path.append(r'W:\durant\programs\vi')
 
 import wx
 from instrument_controller import Source
 from agilent_signal_analyzer import PXA
+from keithley_2600smu import SMU_K2611B
 
 from enr_gui import VirtualENRPanel
 import time
@@ -12,6 +11,8 @@ import numpy as np
 import pandas as pd
 
 from motor_stepper_dumb import MotorController
+
+DEV_MODE = True
 
 
 def safeFname(path,fname,ext='.csv'):
@@ -26,11 +27,10 @@ def safeFname(path,fname,ext='.csv'):
 
 class ENR():
 
-
 	def __init__(self):
 
 		app = wx.App(False)
-		frame = wx.Frame(parent=None, size=wx.Size(500,625))
+		frame = wx.Frame(parent=None, size = (800,700))
 
 		panel = ENRPanel(parent=frame)
 
@@ -42,10 +42,19 @@ class ENRPanel(VirtualENRPanel):
 	def __init__(self, **kwargs):
 		VirtualENRPanel.__init__(self, **kwargs)
 
-		self.psg = Source('psg',address=20)
-		self.exa = PXA()
-		self.mc = MotorController("Dev1",stepsize=1)
-		self.hp = Source('hp6627',address=5,channel=4)
+		if DEV_MODE:
+			self.psg = None
+			self.exa = None
+			self.mc = None
+			self.hp = None
+			self.smu = None
+
+		else:
+			self.psg = Source('psg',address=20)
+			self.exa = PXA()
+			self.mc = MotorController("Dev1",stepsize=1)
+			self.hp = Source('hp6627',address=5,channel=4)
+			self.smu = SMU_K2611B(address=18)
 
 	def UpdateVariables(self):
 		self.vbw = int(float(self.vbw_hz.GetValue()))
@@ -249,17 +258,11 @@ class ENRPanel(VirtualENRPanel):
 
 		self.verify_textbox.SetLabel(str(val))
 
-	def Save_NS_Off( self, event ):
+	def ns_chopped_pressed( self, event ):
+		event.Skip()
 
 		self.nsoff, self.nson = self.ChopNS()
-
-		#self.Output_csv(self.nsoff,' ns_off_raw')
-
-	def Save_NS_On( self, event ):
-		
-		self.nsoff, self.nson = self.ChopNS()
-
-		#self.Output_csv(self.nson,' ns_on_raw')
+		self.Calculate_NS()
 
 	def MotorCW(self, event):
 		self.mc.step_angle(1,1)
@@ -276,7 +279,7 @@ class ENRPanel(VirtualENRPanel):
 		outfilename = safeFname(self.outpath, self.output_filename.GetValue()+extension,'.csv')
 		df.to_csv(outfilename)
 
-	def Calculate_NS( self, event ):
+	def Calculate_NS( self ):
 		'''
 		if there's no input file then we can't solve for T hot
 		instead just output raw data. Assume it will be used to 
@@ -309,23 +312,13 @@ class ENRPanel(VirtualENRPanel):
 			outfilename = safeFname(self.outpath,self.output_filename.GetValue(),'.csv')
 			df.to_csv(outfilename)
 
-	def Save_LN2_Cold( self, event ):
+	def hotcold_chopped_pressed( self, event ):
+		event.Skip()
 		
 		self.ln2cold, self.ln2hot = self.SweepOnce()
+		self.Calculate_LN2()
 
-		#self.Output_csv(self.ln2cold,' cold_raw')
-
-
-	def Save_LN2_Hot( self, event ):
-
-		bws0 = np.arange(100,1000,100)
-		bws1 = np.arange(1000,11000,1000)
-		bws = np.append(bws0,bws1)
-		for k in bws:
-			self.NoiseSweep(int(k))
-		#self.Output_csv(self.ln2hot,' hot_raw')
-
-	def Calculate_LN2( self, event ):
+	def Calculate_LN2( self ):
 		
 		thot = float(self.ln2_thot.GetValue())
 		tcold = float(self.ln2_tcold.GetValue())
@@ -344,7 +337,7 @@ class ENRPanel(VirtualENRPanel):
 		outfilename = safeFname(self.outpath,self.output_filename.GetValue(),'.csv')
 		df.to_csv(outfilename)
 
-	def Create_Calfile( self, event ):
+	def create_ns_calfile( self, event ):
 		rxpath = self.rx_tsys_in.GetPath()
 		nspath = self.ns_unknown_in.GetPath()
 
@@ -359,6 +352,31 @@ class ENRPanel(VirtualENRPanel):
 
 		outfilename = safeFname(self.outpath,self.ns_cal_filename.GetValue(),'.csv')
 		df.to_csv(outfilename)
+
+	def voltage_bias_checked( self, event ):
+		event.Skip()
+
+		self.m_checkBox1.Disable()
+		self.m_checkBox2.Enable()
+		self.m_textCtrl27.Enable()
+		self.m_textCtrl28.Enable()
+
+		self.m_checkBox2.SetValue(False)
+		self.m_textCtrl29.Disable()
+		self.m_textCtrl26.Disable()
+
+	def current_bias_checked( self, event ):
+		event.Skip()
+
+		self.m_checkBox1.Enable()
+		self.m_checkBox2.Disable()
+		self.m_textCtrl27.Disable()
+		self.m_textCtrl28.Disable()
+
+		self.m_checkBox1.SetValue(False)
+		self.m_textCtrl29.Enable()
+		self.m_textCtrl26.Enable()
+
 
 if __name__ == '__main__':
 	a = ENR()
