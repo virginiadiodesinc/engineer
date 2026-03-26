@@ -20,15 +20,16 @@ _ = gettext.gettext
 class SmarterSynthGUI ( wx.Frame ):
 
     def __init__( self, parent ):
-        wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = wx.EmptyString, pos = wx.DefaultPosition, size = wx.Size( 500,300 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
+        wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = wx.EmptyString, pos = wx.DefaultPosition, size = wx.Size( 500,421 ), style = wx.DEFAULT_FRAME_STYLE|wx.TAB_TRAVERSAL )
 
         self.SetSizeHints( wx.DefaultSize, wx.DefaultSize )
+        self.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_WINDOW ) )
 
-        bSizer15 = wx.BoxSizer( wx.HORIZONTAL )
+        bSizer11 = wx.BoxSizer( wx.HORIZONTAL )
 
         m_listBox1Choices = []
         self.m_listBox1 = wx.ListBox( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, m_listBox1Choices, 0 )
-        bSizer15.Add( self.m_listBox1, 1, wx.ALL|wx.EXPAND, 5 )
+        bSizer11.Add( self.m_listBox1, 1, wx.ALL|wx.EXPAND, 5 )
 
         bSizer3 = wx.BoxSizer( wx.VERTICAL )
 
@@ -63,7 +64,7 @@ class SmarterSynthGUI ( wx.Frame ):
         bSizer3.Add( ( 0, 0), 1, wx.EXPAND, 5 )
 
 
-        bSizer15.Add( bSizer3, 0, wx.EXPAND, 5 )
+        bSizer11.Add( bSizer3, 0, wx.EXPAND, 5 )
 
         self.m_panel10 = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
         bSizer16 = wx.BoxSizer( wx.VERTICAL )
@@ -116,10 +117,10 @@ class SmarterSynthGUI ( wx.Frame ):
         self.m_panel10.SetSizer( bSizer16 )
         self.m_panel10.Layout()
         bSizer16.Fit( self.m_panel10 )
-        bSizer15.Add( self.m_panel10, 1, wx.EXPAND |wx.ALL, 5 )
+        bSizer11.Add( self.m_panel10, 1, wx.EXPAND |wx.ALL, 5 )
 
 
-        self.SetSizer( bSizer15 )
+        self.SetSizer( bSizer11 )
         self.Layout()
 
         self.Centre( wx.BOTH )

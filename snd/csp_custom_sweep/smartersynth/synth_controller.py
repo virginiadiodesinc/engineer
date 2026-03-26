@@ -2,19 +2,12 @@ from .vdi_daq import VDAQ
 from .vdi_fcounter import FC
 from .vdi_synth import Synth
 
-from .synth_view import SmarterSynthView
-
-
 class SmarterSynth:
 	#manage power correction for cable
 	#control vdidaq > vva to toggle power
 	#control frequency counter to measure exact frequency
 
-	def __init__(self):
-		self.synth = SmarterSynthView(controller=self)
-		self.synth.Show()
-
-	def initialize_synth(self, synth_sn, fc_sn, vdaq_sn):
+	def __init__(self, synth_sn, fc_sn, vdaq_sn):
 		print(synth_sn)
 		print(fc_sn)
 		print(vdaq_sn)
