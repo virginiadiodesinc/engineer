@@ -27,7 +27,7 @@ class SmarterSynthView(SmarterSynthGUI):
         synth_sn = self.m_textCtrl31.GetValue()
         fc_sn = self.m_textCtrl32.GetValue()
         vdaq_sn = self.m_textCtrl33.GetValue()
-        self.controller.initialize_synth(synth_sn, fc_sn, vdaq_sn)
+        self.controller.set_serial_numbers(synth_sn, fc_sn, vdaq_sn)
         self.Close()
 
     def cancel_pressed( self, event ):

@@ -1,5 +1,5 @@
 import wx
-from smartersynth import SmarterSynthView, SmarterSynth
+from smartersynth.synth import SynthHelper
 from main_gui import MyPanel2
 
 class Main():
@@ -21,11 +21,10 @@ class MainPanel(MyPanel2):
 
 	def idk(self, event):
 		event.Skip()
-		a = SmarterSynthView(controller=self)
+		a = SynthHelper()
 		a.Show()
 
-	def initialize_synth(self, synth_sn, fc_sn, vdaq_sn):
-		a = SmarterSynth()
+		print( a.get_synth_obj() )
 
 if __name__ == '__main__':
 	a = Main()
