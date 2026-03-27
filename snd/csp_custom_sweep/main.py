@@ -21,10 +21,10 @@ class MainPanel(MyPanel2):
 
 	def idk(self, event):
 		event.Skip()
-		a = SynthHelper()
-		a.Show()
+		self.sh = SynthHelper()
 
-		print( a.get_synth_obj() )
-
+	def idk2(self, event):
+		self.sh.get_synth_obj()
+		
 if __name__ == '__main__':
 	a = Main()

@@ -27,12 +27,16 @@ class MyPanel2 ( wx.Panel ):
         self.m_button6 = wx.Button( self, wx.ID_ANY, _(u"MyButton"), wx.DefaultPosition, wx.DefaultSize, 0 )
         bSizer4.Add( self.m_button6, 0, wx.ALL, 5 )
 
+        self.m_button2 = wx.Button( self, wx.ID_ANY, _(u"MyButton"), wx.DefaultPosition, wx.DefaultSize, 0 )
+        bSizer4.Add( self.m_button2, 0, wx.ALL, 5 )
+
 
         self.SetSizer( bSizer4 )
         self.Layout()
 
         # Connect Events
         self.m_button6.Bind( wx.EVT_BUTTON, self.idk )
+        self.m_button2.Bind( wx.EVT_BUTTON, self.idk2 )
 
     def __del__( self ):
         pass
@@ -40,6 +44,9 @@ class MyPanel2 ( wx.Panel ):
 
     # Virtual event handlers, override them in your derived class
     def idk( self, event ):
+        event.Skip()
+
+    def idk2( self, event ):
         event.Skip()
 
 
