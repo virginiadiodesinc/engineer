@@ -24,7 +24,11 @@ class MainPanel(MyPanel2):
 		self.sh = SynthHelper()
 
 	def idk2(self, event):
-		self.sh.get_synth_obj()
+		event.Skip()
+		self.smart_synth = self.sh.get_synth_obj()
+
+	def idk3(self, event):
+		event.Skip()
 		
 if __name__ == '__main__':
 	a = Main()

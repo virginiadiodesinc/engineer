@@ -1,5 +1,5 @@
 from .synth_gui import SmarterSynthGUI
-
+import ftd2xx as d2xx
 
 class SmarterSynthView(SmarterSynthGUI):
 
@@ -7,6 +7,13 @@ class SmarterSynthView(SmarterSynthGUI):
         SmarterSynthGUI.__init__(self, parent=None, **kwargs)
 
         self.controller = controller
+
+        try:
+            device_list = d2xx.listDevices()
+            device_list_ascii = [k.decode('utf-8') for k in device_list]
+            self.populate_choicebox(device_list_ascii)
+        except:
+            pass
     
     def synth_selected( self, event ):
         event.Skip()
@@ -27,7 +34,9 @@ class SmarterSynthView(SmarterSynthGUI):
         synth_sn = self.m_textCtrl31.GetValue()
         fc_sn = self.m_textCtrl32.GetValue()
         vdaq_sn = self.m_textCtrl33.GetValue()
-        self.controller.set_serial_numbers(synth_sn, fc_sn, vdaq_sn)
+        channel = int( self.m_radioBox1.GetStringSelection() )
+
+        self.controller.set_serial_numbers(synth_sn, fc_sn, vdaq_sn, channel)
         self.Close()
 
     def cancel_pressed( self, event ):

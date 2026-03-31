@@ -24,11 +24,14 @@ class MyPanel2 ( wx.Panel ):
 
         bSizer4 = wx.BoxSizer( wx.VERTICAL )
 
-        self.m_button6 = wx.Button( self, wx.ID_ANY, _(u"MyButton"), wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.m_button6 = wx.Button( self, wx.ID_ANY, _(u"select"), wx.DefaultPosition, wx.DefaultSize, 0 )
         bSizer4.Add( self.m_button6, 0, wx.ALL, 5 )
 
-        self.m_button2 = wx.Button( self, wx.ID_ANY, _(u"MyButton"), wx.DefaultPosition, wx.DefaultSize, 0 )
+        self.m_button2 = wx.Button( self, wx.ID_ANY, _(u"connect"), wx.DefaultPosition, wx.DefaultSize, 0 )
         bSizer4.Add( self.m_button2, 0, wx.ALL, 5 )
+
+        self.m_button3 = wx.Button( self, wx.ID_ANY, _(u"disconnect"), wx.DefaultPosition, wx.DefaultSize, 0 )
+        bSizer4.Add( self.m_button3, 0, wx.ALL, 5 )
 
 
         self.SetSizer( bSizer4 )
@@ -37,6 +40,7 @@ class MyPanel2 ( wx.Panel ):
         # Connect Events
         self.m_button6.Bind( wx.EVT_BUTTON, self.idk )
         self.m_button2.Bind( wx.EVT_BUTTON, self.idk2 )
+        self.m_button3.Bind( wx.EVT_BUTTON, self.idk3 )
 
     def __del__( self ):
         pass
@@ -49,4 +53,5 @@ class MyPanel2 ( wx.Panel ):
     def idk2( self, event ):
         event.Skip()
 
-
+    def idk3( self, event ):
+        event.Skip()
