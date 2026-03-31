@@ -104,9 +104,9 @@ class ENRPanel(VirtualENRPanel):
 		self.current_limit = float(self.m_textCtrl271.GetValue())/1e3
 
 		#correction parameters
-		self.taper_db = float( self.m_textCtrl25.GetValue() )
-		self.horn_db = float ( self.m_textCtrl24.GetValue() )
-		self.tif = float( self.m_textCtrl281.GetValue() )
+		self.taper1_db = float( self.m_textCtrl25.GetValue() )
+		self.taper2_db = float ( self.m_textCtrl24.GetValue() )
+		#self.tif = float( self.m_textCtrl281.GetValue() )
 
 	def SetupInstruments(self):
 		self.exa.preset()
@@ -420,8 +420,8 @@ class ENRPanel(VirtualENRPanel):
 
 			enr_caled = pd.read_csv(calfilepath,index_col=0)
 
-			df['enr(K)'] = np.interp(df.index,enr_caled.index,enr_caled['T(K)'])
-			df['T(K)'] = (df['enr(K)'] - df['Y']*df['rt(K)']) / (df['Y']-1)
+			df['Tns(K)'] = np.interp(df.index,enr_caled.index,enr_caled['Tns(K)'])
+			df['Treceiver(K)'] = (df['Tns(K)'] - df['Y']*df['rt(K)']) / (df['Y']-1)
 
 			outfilename = safeFname(self.outpath,self.output_filename.GetValue(),'.csv')
 			df.to_csv(outfilename)
@@ -433,10 +433,10 @@ class ENRPanel(VirtualENRPanel):
 		self.Calculate_LN2()
 
 	def get_horn_and_taper_correction(self):
-		taper_db = self.taper_db
-		horn_db = self.horn_db
+		taper1_db = self.taper1_db
+		taper2_db = self.taper2_db
 
-		combined_loss_db = taper_db+horn_db
+		combined_loss_db = taper1_db+taper2_db
 		combined_loss_lin = np.power(10, combined_loss_db/10)
 
 		thot = float( self.ln2.thot.GetValue )
@@ -459,17 +459,17 @@ class ENRPanel(VirtualENRPanel):
 
 		df['Treceiver(K)'] = (df['hot(K)'] - df['Y']*df['cold(K)']) / (df['Y']-1)
 
-		df['taper_loss(db)'] = self.taper_db
-		df['horn_loss(db)'] = self.horn_db
+		df['taper1_loss(db)'] = self.taper1_db
+		df['taper2_loss(db)'] = self.taper2_db
 
 		combined_loss_lin, combined_temperature = self.get_horn_and_taper_correction()
 
-		df['taper_and_horn(lin)'] = combined_loss_lin
-		df['taper_and_horn(K)'] = combined_temperature
-		df['Tif(K)'] = self.tif
-
+		df['taper_loss_combined(lin)'] = combined_loss_lin
+		df['taper_loss_combined(K)'] = combined_temperature
+		
 		######
-		#calculate Tmix!
+		#can't calculate Tmix without more temperature points
+		#df['Tif(K)'] = self.tif
 		######
 
 		outfilename = safeFname(self.outpath,self.output_filename.GetValue(),'.csv')
@@ -482,10 +482,10 @@ class ENRPanel(VirtualENRPanel):
 		caled_rx = pd.read_csv(rxpath,index_col=0)
 		df = pd.read_csv(nspath,index_col=0)
 
-		trx = np.interp(df.index,caled_rx.index,caled_rx['T(K)'])
+		trx = np.interp(df.index,caled_rx.index,caled_rx['Treceiver(K)'])
 
-		df['T(K)'] = trx*(df['Y']-1)+df['Y']*df['rt(K)']
-		df['ENR'] = (df['T(K)']-df['rt(K)'])/df['rt(K)']
+		df['Tns(K)'] = trx*(df['Y']-1)+df['Y']*df['rt(K)']
+		df['ENR'] = (df['Tns(K)']-df['rt(K)'])/df['rt(K)']
 		df['ENR(dB)']=10*np.log10(df['ENR'])
 
 		outfilename = safeFname(self.outpath,self.ns_cal_filename.GetValue(),'.csv')
