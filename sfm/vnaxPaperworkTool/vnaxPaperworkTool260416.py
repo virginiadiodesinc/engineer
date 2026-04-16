@@ -75,7 +75,9 @@ def binaryChecker(numberInput):
                 numberInput = int(input("Enter 0 or 1: "))
         except ValueError:
             print("Invalid input. Please enter a number (0 or 1).")
-            numberInput = int(input("Enter 0 or 1: "))
+            numberInput = input("Enter 0 or 1: ")
+            binaryChecker(numberInput)
+            return numberInput
 
 def oneTwoChecker(numberInput):
     while True:
@@ -88,7 +90,9 @@ def oneTwoChecker(numberInput):
                 numberInput = int(input("Enter 1 or 2: "))
         except ValueError:
             print("Invalid input. Please enter a number (1 or 2).")
-            numberInput = int(input("Enter 1 or 2: "))
+            numberInput = input("Enter 1 or 2: ")
+            numberInput = oneTwoChecker(numberInput)
+            return numberInput
 
 def isLetter(strInput):
     while True:
