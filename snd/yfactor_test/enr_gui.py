@@ -16,7 +16,7 @@ import wx.xrc
 
 class VirtualENRPanel ( wx.Panel ):
 
-	def __init__( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 770,662 ), style = wx.TAB_TRAVERSAL, name = wx.EmptyString ):
+	def __init__( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 770,696 ), style = wx.TAB_TRAVERSAL, name = wx.EmptyString ):
 		wx.Panel.__init__ ( self, parent, id = id, pos = pos, size = size, style = style, name = name )
 
 		bSizer5 = wx.BoxSizer( wx.HORIZONTAL )
@@ -33,50 +33,102 @@ class VirtualENRPanel ( wx.Panel ):
 
 		bSizer7.Add( self.m_staticText30, 0, wx.ALL, 5 )
 
-		gSizer6 = wx.GridSizer( 0, 2, 0, 0 )
+		fgSizer1 = wx.FlexGridSizer( 0, 4, 0, 0 )
+		fgSizer1.SetFlexibleDirection( wx.BOTH )
+		fgSizer1.SetNonFlexibleGrowMode( wx.FLEX_GROWMODE_SPECIFIED )
 
-		self.m_staticText231 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"MXG/PSG Address", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText371 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"Type", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText371.Wrap( -1 )
+
+		fgSizer1.Add( self.m_staticText371, 0, wx.ALL, 5 )
+
+		self.m_staticText381 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"Address", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText381.Wrap( -1 )
+
+		fgSizer1.Add( self.m_staticText381, 0, wx.ALL, 5 )
+
+		self.m_staticText39 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"Connected", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText39.Wrap( -1 )
+
+		fgSizer1.Add( self.m_staticText39, 0, wx.ALL, 5 )
+
+		self.m_staticText40 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"Power On", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText40.Wrap( -1 )
+
+		fgSizer1.Add( self.m_staticText40, 0, wx.ALL, 5 )
+
+		self.m_staticText231 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"MXG/PSG", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText231.Wrap( -1 )
 
-		gSizer6.Add( self.m_staticText231, 0, wx.ALL, 5 )
+		fgSizer1.Add( self.m_staticText231, 0, wx.ALL, 5 )
 
 		self.m_textCtrl17 = wx.TextCtrl( self.m_panel6, wx.ID_ANY, u"20", wx.DefaultPosition, wx.DefaultSize, 0 )
-		gSizer6.Add( self.m_textCtrl17, 0, wx.ALL, 5 )
+		fgSizer1.Add( self.m_textCtrl17, 0, wx.ALL, 5 )
 
-		self.m_staticText241 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"EXA/PXA Address", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_checkBox3 = wx.CheckBox( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer1.Add( self.m_checkBox3, 0, wx.ALL, 5 )
+
+		self.m_checkBox4 = wx.CheckBox( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer1.Add( self.m_checkBox4, 0, wx.ALL, 5 )
+
+		self.m_staticText241 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"EXA/PXA", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText241.Wrap( -1 )
 
-		gSizer6.Add( self.m_staticText241, 0, wx.ALL, 5 )
+		fgSizer1.Add( self.m_staticText241, 0, wx.ALL, 5 )
 
 		self.m_textCtrl18 = wx.TextCtrl( self.m_panel6, wx.ID_ANY, u"18", wx.DefaultPosition, wx.DefaultSize, 0 )
-		gSizer6.Add( self.m_textCtrl18, 0, wx.ALL, 5 )
+		fgSizer1.Add( self.m_textCtrl18, 0, wx.ALL, 5 )
 
-		self.m_staticText251 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"NI-DAQ Name", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_checkBox5 = wx.CheckBox( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer1.Add( self.m_checkBox5, 0, wx.ALL, 5 )
+
+
+		fgSizer1.Add( ( 0, 0), 1, wx.EXPAND, 5 )
+
+		self.m_staticText251 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"NI-DAQ", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText251.Wrap( -1 )
 
-		gSizer6.Add( self.m_staticText251, 0, wx.ALL, 5 )
+		fgSizer1.Add( self.m_staticText251, 0, wx.ALL, 5 )
 
 		self.m_textCtrl19 = wx.TextCtrl( self.m_panel6, wx.ID_ANY, u"Dev1", wx.DefaultPosition, wx.DefaultSize, 0 )
-		gSizer6.Add( self.m_textCtrl19, 0, wx.ALL, 5 )
+		fgSizer1.Add( self.m_textCtrl19, 0, wx.ALL, 5 )
 
-		self.m_staticText261 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"HP6627 Address", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_checkBox7 = wx.CheckBox( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer1.Add( self.m_checkBox7, 0, wx.ALL, 5 )
+
+
+		fgSizer1.Add( ( 0, 0), 1, wx.EXPAND, 5 )
+
+		self.m_staticText261 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"HP6627", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText261.Wrap( -1 )
 
-		gSizer6.Add( self.m_staticText261, 0, wx.ALL, 5 )
+		fgSizer1.Add( self.m_staticText261, 0, wx.ALL, 5 )
 
 		self.m_textCtrl20 = wx.TextCtrl( self.m_panel6, wx.ID_ANY, u"5", wx.DefaultPosition, wx.DefaultSize, 0 )
-		gSizer6.Add( self.m_textCtrl20, 0, wx.ALL, 5 )
+		fgSizer1.Add( self.m_textCtrl20, 0, wx.ALL, 5 )
 
-		self.m_staticText29 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"Keithley 2600SMU Address", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_checkBox9 = wx.CheckBox( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer1.Add( self.m_checkBox9, 0, wx.ALL, 5 )
+
+		self.m_checkBox10 = wx.CheckBox( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer1.Add( self.m_checkBox10, 0, wx.ALL, 5 )
+
+		self.m_staticText29 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"Keithley 2600", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText29.Wrap( -1 )
 
-		gSizer6.Add( self.m_staticText29, 0, wx.ALL, 5 )
+		fgSizer1.Add( self.m_staticText29, 0, wx.ALL, 5 )
 
 		self.m_textCtrl23 = wx.TextCtrl( self.m_panel6, wx.ID_ANY, u"16", wx.DefaultPosition, wx.DefaultSize, 0 )
-		gSizer6.Add( self.m_textCtrl23, 0, wx.ALL, 5 )
+		fgSizer1.Add( self.m_textCtrl23, 0, wx.ALL, 5 )
+
+		self.m_checkBox11 = wx.CheckBox( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer1.Add( self.m_checkBox11, 0, wx.ALL, 5 )
+
+		self.m_checkBox12 = wx.CheckBox( self.m_panel6, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		fgSizer1.Add( self.m_checkBox12, 0, wx.ALL, 5 )
 
 
-		bSizer7.Add( gSizer6, 1, wx.EXPAND, 5 )
+		bSizer7.Add( fgSizer1, 1, wx.EXPAND, 5 )
 
 
 		self.m_panel6.SetSizer( bSizer7 )
@@ -96,7 +148,7 @@ class VirtualENRPanel ( wx.Panel ):
 
 		gSizer7 = wx.GridSizer( 0, 2, 0, 0 )
 
-		self.m_staticText32 = wx.StaticText( self.m_panel9, wx.ID_ANY, u"WR10-42 Horn", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText32 = wx.StaticText( self.m_panel9, wx.ID_ANY, u"WR10-42 Taper (dB)", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText32.Wrap( -1 )
 
 		gSizer7.Add( self.m_staticText32, 0, wx.ALL, 5 )
@@ -104,13 +156,21 @@ class VirtualENRPanel ( wx.Panel ):
 		self.m_textCtrl24 = wx.TextCtrl( self.m_panel9, wx.ID_ANY, u"0.11", wx.DefaultPosition, wx.DefaultSize, 0 )
 		gSizer7.Add( self.m_textCtrl24, 0, wx.ALL, 5 )
 
-		self.m_staticText33 = wx.StaticText( self.m_panel9, wx.ID_ANY, u"WRXX-10 Taper", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText33 = wx.StaticText( self.m_panel9, wx.ID_ANY, u"WRXX-10 Taper (dB)", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText33.Wrap( -1 )
 
 		gSizer7.Add( self.m_staticText33, 0, wx.ALL, 5 )
 
 		self.m_textCtrl25 = wx.TextCtrl( self.m_panel9, wx.ID_ANY, u"0", wx.DefaultPosition, wx.DefaultSize, 0 )
 		gSizer7.Add( self.m_textCtrl25, 0, wx.ALL, 5 )
+
+		self.m_staticText41 = wx.StaticText( self.m_panel9, wx.ID_ANY, u"Tif (K)", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText41.Wrap( -1 )
+
+		gSizer7.Add( self.m_staticText41, 0, wx.ALL, 5 )
+
+		self.m_textCtrl281 = wx.TextCtrl( self.m_panel9, wx.ID_ANY, u"100", wx.DefaultPosition, wx.DefaultSize, 0 )
+		gSizer7.Add( self.m_textCtrl281, 0, wx.ALL, 5 )
 
 
 		bSizer8.Add( gSizer7, 1, wx.EXPAND, 5 )
@@ -156,6 +216,14 @@ class VirtualENRPanel ( wx.Panel ):
 		self.m_textCtrl28 = wx.TextCtrl( self.m_panel71, wx.ID_ANY, u"28", wx.DefaultPosition, wx.DefaultSize, 0 )
 		gSizer8.Add( self.m_textCtrl28, 0, wx.ALL, 5 )
 
+		self.m_staticText361 = wx.StaticText( self.m_panel71, wx.ID_ANY, u"Current Limit (mA)", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText361.Wrap( -1 )
+
+		gSizer8.Add( self.m_staticText361, 0, wx.ALL, 5 )
+
+		self.m_textCtrl271 = wx.TextCtrl( self.m_panel71, wx.ID_ANY, u"100", wx.DefaultPosition, wx.DefaultSize, 0 )
+		gSizer8.Add( self.m_textCtrl271, 0, wx.ALL, 5 )
+
 		self.m_checkBox2 = wx.CheckBox( self.m_panel71, wx.ID_ANY, u"current bias (Keithley)", wx.DefaultPosition, wx.DefaultSize, 0 )
 		gSizer8.Add( self.m_checkBox2, 0, wx.ALL, 5 )
 
@@ -168,8 +236,6 @@ class VirtualENRPanel ( wx.Panel ):
 		gSizer8.Add( self.m_staticText38, 0, wx.ALL, 5 )
 
 		self.m_textCtrl29 = wx.TextCtrl( self.m_panel71, wx.ID_ANY, u"3", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_textCtrl29.Enable( False )
-
 		gSizer8.Add( self.m_textCtrl29, 0, wx.ALL, 5 )
 
 		self.m_staticText351 = wx.StaticText( self.m_panel71, wx.ID_ANY, u"Voltage Limit (V)", wx.DefaultPosition, wx.DefaultSize, 0 )
@@ -178,8 +244,6 @@ class VirtualENRPanel ( wx.Panel ):
 		gSizer8.Add( self.m_staticText351, 0, wx.ALL, 5 )
 
 		self.m_textCtrl26 = wx.TextCtrl( self.m_panel71, wx.ID_ANY, u"20", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_textCtrl26.Enable( False )
-
 		gSizer8.Add( self.m_textCtrl26, 0, wx.ALL, 5 )
 
 
@@ -194,7 +258,7 @@ class VirtualENRPanel ( wx.Panel ):
 		self.m_panel8 = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.BORDER_RAISED|wx.TAB_TRAVERSAL )
 		bSizer11 = wx.BoxSizer( wx.VERTICAL )
 
-		self.m_staticText34 = wx.StaticText( self.m_panel8, wx.ID_ANY, u"Motor Troubleshooting", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText34 = wx.StaticText( self.m_panel8, wx.ID_ANY, u"Troubleshooting", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText34.Wrap( -1 )
 
 		self.m_staticText34.SetFont( wx.Font( wx.NORMAL_FONT.GetPointSize(), wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_BOLD, False, wx.EmptyString ) )
@@ -208,6 +272,9 @@ class VirtualENRPanel ( wx.Panel ):
 
 		self.m_button101 = wx.Button( self.m_panel8, wx.ID_ANY, u"MotorCCW", wx.DefaultPosition, wx.DefaultSize, 0 )
 		bSizer4.Add( self.m_button101, 0, wx.ALL, 5 )
+
+		self.m_button11 = wx.Button( self.m_panel8, wx.ID_ANY, u"Reconnect Instruments", wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer4.Add( self.m_button11, 0, wx.ALL, 5 )
 
 
 		bSizer11.Add( bSizer4, 1, wx.EXPAND, 5 )
@@ -378,7 +445,7 @@ class VirtualENRPanel ( wx.Panel ):
 		self.m_panel3.SetSizer( bSizer13 )
 		self.m_panel3.Layout()
 		bSizer13.Fit( self.m_panel3 )
-		self.m_notebook4.AddPage( self.m_panel3, u"Measure Tsys using NS", False )
+		self.m_notebook4.AddPage( self.m_panel3, u"Meas Tsys using NS", False )
 		self.m_panel2 = wx.Panel( self.m_notebook4, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
 		bSizer14 = wx.BoxSizer( wx.VERTICAL )
 
@@ -410,7 +477,7 @@ class VirtualENRPanel ( wx.Panel ):
 		self.m_panel2.SetSizer( bSizer14 )
 		self.m_panel2.Layout()
 		bSizer14.Fit( self.m_panel2 )
-		self.m_notebook4.AddPage( self.m_panel2, u"Measure Tsys Hot/Cold", False )
+		self.m_notebook4.AddPage( self.m_panel2, u"Meas Tsys Hot/Cold", False )
 		self.m_panel7 = wx.Panel( self.m_notebook4, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
 		bSizer15 = wx.BoxSizer( wx.VERTICAL )
 
@@ -450,7 +517,52 @@ class VirtualENRPanel ( wx.Panel ):
 		self.m_panel7.SetSizer( bSizer15 )
 		self.m_panel7.Layout()
 		bSizer15.Fit( self.m_panel7 )
-		self.m_notebook4.AddPage( self.m_panel7, u"Create ENR File", True )
+		self.m_notebook4.AddPage( self.m_panel7, u"Create ENR File", False )
+		self.m_panel91 = wx.Panel( self.m_notebook4, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
+		bSizer17 = wx.BoxSizer( wx.VERTICAL )
+
+		gSizer15 = wx.GridSizer( 0, 2, 0, 0 )
+
+		self.m_button14 = wx.Button( self.m_panel91, wx.ID_ANY, u"Room Temp", wx.DefaultPosition, wx.DefaultSize, 0 )
+		gSizer15.Add( self.m_button14, 0, wx.ALL, 5 )
+
+		self.m_staticText42 = wx.StaticText( self.m_panel91, wx.ID_ANY, u"[measured power]", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText42.Wrap( -1 )
+
+		gSizer15.Add( self.m_staticText42, 0, wx.ALL, 5 )
+
+		self.m_button15 = wx.Button( self.m_panel91, wx.ID_ANY, u"Cold", wx.DefaultPosition, wx.DefaultSize, 0 )
+		gSizer15.Add( self.m_button15, 0, wx.ALL, 5 )
+
+		self.m_staticText43 = wx.StaticText( self.m_panel91, wx.ID_ANY, u"[measured power]", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText43.Wrap( -1 )
+
+		gSizer15.Add( self.m_staticText43, 0, wx.ALL, 5 )
+
+		self.m_staticText44 = wx.StaticText( self.m_panel91, wx.ID_ANY, u"Cable Loss (dB)", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText44.Wrap( -1 )
+
+		gSizer15.Add( self.m_staticText44, 0, wx.ALL, 5 )
+
+		self.m_textCtrl291 = wx.TextCtrl( self.m_panel91, wx.ID_ANY, u"0.07", wx.DefaultPosition, wx.DefaultSize, 0 )
+		gSizer15.Add( self.m_textCtrl291, 0, wx.ALL, 5 )
+
+		self.m_button16 = wx.Button( self.m_panel91, wx.ID_ANY, u"Calc Tif", wx.DefaultPosition, wx.DefaultSize, 0 )
+		gSizer15.Add( self.m_button16, 0, wx.ALL, 5 )
+
+		self.m_staticText45 = wx.StaticText( self.m_panel91, wx.ID_ANY, u"[ tif ]", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText45.Wrap( -1 )
+
+		gSizer15.Add( self.m_staticText45, 0, wx.ALL, 5 )
+
+
+		bSizer17.Add( gSizer15, 0, wx.EXPAND, 5 )
+
+
+		self.m_panel91.SetSizer( bSizer17 )
+		self.m_panel91.Layout()
+		bSizer17.Fit( self.m_panel91 )
+		self.m_notebook4.AddPage( self.m_panel91, u"Meas Tif", True )
 
 		bSizer7.Add( self.m_notebook4, 1, wx.EXPAND |wx.ALL, 5 )
 
@@ -462,20 +574,35 @@ class VirtualENRPanel ( wx.Panel ):
 		self.Layout()
 
 		# Connect Events
+		self.m_checkBox4.Bind( wx.EVT_CHECKBOX, self.psg_power_toggled )
+		self.m_checkBox10.Bind( wx.EVT_CHECKBOX, self.hp_power_toggled )
+		self.m_checkBox12.Bind( wx.EVT_CHECKBOX, self.smu_power_toggled )
 		self.m_checkBox1.Bind( wx.EVT_CHECKBOX, self.voltage_bias_checked )
 		self.m_checkBox2.Bind( wx.EVT_CHECKBOX, self.current_bias_checked )
 		self.m_button91.Bind( wx.EVT_BUTTON, self.MotorCW )
 		self.m_button101.Bind( wx.EVT_BUTTON, self.MotorCCW )
+		self.m_button11.Bind( wx.EVT_BUTTON, self.reconnect_instruments_pressed )
 		self.m_button5.Bind( wx.EVT_BUTTON, self.VerifySetup )
 		self.m_button8.Bind( wx.EVT_BUTTON, self.ns_chopped_pressed )
 		self.m_button6.Bind( wx.EVT_BUTTON, self.hotcold_chopped_pressed )
 		self.m_button12.Bind( wx.EVT_BUTTON, self.create_ns_calfile )
+		self.m_button14.Bind( wx.EVT_BUTTON, self.measure_tif_roomtemp )
+		self.m_button15.Bind( wx.EVT_BUTTON, self.measure_tif_cold )
 
 	def __del__( self ):
 		pass
 
 
 	# Virtual event handlers, override them in your derived class
+	def psg_power_toggled( self, event ):
+		event.Skip()
+
+	def hp_power_toggled( self, event ):
+		event.Skip()
+
+	def smu_power_toggled( self, event ):
+		event.Skip()
+
 	def voltage_bias_checked( self, event ):
 		event.Skip()
 
@@ -488,6 +615,9 @@ class VirtualENRPanel ( wx.Panel ):
 	def MotorCCW( self, event ):
 		event.Skip()
 
+	def reconnect_instruments_pressed( self, event ):
+		event.Skip()
+
 	def VerifySetup( self, event ):
 		event.Skip()
 
@@ -498,6 +628,12 @@ class VirtualENRPanel ( wx.Panel ):
 		event.Skip()
 
 	def create_ns_calfile( self, event ):
+		event.Skip()
+
+	def measure_tif_roomtemp( self, event ):
+		event.Skip()
+
+	def measure_tif_cold( self, event ):
 		event.Skip()
 
 

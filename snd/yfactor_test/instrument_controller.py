@@ -387,7 +387,7 @@ class Source:
             if self.dummy:
                 self.inst = None
             else:
-                traceback.print_exc()
+                raise Exception
 
     def __repr__(self):
         return self.type
