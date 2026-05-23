@@ -1,0 +1,22 @@
+
+--- Interrogating PNA (Emptying the Vault) ---
+1. Active Trace Name is: "CH1_S11_1"
+2. Trace Cal Type: "Response(a1)"
+Press any key to continue . . .
+
+
+
+
+
+
+
+
+
+--- Interrogating PNA (put your hands up) ---
+1. Active Cal Set Name: "TEST123"
+2. Trace Cal Type: [TIMED OUT] VNA Error: +103,"CALC measurement selection set to none"
+3. Error Terms Catalog: "ResponseTracking(a1),SourcePowerCorrection(1)"
+Press any key to continue . . .
+
+
+
