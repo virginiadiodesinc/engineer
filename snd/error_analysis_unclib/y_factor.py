@@ -71,13 +71,15 @@ def generate_trx_df():
 
 if __name__ == '__main__':
 	exa = connect_exa()
+
 	pico = connect_picoscope(1)
 	temps = []
 	datas = []
-
-	meas_delay = float(exa.get_sweep_time())
+	
+	time.sleep(1)
+	meas_delay = float(exa.get_sweep_time()) * 2
 
 	for j in range(2):
-		temps.append(get_temperature(pico,1))
 		time.sleep(meas_delay)
+		temps.append(get_temperature(pico,1))
 		datas.append(get_exa_data(exa))

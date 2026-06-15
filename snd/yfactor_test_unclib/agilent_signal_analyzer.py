@@ -43,13 +43,17 @@ class PXA():
 
 	def get_sweep_time(self):
 		return self.inst.query(':SENS:SWE:TIME?')
+	
+	def set_sweep_time(self, time_s):
+		self.inst.write(f':SENS:SWE:TIME {time_s} s')
 
 	def marker_setbandwidth(self, bw):
 		self.inst.write(':CALC:MARK:FUNC BPOW')
 		self.inst.write(f':CALC:MARK:FUNC:BAND:SPAN {bw} MHz')
 
-	def marker_setcf(self, cf):
-		self.inst.write(f':CALC:MARK:X {cf} MHz')
+	def marker_setcf(self, cf, units='MHz'):
+		self.inst.write(':CALC:MARK:MODE POS')
+		self.inst.write(f':CALC:MARK:X {cf} {units}')
 
 	def marker_getvalue(self):
 		return self.inst.query('CALC:MARK1:Y?')

@@ -18,7 +18,21 @@ def get_directivity(df, direction = 'forward'):
 		directivity = df[f'{direction} directivity'].apply(complex)
 		reflection = df[f'{direction} reflection tracking'].apply(complex)
 
-	sys_dir = reflection / directivity
+	sys_dir = directivity / reflection
+
+	sys_dir_mag = sys_dir.apply(np.absolute)
+	sys_dir_db = 20*np.log10(sys_dir_mag)
+
+	return sys_dir_db
+
+def get_1port_directivity(df):
+	'''
+	direction = forward, reverse, or None
+	'''
+	directivity = df['directivity'].apply(complex)
+	reflection = df['reflection tracking'].apply(complex)
+
+	sys_dir = directivity / reflection
 
 	sys_dir_mag = sys_dir.apply(np.absolute)
 	sys_dir_db = 20*np.log10(sys_dir_mag)
@@ -132,21 +146,21 @@ def plot_directivity_metrics(folder_path, num_ports=2,name1='vnax xxx', name2='v
 
 if __name__ == '__main__':
 	#plt.ion()
-
+	pass
 	#df = pd.read_excel('TRL_coefs.xlsx')
-	df = pd.read_excel('SOLT_coefs.xlsx')
-	df.index = df['Unnamed: 0']
+	# df = pd.read_excel('SOLT_coefs.xlsx')
+	# df.index = df['Unnamed: 0']
 
-	dir1 = get_directivity(df, 'forward')
-	dir2 = get_directivity(df, 'reverse')
+	# dir1 = get_directivity(df, 'forward')
+	# dir2 = get_directivity(df, 'reverse')
 
-	plot_reflection_trackings(df)
-	plt.figure()
+	# plot_reflection_trackings(df)
+	# plt.figure()
 
-	(-1*dir1).plot()
-	(-1*dir2).plot()
+	# (-1*dir1).plot()
+	# (-1*dir2).plot()
 
-	plt.axhline(-18)
-	plt.legend()
+	# plt.axhline(-18)
+	# plt.legend()
 
-	plt.show()
+	# plt.show()
