@@ -2,6 +2,59 @@ import metas_unclib as mu
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy import stats
+
+def returnloss_from_dataframe(df, p=0.95):
+	'''
+	uses the first column
+	and returns {value} where p% of data is <= {value}
+	'''
+	column = df.columns[0]
+	return df.quantile(p)[column]
+
+def s11_to_gamma(s11_db=-10):
+	s11_lin = np.power(10,s11_db/20)
+	vswr = (1+s11_lin)/(1-s11_lin)
+	gamma = (vswr-1)/(vswr+1)
+	
+	return gamma
+
+def gammas_to_unc(gamma1, gamma2):
+	unc = -20*np.log10(1-gamma1*gamma2)
+	return unc
+
+def ufloatfromsamples(samples_list, id=None, desc=None, p=0.95):
+	'''
+	wrapper for metas_unclib ufloatfromsamples
+	normalize ufloat.stdunc to be 1 sigma
+	'''
+	mu_float = mu.ufloatfromsamples(samples_list, id=id, desc=desc, p=p)
+	mu_interval = mu.get_coverage_interval(mu_float,p=p)[0]
+	
+	stddev = get_stdev_from_interval(p=p, interval=mu_interval, numpoints=len(samples_list))
+	new_float = mu.ufloat(value=mu_float.value,stdunc=stddev,id=id,desc=desc)
+
+	return new_float
+
+
+def get_stdev_from_interval(p, interval, numpoints):
+	ci_lower = interval[0]
+	ci_upper = interval[1]
+	confidence_level = p
+	
+	# 1. Calculate the tail probability (alpha / 2)
+	alpha = 1 - confidence_level
+	tail_prob = 1 - (alpha / 2)  # 0.975 for a 95% CI
+
+	# 2. Get the z-score multiplier using SciPy
+	z_multiplier = stats.norm.ppf(tail_prob)
+
+	# 3. Extract the standard deviation
+	interval_width = ci_upper - ci_lower
+	std_err = interval_width / (2 * z_multiplier)
+	std_dev = std_err*np.sqrt(numpoints)
+
+	return std_dev
 
 def str_to_ufloat(input_string):
 	'''

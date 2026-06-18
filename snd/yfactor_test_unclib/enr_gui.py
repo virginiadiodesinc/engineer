@@ -16,7 +16,7 @@ import wx.xrc
 
 class VirtualENRPanel ( wx.Panel ):
 
-	def __init__( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 770,696 ), style = wx.TAB_TRAVERSAL, name = wx.EmptyString ):
+	def __init__( self, parent, id = wx.ID_ANY, pos = wx.DefaultPosition, size = wx.Size( 770,740 ), style = wx.TAB_TRAVERSAL, name = wx.EmptyString ):
 		wx.Panel.__init__ ( self, parent, id = id, pos = pos, size = size, style = style, name = name )
 
 		bSizer5 = wx.BoxSizer( wx.HORIZONTAL )
@@ -57,7 +57,7 @@ class VirtualENRPanel ( wx.Panel ):
 
 		fgSizer1.Add( self.m_staticText40, 0, wx.ALL, 5 )
 
-		self.m_staticText231 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"MXG/PSG", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText231 = wx.StaticText( self.m_panel6, wx.ID_ANY, u"MXG/PSG/Synth", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText231.Wrap( -1 )
 
 		fgSizer1.Add( self.m_staticText231, 0, wx.ALL, 5 )
@@ -163,14 +163,6 @@ class VirtualENRPanel ( wx.Panel ):
 
 		self.m_textCtrl25 = wx.TextCtrl( self.m_panel9, wx.ID_ANY, u"0", wx.DefaultPosition, wx.DefaultSize, 0 )
 		gSizer7.Add( self.m_textCtrl25, 0, wx.ALL, 5 )
-
-		self.m_staticText41 = wx.StaticText( self.m_panel9, wx.ID_ANY, u"Tif (K)", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_staticText41.Wrap( -1 )
-
-		gSizer7.Add( self.m_staticText41, 0, wx.ALL, 5 )
-
-		self.m_textCtrl281 = wx.TextCtrl( self.m_panel9, wx.ID_ANY, u"100", wx.DefaultPosition, wx.DefaultSize, 0 )
-		gSizer7.Add( self.m_textCtrl281, 0, wx.ALL, 5 )
 
 
 		bSizer8.Add( gSizer7, 1, wx.EXPAND, 5 )
@@ -317,13 +309,21 @@ class VirtualENRPanel ( wx.Panel ):
 		self.ifcenter_mhz = wx.TextCtrl( self.m_panel5, wx.ID_ANY, u"70", wx.DefaultPosition, wx.DefaultSize, wx.TE_READONLY )
 		gSizer1.Add( self.ifcenter_mhz, 0, wx.ALL, 5 )
 
-		self.m_staticText5 = wx.StaticText( self.m_panel5, wx.ID_ANY, u"Sweep Time (s)", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText48 = wx.StaticText( self.m_panel5, wx.ID_ANY, u"Spec. A #Points", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText48.Wrap( -1 )
+
+		gSizer1.Add( self.m_staticText48, 0, wx.ALL, 5 )
+
+		self.speca_np = wx.TextCtrl( self.m_panel5, wx.ID_ANY, u"1001", wx.DefaultPosition, wx.DefaultSize, 0 )
+		gSizer1.Add( self.speca_np, 0, wx.ALL, 5 )
+
+		self.m_staticText5 = wx.StaticText( self.m_panel5, wx.ID_ANY, u"Measurement Time (s)", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText5.Wrap( -1 )
 
 		gSizer1.Add( self.m_staticText5, 0, wx.ALL, 5 )
 
-		self.ifbw_mhz = wx.TextCtrl( self.m_panel5, wx.ID_ANY, u"1", wx.DefaultPosition, wx.DefaultSize)
-		gSizer1.Add( self.ifbw_mhz, 0, wx.ALL, 5 )
+		self.set_meas_time = wx.TextCtrl( self.m_panel5, wx.ID_ANY, u"1", wx.DefaultPosition, wx.DefaultSize, 0 )
+		gSizer1.Add( self.set_meas_time, 0, wx.ALL, 5 )
 
 		self.m_staticText6 = wx.StaticText( self.m_panel5, wx.ID_ANY, u"Start Frequency (GHz)", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText6.Wrap( -1 )
@@ -517,52 +517,7 @@ class VirtualENRPanel ( wx.Panel ):
 		self.m_panel7.SetSizer( bSizer15 )
 		self.m_panel7.Layout()
 		bSizer15.Fit( self.m_panel7 )
-		self.m_notebook4.AddPage( self.m_panel7, u"Create ENR File", False )
-		self.m_panel91 = wx.Panel( self.m_notebook4, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
-		bSizer17 = wx.BoxSizer( wx.VERTICAL )
-
-		gSizer15 = wx.GridSizer( 0, 2, 0, 0 )
-
-		self.m_button14 = wx.Button( self.m_panel91, wx.ID_ANY, u"Room Temp", wx.DefaultPosition, wx.DefaultSize, 0 )
-		gSizer15.Add( self.m_button14, 0, wx.ALL, 5 )
-
-		self.m_staticText42 = wx.StaticText( self.m_panel91, wx.ID_ANY, u"[measured power]", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_staticText42.Wrap( -1 )
-
-		gSizer15.Add( self.m_staticText42, 0, wx.ALL, 5 )
-
-		self.m_button15 = wx.Button( self.m_panel91, wx.ID_ANY, u"Cold", wx.DefaultPosition, wx.DefaultSize, 0 )
-		gSizer15.Add( self.m_button15, 0, wx.ALL, 5 )
-
-		self.m_staticText43 = wx.StaticText( self.m_panel91, wx.ID_ANY, u"[measured power]", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_staticText43.Wrap( -1 )
-
-		gSizer15.Add( self.m_staticText43, 0, wx.ALL, 5 )
-
-		self.m_staticText44 = wx.StaticText( self.m_panel91, wx.ID_ANY, u"Cable Loss (dB)", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_staticText44.Wrap( -1 )
-
-		gSizer15.Add( self.m_staticText44, 0, wx.ALL, 5 )
-
-		self.m_textCtrl291 = wx.TextCtrl( self.m_panel91, wx.ID_ANY, u"0.07", wx.DefaultPosition, wx.DefaultSize, 0 )
-		gSizer15.Add( self.m_textCtrl291, 0, wx.ALL, 5 )
-
-		self.m_button16 = wx.Button( self.m_panel91, wx.ID_ANY, u"Calc Tif", wx.DefaultPosition, wx.DefaultSize, 0 )
-		gSizer15.Add( self.m_button16, 0, wx.ALL, 5 )
-
-		self.m_staticText45 = wx.StaticText( self.m_panel91, wx.ID_ANY, u"[ tif ]", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_staticText45.Wrap( -1 )
-
-		gSizer15.Add( self.m_staticText45, 0, wx.ALL, 5 )
-
-
-		bSizer17.Add( gSizer15, 0, wx.EXPAND, 5 )
-
-
-		self.m_panel91.SetSizer( bSizer17 )
-		self.m_panel91.Layout()
-		bSizer17.Fit( self.m_panel91 )
-		self.m_notebook4.AddPage( self.m_panel91, u"Meas Tif", True )
+		self.m_notebook4.AddPage( self.m_panel7, u"Create ENR File", True )
 
 		bSizer7.Add( self.m_notebook4, 1, wx.EXPAND |wx.ALL, 5 )
 
@@ -586,8 +541,6 @@ class VirtualENRPanel ( wx.Panel ):
 		self.m_button8.Bind( wx.EVT_BUTTON, self.ns_chopped_pressed )
 		self.m_button6.Bind( wx.EVT_BUTTON, self.hotcold_chopped_pressed )
 		self.m_button12.Bind( wx.EVT_BUTTON, self.create_ns_calfile )
-		self.m_button14.Bind( wx.EVT_BUTTON, self.measure_tif_roomtemp )
-		self.m_button15.Bind( wx.EVT_BUTTON, self.measure_tif_cold )
 
 	def __del__( self ):
 		pass
@@ -628,12 +581,6 @@ class VirtualENRPanel ( wx.Panel ):
 		event.Skip()
 
 	def create_ns_calfile( self, event ):
-		event.Skip()
-
-	def measure_tif_roomtemp( self, event ):
-		event.Skip()
-
-	def measure_tif_cold( self, event ):
 		event.Skip()
 
 
