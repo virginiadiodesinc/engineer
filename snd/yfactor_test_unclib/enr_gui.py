@@ -222,7 +222,15 @@ class VirtualENRPanel ( wx.Panel ):
 
 		gSizer8.Add( ( 0, 0), 1, wx.EXPAND, 5 )
 
-		self.m_staticText38 = wx.StaticText( self.m_panel71, wx.ID_ANY, u"Current (mA)", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText51 = wx.StaticText( self.m_panel71, wx.ID_ANY, u"Start Current (mA)", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText51.Wrap( -1 )
+
+		gSizer8.Add( self.m_staticText51, 0, wx.ALL, 5 )
+
+		self.m_textCtrl35 = wx.TextCtrl( self.m_panel71, wx.ID_ANY, u"3", wx.DefaultPosition, wx.DefaultSize, 0 )
+		gSizer8.Add( self.m_textCtrl35, 0, wx.ALL, 5 )
+
+		self.m_staticText38 = wx.StaticText( self.m_panel71, wx.ID_ANY, u"Stop Current (mA)", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText38.Wrap( -1 )
 
 		gSizer8.Add( self.m_staticText38, 0, wx.ALL, 5 )
@@ -230,12 +238,20 @@ class VirtualENRPanel ( wx.Panel ):
 		self.m_textCtrl29 = wx.TextCtrl( self.m_panel71, wx.ID_ANY, u"3", wx.DefaultPosition, wx.DefaultSize, 0 )
 		gSizer8.Add( self.m_textCtrl29, 0, wx.ALL, 5 )
 
+		self.m_staticText52 = wx.StaticText( self.m_panel71, wx.ID_ANY, u"Num. Points", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText52.Wrap( -1 )
+
+		gSizer8.Add( self.m_staticText52, 0, wx.ALL, 5 )
+
+		self.m_textCtrl36 = wx.TextCtrl( self.m_panel71, wx.ID_ANY, u"1", wx.DefaultPosition, wx.DefaultSize, 0 )
+		gSizer8.Add( self.m_textCtrl36, 0, wx.ALL, 5 )
+
 		self.m_staticText351 = wx.StaticText( self.m_panel71, wx.ID_ANY, u"Voltage Limit (V)", wx.DefaultPosition, wx.DefaultSize, 0 )
 		self.m_staticText351.Wrap( -1 )
 
 		gSizer8.Add( self.m_staticText351, 0, wx.ALL, 5 )
 
-		self.m_textCtrl26 = wx.TextCtrl( self.m_panel71, wx.ID_ANY, u"20", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_textCtrl26 = wx.TextCtrl( self.m_panel71, wx.ID_ANY, u"1.2", wx.DefaultPosition, wx.DefaultSize, 0 )
 		gSizer8.Add( self.m_textCtrl26, 0, wx.ALL, 5 )
 
 
@@ -246,36 +262,6 @@ class VirtualENRPanel ( wx.Panel ):
 		self.m_panel71.Layout()
 		bSizer91.Fit( self.m_panel71 )
 		bSizer44.Add( self.m_panel71, 0, wx.EXPAND |wx.ALL, 5 )
-
-		self.m_panel8 = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.BORDER_RAISED|wx.TAB_TRAVERSAL )
-		bSizer11 = wx.BoxSizer( wx.VERTICAL )
-
-		self.m_staticText34 = wx.StaticText( self.m_panel8, wx.ID_ANY, u"Troubleshooting", wx.DefaultPosition, wx.DefaultSize, 0 )
-		self.m_staticText34.Wrap( -1 )
-
-		self.m_staticText34.SetFont( wx.Font( wx.NORMAL_FONT.GetPointSize(), wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_BOLD, False, wx.EmptyString ) )
-
-		bSizer11.Add( self.m_staticText34, 0, wx.ALL, 5 )
-
-		bSizer4 = wx.BoxSizer( wx.HORIZONTAL )
-
-		self.m_button91 = wx.Button( self.m_panel8, wx.ID_ANY, u"MotorCW", wx.DefaultPosition, wx.DefaultSize, 0 )
-		bSizer4.Add( self.m_button91, 0, wx.ALL, 5 )
-
-		self.m_button101 = wx.Button( self.m_panel8, wx.ID_ANY, u"MotorCCW", wx.DefaultPosition, wx.DefaultSize, 0 )
-		bSizer4.Add( self.m_button101, 0, wx.ALL, 5 )
-
-		self.m_button11 = wx.Button( self.m_panel8, wx.ID_ANY, u"Reconnect Instruments", wx.DefaultPosition, wx.DefaultSize, 0 )
-		bSizer4.Add( self.m_button11, 0, wx.ALL, 5 )
-
-
-		bSizer11.Add( bSizer4, 1, wx.EXPAND, 5 )
-
-
-		self.m_panel8.SetSizer( bSizer11 )
-		self.m_panel8.Layout()
-		bSizer11.Fit( self.m_panel8 )
-		bSizer44.Add( self.m_panel8, 1, wx.EXPAND |wx.ALL, 5 )
 
 
 		bSizer5.Add( bSizer44, 0, wx.EXPAND, 5 )
@@ -435,6 +421,15 @@ class VirtualENRPanel ( wx.Panel ):
 		self.roomtemp_k = wx.TextCtrl( self.m_panel3, wx.ID_ANY, u"293", wx.DefaultPosition, wx.DefaultSize, 0 )
 		gSizer3.Add( self.roomtemp_k, 0, wx.ALL, 5 )
 
+		self.m_staticText49 = wx.StaticText( self.m_panel3, wx.ID_ANY, u"IV Before/After Sweep", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText49.Wrap( -1 )
+
+		gSizer3.Add( self.m_staticText49, 0, wx.ALL, 5 )
+
+		self.run_iv_tests = wx.CheckBox( self.m_panel3, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.run_iv_tests.SetValue(True)
+		gSizer3.Add( self.run_iv_tests, 0, wx.ALL, 5 )
+
 		self.m_button8 = wx.Button( self.m_panel3, wx.ID_ANY, u"Save Chopped Data", wx.DefaultPosition, wx.DefaultSize, 0 )
 		gSizer3.Add( self.m_button8, 0, wx.ALL, 5 )
 
@@ -445,7 +440,7 @@ class VirtualENRPanel ( wx.Panel ):
 		self.m_panel3.SetSizer( bSizer13 )
 		self.m_panel3.Layout()
 		bSizer13.Fit( self.m_panel3 )
-		self.m_notebook4.AddPage( self.m_panel3, u"Meas Tsys using NS", False )
+		self.m_notebook4.AddPage( self.m_panel3, u"Meas Tsys using NS", True )
 		self.m_panel2 = wx.Panel( self.m_notebook4, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL )
 		bSizer14 = wx.BoxSizer( wx.VERTICAL )
 
@@ -517,9 +512,39 @@ class VirtualENRPanel ( wx.Panel ):
 		self.m_panel7.SetSizer( bSizer15 )
 		self.m_panel7.Layout()
 		bSizer15.Fit( self.m_panel7 )
-		self.m_notebook4.AddPage( self.m_panel7, u"Create ENR File", True )
+		self.m_notebook4.AddPage( self.m_panel7, u"Create ENR File", False )
 
 		bSizer7.Add( self.m_notebook4, 1, wx.EXPAND |wx.ALL, 5 )
+
+		self.m_panel8 = wx.Panel( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.BORDER_RAISED|wx.TAB_TRAVERSAL )
+		bSizer11 = wx.BoxSizer( wx.VERTICAL )
+
+		self.m_staticText34 = wx.StaticText( self.m_panel8, wx.ID_ANY, u"Troubleshooting", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_staticText34.Wrap( -1 )
+
+		self.m_staticText34.SetFont( wx.Font( wx.NORMAL_FONT.GetPointSize(), wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_BOLD, False, wx.EmptyString ) )
+
+		bSizer11.Add( self.m_staticText34, 0, wx.ALL, 5 )
+
+		bSizer4 = wx.BoxSizer( wx.HORIZONTAL )
+
+		self.m_button91 = wx.Button( self.m_panel8, wx.ID_ANY, u"MotorCW", wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer4.Add( self.m_button91, 0, wx.ALL, 5 )
+
+		self.m_button101 = wx.Button( self.m_panel8, wx.ID_ANY, u"MotorCCW", wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer4.Add( self.m_button101, 0, wx.ALL, 5 )
+
+		self.m_button11 = wx.Button( self.m_panel8, wx.ID_ANY, u"Reconnect Instruments", wx.DefaultPosition, wx.DefaultSize, 0 )
+		bSizer4.Add( self.m_button11, 0, wx.ALL, 5 )
+
+
+		bSizer11.Add( bSizer4, 1, wx.EXPAND, 5 )
+
+
+		self.m_panel8.SetSizer( bSizer11 )
+		self.m_panel8.Layout()
+		bSizer11.Fit( self.m_panel8 )
+		bSizer7.Add( self.m_panel8, 1, wx.EXPAND |wx.ALL, 5 )
 
 
 		bSizer5.Add( bSizer7, 1, wx.EXPAND, 5 )
@@ -534,13 +559,13 @@ class VirtualENRPanel ( wx.Panel ):
 		self.m_checkBox12.Bind( wx.EVT_CHECKBOX, self.smu_power_toggled )
 		self.m_checkBox1.Bind( wx.EVT_CHECKBOX, self.voltage_bias_checked )
 		self.m_checkBox2.Bind( wx.EVT_CHECKBOX, self.current_bias_checked )
-		self.m_button91.Bind( wx.EVT_BUTTON, self.MotorCW )
-		self.m_button101.Bind( wx.EVT_BUTTON, self.MotorCCW )
-		self.m_button11.Bind( wx.EVT_BUTTON, self.reconnect_instruments_pressed )
 		self.m_button5.Bind( wx.EVT_BUTTON, self.VerifySetup )
 		self.m_button8.Bind( wx.EVT_BUTTON, self.ns_chopped_pressed )
 		self.m_button6.Bind( wx.EVT_BUTTON, self.hotcold_chopped_pressed )
 		self.m_button12.Bind( wx.EVT_BUTTON, self.create_ns_calfile )
+		self.m_button91.Bind( wx.EVT_BUTTON, self.MotorCW )
+		self.m_button101.Bind( wx.EVT_BUTTON, self.MotorCCW )
+		self.m_button11.Bind( wx.EVT_BUTTON, self.reconnect_instruments_pressed )
 
 	def __del__( self ):
 		pass
@@ -562,15 +587,6 @@ class VirtualENRPanel ( wx.Panel ):
 	def current_bias_checked( self, event ):
 		event.Skip()
 
-	def MotorCW( self, event ):
-		event.Skip()
-
-	def MotorCCW( self, event ):
-		event.Skip()
-
-	def reconnect_instruments_pressed( self, event ):
-		event.Skip()
-
 	def VerifySetup( self, event ):
 		event.Skip()
 
@@ -581,6 +597,15 @@ class VirtualENRPanel ( wx.Panel ):
 		event.Skip()
 
 	def create_ns_calfile( self, event ):
+		event.Skip()
+
+	def MotorCW( self, event ):
+		event.Skip()
+
+	def MotorCCW( self, event ):
+		event.Skip()
+
+	def reconnect_instruments_pressed( self, event ):
 		event.Skip()
 
 

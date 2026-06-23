@@ -17,9 +17,12 @@ from pico_tc08 import TC08
 import metas_unclib as mu
 import mu_helper as muh
 
+from smu_manager import KeithleyManager
+
+import pickle
 
 #Disables instrument connections
-DEV_MODE = False
+DEV_MODE = True
 
 def calculate_standing_wave(ns_rl, mix_rl, horn_rl=-23):
 	ns_vswr = (1+np.power(10,ns_rl/20))/(1-np.power(10,ns_rl/20))
@@ -70,7 +73,8 @@ class ENRPanel(VirtualENRPanel):
 			self.exa = None
 			self.mc = None
 			self.hp = None
-			self.smu = None
+			self.smu_manager = None
+			self.tc08 = None
 
 		else:
 			self.connect_instruments()
@@ -79,31 +83,35 @@ class ENRPanel(VirtualENRPanel):
 
 	def connect_instruments(self):
 		try:
-			self.psg = Source('psg',address=20)
+			psg_address = int(self.m_textCtrl17.GetValue())
+			self.psg = Source('psg',address=psg_address)
 			self.m_checkBox3.SetValue(True)
 		except:
-			self.psg = Source('psg',address=20,dummy=True)
+			self.psg = Source('psg',address=psg_address,dummy=True)
 			self.m_checkBox3.SetValue(False)
 		try:
-			self.exa = PXA()
+			exa_address = int(self.m_textCtrl18.GetValue())
+			self.exa = PXA(address=exa_address)
 			self.m_checkBox5.SetValue(True)
 		except:
 			self.m_checkBox5.SetValue(False)
 		try:
-			self.mc = MotorController("Dev1",stepsize=1)
+			mc_name = self.m_textCtrl19.GetValue()
+			self.mc = MotorController(mc_name,stepsize=1)
 			self.m_checkBox7.SetValue(True)
 		except:
 			self.m_checkBox7.SetValue(False)
 		try:
-			self.hp = PSU()
+			psu_address = int(self.m_textCtrl20.GetValue())
+			self.hp = PSU(address=psu_address)
 			self.m_checkBox9.SetValue(True)
 		except:
 			self.m_checkBox9.SetValue(False)
-		try:
-			self.smu = SMU_K2611B(address=18)
-			self.m_checkBox11.SetValue(True)
-		except:
-			self.m_checkBox11.SetValue(False)
+	
+		keithley_address = int(self.m_textCtrl23.GetValue())
+		self.smu_manager = KeithleyManager(address=keithley_address)
+		self.m_checkBox11.SetValue(self.smu_manager.get_connected_status())
+		self.m_checkBox12.SetValue(self.smu_manager.get_power_status())
 
 		try:
 			self.tc08 = TC08()
@@ -131,7 +139,9 @@ class ENRPanel(VirtualENRPanel):
 		#bias parameters
 		self.hp_channel = int(self.m_textCtrl27.GetValue())
 		self.bias_voltage = float(self.m_textCtrl28.GetValue())
-		self.bias_current = float(self.m_textCtrl29.GetValue())/1e3
+		self.start_current = float(self.m_textCtrl35.GetValue())/1e3
+		self.stop_current = float(self.m_textCtrl29.GetValue())/1e3
+		self.num_current_points = int(self.m_textCtrl36.GetValue())
 		self.voltage_limit = float(self.m_textCtrl26.GetValue())
 		self.current_limit = float(self.m_textCtrl271.GetValue())/1e3
 
@@ -160,16 +170,14 @@ class ENRPanel(VirtualENRPanel):
 		
 		self.exa.marker_setcf(float(sweep_time)/2,'s')
 
-		if self.ns_bias_mode == 'current':
-			self.smu.set_mode_current_source()
-			self.smu.set_voltage_limit(self.voltage_limit)
-			self.smu.set_current_level(self.current_limit)
-			self.set_smu_state(True)
+		self.smu_manager.setup_current_source(ibias_ma=self.start_current, vlimit_v=self.voltage_limit)
 
-		elif self.ns_bias_mode == 'voltage':
-			self.hp.set_currdef(self.hp_channel, self.bias_current)
+		try:
+			self.hp.set_currdef(self.hp_channel, self.current_limit)
 			self.hp.set_voltdef(self.hp_channel, self.bias_voltage)
 			self.set_hp_state(True)
+		except:
+			pass
 
 	def set_hp_state(self, state=False):
 		if state == False:
@@ -188,18 +196,10 @@ class ENRPanel(VirtualENRPanel):
 
 	def set_smu_state(self, state=False):
 		if state == False:
-			try:
-				self.smu.setsourceOff()
-				self.m_checkBox12.SetValue(False)
-			except:
-				pass
+			self.m_checkBox12.SetValue( self.smu_manager.toggle_off() )
 
 		elif state == True:
-			try:
-				self.smu.setsourceOn()
-				self.m_checkBox12.SetValue(True)
-			except:
-				pass                    
+			self.m_checkBox12.SetValue( self.smu_manager.toggle_on() )
 
 	def set_psg_state(self, state=False):
 		if state == False:
@@ -232,18 +232,6 @@ class ENRPanel(VirtualENRPanel):
 	def smu_power_toggled( self, event ):
 		event.Skip()
 		self.set_smu_state(self.m_checkBox12.GetValue())
-
-	def NoiseSweep(self, fps):
-		#self.ifbw_mhz.SetValue(f'{bandwidth_mhz}')
-		#self.output_filename.SetValue(f'{bandwidth_mhz}')
-
-		self.numfpoints = fps
-		self.output_filename.SetValue(f'{fps}')
-
-		self.VerifySetup(None)
-
-		self.ln2cold, self.ln2hot = self.SweepOnce()
-		self.Calculate_LN2(None)
 
 	def SweepOnce(self):
 
@@ -318,7 +306,6 @@ class ENRPanel(VirtualENRPanel):
 
 	def ChopNS(self):
 
-		self.UpdateVariables()
 		self.exa.set_numpoints(self.speca_numpoints)
 		self.exa.set_sweep_time(self.meas_time)
 		self.psg.set_power(self.lopower)
@@ -405,6 +392,8 @@ class ENRPanel(VirtualENRPanel):
 		self.meas_delay = float(self.exa.get_sweep_time())*2
 		self.measdelay.SetValue(str(self.meas_delay))
 
+		self.set_smu_state(True)
+
 
 		f = (self.fstart+self.fstop)/(2*self.multval)
 		self.psg.set_frequency(f)
@@ -422,9 +411,32 @@ class ENRPanel(VirtualENRPanel):
 
 	def ns_chopped_pressed( self, event ):
 		event.Skip()
+		self.UpdateVariables()
 
-		self.nsoff, self.nson = self.ChopNS()
-		self.Calculate_NS()
+		#if we are current biasing get the range of bias values
+		if self.ns_bias_mode == 'current':
+			current_biases = np.linspace(self.start_current, self.stop_current, self.num_current_points)
+
+			for current in current_biases:
+				if self.run_iv_tests.GetValue():
+					#take pre-IV
+					source_vals, measure_vals = self.smu_manager.take_iv(self.voltage_limit, 100e-9,1e-3, 30)
+					print(source_vals)
+					print(measure_vals)
+
+				self.smu_manager.setup_current_source(ibias_ma=current, vlimit_v=self.voltage_limit)
+				self.nsoff, self.nson = self.ChopNS()
+
+				filename_with_current = self.output_filename.GetValue()+f"_{current*1e3}mA"
+				self.Calculate_NS(file_name = filename_with_current)
+
+			if self.run_iv_tests.GetValue():
+				#take post-IV
+				source_vals, measure_vals = self.smu_manager.take_iv(self.voltage_limit, 100e-9,1e-3, 30)
+				print(source_vals)
+				print(measure_vals)
+		else:
+			self.Calculate_NS(file_name = self.output_filename.GetValue())
 
 	def MotorCW(self, event):
 		self.mc.step_angle(1,1)
@@ -440,7 +452,7 @@ class ENRPanel(VirtualENRPanel):
 		outfilename = safeFname(self.outpath, self.output_filename.GetValue()+extension,'.csv')
 		df.to_csv(outfilename)
 
-	def Calculate_NS( self ):
+	def Calculate_NS( self, file_name ):
 		'''
 		if there's no input file then we can't solve for T hot
 		instead just output raw data. Assume it will be used to 
@@ -460,8 +472,11 @@ class ENRPanel(VirtualENRPanel):
 		df['rt(K)'] = roomtemp
 
 		if calfilepath == '':
-			outfilename = safeFname(self.outpath,self.output_filename.GetValue()+'_unknown','.csv')
+			outfilename = safeFname(self.outpath,file_name+'_unknown','.csv')
 			df.to_csv(outfilename)
+
+			pickle_filename = safeFname(self.outpath,file_name+'unknown','.pickle')
+			pickle.dump(open(pickle_filename,'wb'))
 
 		else:
 
@@ -471,8 +486,11 @@ class ENRPanel(VirtualENRPanel):
 			df['Tns(K)'] = mu.unumlib.interpolation2(enr_caled.index,enr_caled['Tns(K)'],1,df.index)
 			df['Treceiver(K)'] = (df['Tns(K)'] - df['Y']*df['rt(K)']) / (df['Y']-1)
 
-			outfilename = safeFname(self.outpath,self.output_filename.GetValue(),'.csv')
+			outfilename = safeFname(self.outpath,file_name,'.csv')
 			df.to_csv(outfilename)
+
+			pickle_filename = safeFname(self.outpath,file_name,'.pickle')
+			pickle.dump(open(pickle_filename,'wb'))
 
 	def hotcold_chopped_pressed( self, event ):
 		event.Skip()
@@ -521,6 +539,9 @@ class ENRPanel(VirtualENRPanel):
 		#df['Tif(K)'] = self.tif
 		######
 
+		#save pickle also
+		picklename = safeFname(self.outpath,self.output_filename.GetValue(),'.pickle')
+		pickle.dump(df,open(picklename,'wb'))
 		outfilename = safeFname(self.outpath,self.output_filename.GetValue(),'.csv')
 		df.to_csv(outfilename)
 
@@ -528,30 +549,43 @@ class ENRPanel(VirtualENRPanel):
 		rxpath = self.rx_tsys_in.GetPath()
 		nspath = self.ns_unknown_in.GetPath()
 
-		caled_rx = muh.read_csv(rxpath,index_col=0)
-		df = muh.read_csv(nspath,index_col=0)
+		#pickles will keep the uncertainty budgets
+		if 'pickle' in rxpath:
+			caled_rx = pickle.load(open(rxpath,'rb'))
+		else:
+			caled_rx = muh.read_csv(rxpath,index_col=0)
+
+		if 'pickle' in nspath:
+			df = pickle.load(open(nspath,'rb'))
+		else:
+			df = muh.read_csv(nspath,index_col=0)
 
 		#trx = np.interp(df.index,caled_rx.index,caled_rx['Treceiver(K)'])
 		trx = mu.unumlib.interpolation2(caled_rx.index,caled_rx['Treceiver(K)'],1,df.index)
+		taper_loss_lin = mu.unumlib.interpolation2(caled_rx.index,caled_rx['taper_loss_combined(lin)'],1,df.index)
+		taper_loss_k = mu.unumlib.interpolation2(caled_rx.index,caled_rx['taper_loss_combined(K)'],1,df.index)
+		trx_prime = (trx-taper_loss_k)/taper_loss_lin
 
-		df['Tns(K)'] = trx*(df['Y']-1)+df['Y']*df['rt(K)']
+		df['Trx'] = trx
+		df['TaperLoss(lin)'] = taper_loss_lin
+		df['TaperLoss(K)'] = taper_loss_k
+		df['Trx_Prime'] = trx_prime
+		df['Tns(K)'] = trx_prime*(df['Y']-1)+df['Y']*df['rt(K)']
 		df['ENR'] = (df['Tns(K)']-df['rt(K)'])/df['rt(K)']
 		df['ENR(dB)']=10*np.log10(df['ENR'])
 
 		outfilename = safeFname(self.outpath,self.ns_cal_filename.GetValue(),'.csv')
 		df.to_csv(outfilename)
 
+		#also pickle the output to save the unc budget
+		pickle_filename = safeFname(self.outpath,self.ns_cal_filename.GetValue(),'.pickle')
+		pickle.dump(open(pickle_filename,'wb'))
+
 	def switch_to_voltage_bias_mode( self ):
 		self.m_checkBox1.SetValue(True)
 		self.m_checkBox1.Disable()
 		self.m_checkBox2.Enable()
-		self.m_textCtrl27.Enable()
-		self.m_textCtrl28.Enable()
-		self.m_textCtrl271.Enable()
-
 		self.m_checkBox2.SetValue(False)
-		self.m_textCtrl29.Disable()
-		self.m_textCtrl26.Disable()
 
 		self.ns_bias_mode = 'voltage'
 
@@ -559,13 +593,7 @@ class ENRPanel(VirtualENRPanel):
 		self.m_checkBox2.SetValue(True)
 		self.m_checkBox1.Enable()
 		self.m_checkBox2.Disable()
-		self.m_textCtrl27.Disable()
-		self.m_textCtrl28.Disable()
-		self.m_textCtrl271.Disable()
-
 		self.m_checkBox1.SetValue(False)
-		self.m_textCtrl29.Enable()
-		self.m_textCtrl26.Enable()
 
 		self.ns_bias_mode = 'current'
 
