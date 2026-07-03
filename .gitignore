@@ -212,3 +212,5 @@ snd/yfactor_test/NDC_P6 WR4.3NS-B 12DB 721pts_corrected.csv
 snd/Untitled.ipynb
 *.ipynb
 *.csv
+*.pickle
+*.csv

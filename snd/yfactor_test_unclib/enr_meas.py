@@ -1,6 +1,6 @@
 import os
-
 import wx
+
 from instrument_controller import Source
 from agilent_signal_analyzer import PXA
 from keithley_2600smu import SMU_K2611B
@@ -22,7 +22,7 @@ from smu_manager import KeithleyManager
 import pickle
 
 #Disables instrument connections
-DEV_MODE = True
+DEV_MODE = False
 
 def calculate_standing_wave(ns_rl, mix_rl, horn_rl=-23):
 	ns_vswr = (1+np.power(10,ns_rl/20))/(1-np.power(10,ns_rl/20))
@@ -254,7 +254,7 @@ class ENRPanel(VirtualENRPanel):
 		for k in sweep_range:
 
 			self.psg.set_frequency(k)
-			time.sleep(self.meas_delay)
+			time.sleep(self.meas_delay*2)
 
 			coldtrace = self.exa.get_trace()
 
@@ -268,7 +268,7 @@ class ENRPanel(VirtualENRPanel):
 				pass
 
 			self.mc.step_angle(0,65)
-			time.sleep(self.meas_delay)
+			time.sleep(self.meas_delay*2)
 
 			hottrace = self.exa.get_trace()
 
@@ -325,7 +325,7 @@ class ENRPanel(VirtualENRPanel):
 		for k in sweep_range:
 
 			self.psg.set_frequency(k)
-			time.sleep(self.meas_delay)
+			time.sleep(self.meas_delay*2)
 
 			coldtrace = self.exa.get_trace()
 
@@ -344,7 +344,7 @@ class ENRPanel(VirtualENRPanel):
 			elif self.ns_bias_mode == 'current':
 				self.set_smu_state(True)
 
-			time.sleep(self.meas_delay)
+			time.sleep(self.meas_delay*2)
 			hottrace = self.exa.get_trace()
 
 			#hotval = float(self.exa.marker_getvalue())
@@ -420,9 +420,10 @@ class ENRPanel(VirtualENRPanel):
 			for current in current_biases:
 				if self.run_iv_tests.GetValue():
 					#take pre-IV
-					source_vals, measure_vals = self.smu_manager.take_iv(self.voltage_limit, 100e-9,1e-3, 30)
-					print(source_vals)
-					print(measure_vals)
+					iv_df = self.smu_manager.take_iv(1.2, 100e-9,1e-3, 30)
+					iv_filename = self.output_filename.GetValue()+f"_{current*1e3}mA_preIV"
+					iv_filename_fullpath = safeFname(self.outpath,iv_filename,'.csv')
+					iv_df.to_csv(iv_filename_fullpath)
 
 				self.smu_manager.setup_current_source(ibias_ma=current, vlimit_v=self.voltage_limit)
 				self.nsoff, self.nson = self.ChopNS()
@@ -432,11 +433,16 @@ class ENRPanel(VirtualENRPanel):
 
 			if self.run_iv_tests.GetValue():
 				#take post-IV
-				source_vals, measure_vals = self.smu_manager.take_iv(self.voltage_limit, 100e-9,1e-3, 30)
-				print(source_vals)
-				print(measure_vals)
-		else:
+				iv_df = self.smu_manager.take_iv(1.2, 100e-9,1e-3, 30)
+				post_iv_filename = self.output_filename.GetValue()+f"_{current*1e3}mA_postIV"
+				post_iv_filename_fullpath = safeFname(self.outpath,post_iv_filename,'.csv')
+				iv_df.to_csv(post_iv_filename_fullpath)
+		elif self.ns_bias_mode == 'voltage':
+			self.nsoff, self.nson = self.ChopNS()
 			self.Calculate_NS(file_name = self.output_filename.GetValue())
+
+		else:
+			pass
 
 	def MotorCW(self, event):
 		self.mc.step_angle(1,1)
@@ -476,7 +482,7 @@ class ENRPanel(VirtualENRPanel):
 			df.to_csv(outfilename)
 
 			pickle_filename = safeFname(self.outpath,file_name+'unknown','.pickle')
-			pickle.dump(open(pickle_filename,'wb'))
+			pickle.dump(df,open(pickle_filename,'wb'))
 
 		else:
 
@@ -490,7 +496,7 @@ class ENRPanel(VirtualENRPanel):
 			df.to_csv(outfilename)
 
 			pickle_filename = safeFname(self.outpath,file_name,'.pickle')
-			pickle.dump(open(pickle_filename,'wb'))
+			pickle.dump(df,open(pickle_filename,'wb'))
 
 	def hotcold_chopped_pressed( self, event ):
 		event.Skip()
@@ -579,7 +585,7 @@ class ENRPanel(VirtualENRPanel):
 
 		#also pickle the output to save the unc budget
 		pickle_filename = safeFname(self.outpath,self.ns_cal_filename.GetValue(),'.pickle')
-		pickle.dump(open(pickle_filename,'wb'))
+		pickle.dump(df,open(pickle_filename,'wb'))
 
 	def switch_to_voltage_bias_mode( self ):
 		self.m_checkBox1.SetValue(True)
