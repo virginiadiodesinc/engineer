@@ -72,9 +72,21 @@ class PXA():
 
 		return pd.DataFrame(trace, index=xaxis)
 
-	def get_trace(self):
+	def get_trace(self, single_sweep_mode = False):
 		#over GPIB
-		return self.inst.query_ascii_values(':TRAC:DATA? TRACE1')
+		if single_sweep_mode:
+			#get continuous state'
+			state = self.get_continuous_mode()
+
+			self.set_continuous_mode('OFF')
+			self.trigger_once()
+			self.send_opcheck()
+
+			self.set_continuous_mode(state)
+			
+			return self.inst.query_ascii_values(':TRAC:DATA? TRACE1')
+		else:
+			return self.inst.query_ascii_values(':TRAC:DATA? TRACE1')
 	
 	#Used to identify the PXA being used to correctly set a Cal Factor
 	def calfactor(self, user):

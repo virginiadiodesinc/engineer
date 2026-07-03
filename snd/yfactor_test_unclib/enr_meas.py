@@ -165,7 +165,7 @@ class ENRPanel(VirtualENRPanel):
 		self.exa.set_vbw(self.vbw)
 		
 		#self.exa.marker_setbandwidth(self.bw)
-		#self.exa.set_trace_detector('AVER')
+		self.exa.set_trace_detector('SAMP')
 		sweep_time = self.exa.get_sweep_time()
 		
 		self.exa.marker_setcf(float(sweep_time)/2,'s')
@@ -254,9 +254,9 @@ class ENRPanel(VirtualENRPanel):
 		for k in sweep_range:
 
 			self.psg.set_frequency(k)
-			time.sleep(self.meas_delay*2)
+			#time.sleep(self.meas_delay*2)
 
-			coldtrace = self.exa.get_trace()
+			coldtrace = self.exa.get_trace(single_sweep_mode=True)
 
 			#coldval = float(self.exa.marker_getvalue())
 			coldval = muh.ufloatfromsamples(coldtrace, desc='coldval')
@@ -268,9 +268,9 @@ class ENRPanel(VirtualENRPanel):
 				pass
 
 			self.mc.step_angle(0,65)
-			time.sleep(self.meas_delay*2)
+			#time.sleep(self.meas_delay*2)
 
-			hottrace = self.exa.get_trace()
+			hottrace = self.exa.get_trace(single_sweep_mode=True)
 
 			#hotval = float(self.exa.marker_getvalue())
 			hotval = muh.ufloatfromsamples(hottrace, desc='hottrace')
@@ -325,9 +325,9 @@ class ENRPanel(VirtualENRPanel):
 		for k in sweep_range:
 
 			self.psg.set_frequency(k)
-			time.sleep(self.meas_delay*2)
+			#time.sleep(self.meas_delay*2)
 
-			coldtrace = self.exa.get_trace()
+			coldtrace = self.exa.get_trace(single_sweep_mode=True)
 
 			#coldval = float(self.exa.marker_getvalue())
 			coldval = muh.ufloatfromsamples(coldtrace, desc='coldval')
@@ -344,8 +344,8 @@ class ENRPanel(VirtualENRPanel):
 			elif self.ns_bias_mode == 'current':
 				self.set_smu_state(True)
 
-			time.sleep(self.meas_delay*2)
-			hottrace = self.exa.get_trace()
+			#time.sleep(self.meas_delay*2)
+			hottrace = self.exa.get_trace(single_sweep_mode=True)
 
 			#hotval = float(self.exa.marker_getvalue())
 			hotval = muh.ufloatfromsamples(hottrace, desc='hottrace')
@@ -389,7 +389,7 @@ class ENRPanel(VirtualENRPanel):
 		self.exa.set_numpoints(self.speca_numpoints)
 		self.exa.set_sweep_time(self.meas_time)
 
-		self.meas_delay = float(self.exa.get_sweep_time())*2
+		self.meas_delay = float(self.exa.get_sweep_time())
 		self.measdelay.SetValue(str(self.meas_delay))
 
 		self.set_smu_state(True)
@@ -401,7 +401,7 @@ class ENRPanel(VirtualENRPanel):
 		
 		time.sleep(1)
 
-		trace = self.exa.get_trace()
+		trace = self.exa.get_trace(single_sweep_mode=True)
 		val = muh.ufloatfromsamples(trace)
 
 		self.exa.set_reflevel(val.value+25)
