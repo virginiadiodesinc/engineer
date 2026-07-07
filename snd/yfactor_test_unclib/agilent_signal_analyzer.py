@@ -76,13 +76,10 @@ class PXA():
 		#over GPIB
 		if single_sweep_mode:
 			#get continuous state'
-			state = self.get_continuous_mode()
 
 			self.set_continuous_mode('OFF')
 			self.trigger_once()
-			self.send_opcheck()
-
-			self.set_continuous_mode(state)
+			wait = self.send_opcheck()
 			
 			return self.inst.query_ascii_values(':TRAC:DATA? TRACE1')
 		else:
