@@ -423,7 +423,9 @@ class ENRPanel(VirtualENRPanel):
 					iv_df = self.smu_manager.take_iv(1.2, 100e-9,1e-3, 30)
 					iv_filename = self.output_filename.GetValue()+f"_{current*1e3}mA_preIV"
 					iv_filename_fullpath = safeFname(self.outpath,iv_filename,'.csv')
-					iv_df.to_csv(iv_filename_fullpath)
+
+					split_df = muh.split_columns(iv_df)
+					split_df.to_csv(iv_filename_fullpath)
 
 				self.smu_manager.setup_current_source(ibias_ma=current, vlimit_v=self.voltage_limit)
 				self.nsoff, self.nson = self.ChopNS()
@@ -436,7 +438,9 @@ class ENRPanel(VirtualENRPanel):
 				iv_df = self.smu_manager.take_iv(1.2, 100e-9,1e-3, 30)
 				post_iv_filename = self.output_filename.GetValue()+f"_{current*1e3}mA_postIV"
 				post_iv_filename_fullpath = safeFname(self.outpath,post_iv_filename,'.csv')
-				iv_df.to_csv(post_iv_filename_fullpath)
+
+				split_df = muh.split_columns(iv_df)
+				split_df.to_csv(post_iv_filename_fullpath)
 		elif self.ns_bias_mode == 'voltage':
 			self.nsoff, self.nson = self.ChopNS()
 			self.Calculate_NS(file_name = self.output_filename.GetValue())
@@ -479,7 +483,9 @@ class ENRPanel(VirtualENRPanel):
 
 		if calfilepath == '':
 			outfilename = safeFname(self.outpath,file_name+'_unknown','.csv')
-			df.to_csv(outfilename)
+
+			split_df = muh.split_columns(df)
+			split_df.to_csv(outfilename)
 
 			pickle_filename = safeFname(self.outpath,file_name+'unknown','.pickle')
 			pickle.dump(df,open(pickle_filename,'wb'))
@@ -493,7 +499,9 @@ class ENRPanel(VirtualENRPanel):
 			df['Treceiver(K)'] = (df['Tns(K)'] - df['Y']*df['rt(K)']) / (df['Y']-1)
 
 			outfilename = safeFname(self.outpath,file_name,'.csv')
-			df.to_csv(outfilename)
+
+			split_df = muh.split_columns(df)
+			split_df.to_csv(outfilename)
 
 			pickle_filename = safeFname(self.outpath,file_name,'.pickle')
 			pickle.dump(df,open(pickle_filename,'wb'))
@@ -549,7 +557,9 @@ class ENRPanel(VirtualENRPanel):
 		picklename = safeFname(self.outpath,self.output_filename.GetValue(),'.pickle')
 		pickle.dump(df,open(picklename,'wb'))
 		outfilename = safeFname(self.outpath,self.output_filename.GetValue(),'.csv')
-		df.to_csv(outfilename)
+
+		split_df = muh.split_columns(df)
+		split_df.to_csv(outfilename)
 
 	def create_ns_calfile( self, event ):
 		rxpath = self.rx_tsys_in.GetPath()
@@ -581,7 +591,8 @@ class ENRPanel(VirtualENRPanel):
 		df['ENR(dB)']=10*np.log10(df['ENR'])
 
 		outfilename = safeFname(self.outpath,self.ns_cal_filename.GetValue(),'.csv')
-		df.to_csv(outfilename)
+		split_df = muh.split_columns(df)
+		split_df.to_csv(outfilename)
 
 		#also pickle the output to save the unc budget
 		pickle_filename = safeFname(self.outpath,self.ns_cal_filename.GetValue(),'.pickle')

@@ -70,16 +70,49 @@ def str_to_ufloat(input_string):
 	except:
 		return float(input_string)
 
+def split_columns(input_df):
+	'''
+	split dataframe ufloat columns
+	'''
+	df = input_df.copy()
+
+	for c in df.columns:
+		element = df[c].iloc[0]
+		if (type(element) == mu.ufloat):
+			new_series = df[c].apply(lambda x: x.stdunc)
+			location = df.columns.get_loc(c)
+			df.insert(location+1,f'{c}_unc',new_series)
+
+			df[c] = df[c].apply(lambda x: x.value)
+	return df
+
+def combine_columns(input_df):
+	df = input_df.copy()
+	
+	for c in df.columns:
+		unc_string = f'{c}_unc'
+		if unc_string in df.columns:
+			zipped = zip(df[c], df[unc_string])
+			vals=[]
+			for i,j in zipped:
+				vals.append(mu.ufloat(i,stdunc=j))
+			df[c] = vals
+			df.drop(unc_string,axis=1,inplace=True)
+	return df
+
 def read_csv(filename, **kwargs):
 	df = pd.read_csv(filename, **kwargs)
 	for c in df.columns:
-		#for each column
+		#for each column, look at type of first element
 		substr = df[c].iloc[0]
 		if (type(substr) == str):
 			#try to find columns that are strings
 			if substr.find('±') > -1:
 				#if the string has a ± character, try to parse the whole column into ufloats
 				df[c] = df[c].apply(str_to_ufloat)
+
+	#whatever we ended up with here, try to merge the columns into single ufloats
+	df = combine_columns(df)
 
 	return df
 

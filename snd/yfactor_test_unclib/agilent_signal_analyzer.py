@@ -5,6 +5,7 @@ import pyvisa
 import platform
 import pandas as pd
 import numpy as np
+import time
 
 PXA_ADDRESS = 18
 PXA_CAL_DATA_PATH = ''
@@ -72,7 +73,7 @@ class PXA():
 
 		return pd.DataFrame(trace, index=xaxis)
 
-	def get_trace(self, single_sweep_mode = False):
+	def get_trace(self, premeasure_delay = 0.5, single_sweep_mode = False):
 		#over GPIB
 		if single_sweep_mode:
 			#get continuous state'
@@ -80,6 +81,8 @@ class PXA():
 			self.set_continuous_mode('OFF')
 			self.trigger_once()
 			wait = self.send_opcheck()
+
+			time.sleep(premeasure_delay)
 			
 			return self.inst.query_ascii_values(':TRAC:DATA? TRACE1')
 		else:
