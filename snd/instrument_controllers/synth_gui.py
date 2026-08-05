@@ -14,16 +14,15 @@ import gettext
 _ = gettext.gettext
 
 ###########################################################################
-## Class SmarterSynthGUI
+## Class MyDialog1
 ###########################################################################
 
-class SmarterSynthGUI ( wx.Dialog ):
+class MyDialog1 ( wx.Dialog ):
 
     def __init__( self, parent ):
         wx.Dialog.__init__ ( self, parent, id = wx.ID_ANY, title = wx.EmptyString, pos = wx.DefaultPosition, size = wx.DefaultSize, style = wx.DEFAULT_DIALOG_STYLE )
 
         self.SetSizeHints( wx.DefaultSize, wx.DefaultSize )
-        self.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_WINDOW ) )
 
         bSizer11 = wx.BoxSizer( wx.HORIZONTAL )
 
@@ -122,6 +121,7 @@ class SmarterSynthGUI ( wx.Dialog ):
 
         self.SetSizer( bSizer11 )
         self.Layout()
+        bSizer11.Fit( self )
 
         self.Centre( wx.BOTH )
 

@@ -147,20 +147,20 @@ def plot_directivity_metrics(folder_path, num_ports=2,name1='vnax xxx', name2='v
 if __name__ == '__main__':
 	#plt.ion()
 	pass
-	#df = pd.read_excel('TRL_coefs.xlsx')
+	df = pd.read_excel('TRL_coefs_wr19.xlsx')
 	# df = pd.read_excel('SOLT_coefs.xlsx')
-	# df.index = df['Unnamed: 0']
+	df.index = df['Unnamed: 0']
 
-	# dir1 = get_directivity(df, 'forward')
-	# dir2 = get_directivity(df, 'reverse')
+	dir1 = get_directivity(df, 'forward')
+	dir2 = get_directivity(df, 'reverse')
 
-	# plot_reflection_trackings(df)
-	# plt.figure()
+	#plot_reflection_trackings(df)
+	plt.figure()
 
-	# (-1*dir1).plot()
-	# (-1*dir2).plot()
+	(-1*dir1).plot()
+	(-1*dir2).plot()
 
-	# plt.axhline(-18)
-	# plt.legend()
+	#plt.axhline(-18)
+	plt.legend()
 
-	# plt.show()
+	plt.show()

@@ -139,8 +139,8 @@ class ENRPanel(VirtualENRPanel):
 		#bias parameters
 		self.hp_channel = int(self.m_textCtrl27.GetValue())
 		self.bias_voltage = float(self.m_textCtrl28.GetValue())
-		self.start_current = float(self.m_textCtrl35.GetValue())/1e3
-		self.stop_current = float(self.m_textCtrl29.GetValue())/1e3
+		self.start_current = float(self.m_textCtrl35.GetValue())
+		self.stop_current = float(self.m_textCtrl29.GetValue())
 		self.num_current_points = int(self.m_textCtrl36.GetValue())
 		self.voltage_limit = float(self.m_textCtrl26.GetValue())
 		self.current_limit = float(self.m_textCtrl271.GetValue())/1e3
