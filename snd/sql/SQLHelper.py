@@ -6,7 +6,7 @@ import pandas as pd
 
 import sys
 
-SSP_DB_FILE = "W:/durant/github/vdi_ssp/sql/db/SSP_DB_copy.db"
+SSP_DB_FILE = "W:/durant/github/engineer/snd/sql/db/SSP_DB_copy.db"
 SSP_DB_DATA_DIR = "W:/Python3/vdi_ssp/sql/db/files"
 
 class AutoMapManager:
@@ -18,11 +18,13 @@ class AutoMapManager:
 
 		return list(mapper.columns)
 
-	
-
 class SQLHelper:
 
-	def __init__(self):
+	def __init__(self, update_db=False):
+
+		if update_db:
+			import shutil
+			shutil.copy(r'W:\Python3\vdi_ssp\sql\db\SSP_DB.db', SSP_DB_FILE)
 
 		self.engine = create_engine("sqlite:///" + SSP_DB_FILE, echo=False)
 		SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=self.engine)
@@ -43,6 +45,12 @@ class SQLHelper:
 	def get_columns_from_table_name(self, table_name):
 		inspector = inspect(self.engine)
 		return inspector.get_columns(table_name)
+
+	def print_columns_from_table_names(self, table_names= []):
+		for j in table_names:
+			print(f'{j} - {self.get_columns_from_table_name(j).keys}' )
+			
+
 
 	def get_automap_classes(self):
 		Base = automap_base()
@@ -109,13 +117,16 @@ class SQLHelper:
 		result = self.executeSelect( self.getSelect() )
 		return result
 
-	def executeSelect(self, sel):
+	def executeSelect(self, sel, how='all'):
 
 		with Session(self.engine) as sess:
 			#result will be a list of rows
 			#each row is a tuple of ORMs
 			#if theres only one ORM it's a tuple of length 1
-			result = sess.execute(sel).all()
+			if how=='all':
+				result = sess.execute(sel).all()
+			elif how=='first':
+				result = sess.execute(sel).first()
 		return result
 
 	# def _getApprovedTPP(self, systype='SGX', band='WR10', approved=True):
