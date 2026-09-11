@@ -22,21 +22,19 @@ class SQLHelper:
 
 	def __init__(self, update_db=False):
 
-		if update_db:
-			import shutil
-			shutil.copy(r'W:\Python3\vdi_ssp\sql\db\SSP_DB.db', SSP_DB_FILE)
-
-		self.engine = create_engine("sqlite:///" + SSP_DB_FILE, echo=False)
-		SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=self.engine)
-		self.Base = declarative_base()
-		self.db = scoped_session(SessionLocal)
-
+		self.connect_db()
 		self.meta_counter = 0
 		#a dict of metadata to return
 		self.meta = {}
 
 		#a list of tuples
 		self.filter_tuples = []
+
+	def connect_db(self):
+		self.engine = create_engine("sqlite:///" + SSP_DB_FILE, echo=False)
+		SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=self.engine)
+		self.Base = declarative_base()
+		self.db = scoped_session(SessionLocal)
 
 	def get_table_names(self):
 		inspector = inspect(self.engine)

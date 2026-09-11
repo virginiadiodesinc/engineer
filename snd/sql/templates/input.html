@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>System Compare</h1>
+    <form method="post">
+        <h3>SN</h3>
+        <input type="text" name="serial_number" value="SAX 1233" required>
+        <br><br>
+        <h3>Rev</h3>
+        <input type="text" name="revision" value="a" required>
+        <br><br>
+        <h3>Match Subtype</h3>
+        <select name="match_subtype" required>
+            <option value="True">True</option>
+            <option value="False">False</option>
+        </select>
+        <br><br>
+        <h3>Low Drive?</h3>
+        <select name="low_drive" required>
+            <option value="True">True</option>
+            <option value="False">False</option>
+        </select>
+        <br><br>
+        <h3>Number of Comparisons</h3>
+        <input type="number" name="num_comparisons" value=5 required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
