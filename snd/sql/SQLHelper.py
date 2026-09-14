@@ -20,9 +20,9 @@ class AutoMapManager:
 
 class SQLHelper:
 
-	def __init__(self, update_db=False):
+	def __init__(self, db_file=None):
 
-		self.connect_db()
+		self.connect_db(db_file)
 		self.meta_counter = 0
 		#a dict of metadata to return
 		self.meta = {}
@@ -30,8 +30,11 @@ class SQLHelper:
 		#a list of tuples
 		self.filter_tuples = []
 
-	def connect_db(self):
-		self.engine = create_engine("sqlite:///" + SSP_DB_FILE, echo=False)
+	def connect_db(self, db_file=None):
+		if db_file:
+			self.engine = create_engine("sqlite:///" + db_file, echo=False)
+		else:
+			self.engine = create_engine("sqlite:///" + SSP_DB_FILE, echo=False)
 		SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=self.engine)
 		self.Base = declarative_base()
 		self.db = scoped_session(SessionLocal)

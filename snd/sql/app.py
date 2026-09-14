@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template, redirect
 from .test_explorer import TestExplorer
+from .update_script import sync_database
 import logging
 
 app = Flask(__name__)
@@ -80,7 +81,7 @@ def homepage():
 
 @app.route('/reload')
 def reload():
-    sql_helper.update_database()
+    sync_database(sql_helper)
     return redirect('/')
 
 @app.route('/<sn1>/<sn2>/<rev>')

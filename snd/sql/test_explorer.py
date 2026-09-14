@@ -1,4 +1,4 @@
-from sqlalchemy import select, tuple_, func, text
+from sqlalchemy import select, tuple_, func, text, create_engine
 from sqlalchemy.orm import Session
 from .SQLHelper import SQLHelper
 from .FileReader import readFile
@@ -12,6 +12,7 @@ import numpy as np
 import shutil
 
 SSP_DB_FILE = "W:/durant/github/engineer/snd/sql/db/SSP_DB_copy.db"
+SSP_DB_REF = "W:/durant/github/engineer/snd/sql/db/SSP_DB_ref.db"
 
 
 COLOR_SCHEME = ['#000000']+px.colors.qualitative.Plotly
@@ -29,20 +30,21 @@ class TestExplorer(SQLHelper):
         self.define_classes()
 
     def update_database(self):
-        #close old connection
 
-        self.engine.dispose()
+        # #close old connection
 
-        #copy the db file on the network
-        shutil.copy(r'W:\Python3\vdi_ssp\sql\db\SSP_DB.db', SSP_DB_FILE)
+        # self.engine.dispose()
 
-        #reconnect to the new file
-        self.connect_db()
+        # #copy the db file on the network
+        # shutil.copy(r'W:\Python3\vdi_ssp\sql\db\SSP_DB.db', SSP_DB_FILE)
 
-        #add the new columns
-        self.add_columns()
-        #redefine classes in case we added columns
-        self.define_classes()
+        # #reconnect to the new file
+        # self.connect_db()
+
+        # #add the new columns
+        # self.add_columns()
+        # #redefine classes in case we added columns
+        # self.define_classes()
 
         print("Populating test.test_type column for Short-Loads")
         self.rename_shortloads()
@@ -52,7 +54,7 @@ class TestExplorer(SQLHelper):
 
         print("Populating testset.datetime_edited column")
         self.update_testsets_to_datetime()
-        tests_to_update = self.find_approved_tests(0)
+        tests_to_update = self.find_all_approved_tests(0)
 
         print("Populating test.approved column")
         self.set_approved_tests(tests_to_update, 1)
@@ -64,7 +66,6 @@ class TestExplorer(SQLHelper):
             connection.execute(text('alter table test add column approved integer'))
             connection.execute(text('alter table test add column sn text'))
             connection.execute(text('alter table testset add column datetime_edited datetime'))
-
 
     def define_classes(self, table_names = ['test','testset','system']):
 
@@ -172,7 +173,17 @@ class TestExplorer(SQLHelper):
         
         return self.executeSelect(newest_tests)
 
-    def find_approved_tests(self, number_of_testsets=10):
+    def find_approved_tests(self, sn_tuples):
+        payload_tuples = []
+
+        for sn1, sn2 in sn_tuples:
+            temp = self.newest_tests_from_sns(sn1,sn2)
+            for test in temp:
+                payload_tuples.append((test[0],test[1]))
+
+        return payload_tuples
+
+    def find_all_approved_tests(self, number_of_testsets=10):
         #if number_of_testsets is 0, it will run on all test sets
         #returns a list of tuples of all tests comprising the most recently
         #approved rev for each testset
