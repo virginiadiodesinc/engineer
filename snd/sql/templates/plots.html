@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+    <a href="{{ url_for('homepage') }}"> <h1>Back to Index</h1> </a>
+    <br>
+    {%for revision in available_revs %}
+        <a href="{{ url_for('getdata_simple',sn1=sn1,sn2=sn2,rev=revision[0]) }}"> {{revision[0]}} </a>
+    {% endfor %}
+    <br>
+    <h1>{{sn1}} - {{sn2}} - {{rev}}</h1>
+    <div id="system_info">
+        <p>Band: {{band if band else ""}}</p>
+        <p>Type: {{type if type else ""}}</p>
+        <p>Arch: {{arch if arch else ""}}</p>
+        <p>Subtype: {{subtype if subtype else ""}}</p>
+    </div>
+    <div id="the_plots">
+        {% for plot in html_plots %}
+            {{plot | safe if plot else "Loading plot..."}}
+        {% endfor %}     
+    </div>
+</body>
+</html>

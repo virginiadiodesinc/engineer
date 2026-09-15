@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>System Compare</h1>
+    <form action="{{ url_for('homepage') }}" method="post">
+        SN1
+        <input type="text" name="serial_number" value="SAX 1233" required>
+        <br><br>
+        SN2
+        <input type="text" name="serial_number_2" value="None">
+        <br><br>
+        Rev
+        <input type="text" name="revision" value="a" required>
+        <br><br>
+        Match Subtype
+        <select name="match_subtype" required>
+            <option value="True">True</option>
+            <option value="False">False</option>
+        </select>
+        <br><br>
+        Low Drive?
+        <select name="low_drive" required>
+            <option value="True">True</option>
+            <option value="False">False</option>
+        </select>
+        <br><br>
+        Number of Comparisons
+        <input type="number" name="num_comparisons" value=5 required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br><br>
+    <h1>Lazy System Compare</h1>
+    <form action="{{ url_for('lazy') }}" method="post">
+        sspython URL
+        <input type="text" name="url" value="http://sspython3.vdi.local/testset/WR5.1X6SHM-IR5%204-004/None/a" size="100" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br><br>
+    <a href="{{ url_for('reload') }}"> Reload Database - Test Count {{test_count}} </a>
+    <br>
+    <h1>Newest Testsets</h1>
+    <div id="newest_data">
+        {% for html_data in table_data %}
+            <h4>"{{html_data}}"</h4>
+            {{table_data[html_data] | safe if html_data else "..."}}
+        {% endfor %}     
+    </div>
+</body>
+</html>

@@ -205,3 +205,14 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+snd/yfactor_test/NDC_P6 WR4.3NS-B 721pts_corrected.csv
+snd/yfactor_test/NDC_P6 WR4.3NS-B 6DB 721pts_corrected.csv
+snd/yfactor_test/NDC_P6 WR4.3NS-B 18DB 721pts_corrected.csv
+snd/yfactor_test/NDC_P6 WR4.3NS-B 12DB 721pts_corrected.csv
+snd/Untitled.ipynb
+*.ipynb
+*.csv
+*.pickle
+*.csv
+VDI8p0NS_R2 B2-01C RL wIso.s2p
+WR8p0LNA B1-004.s2p
