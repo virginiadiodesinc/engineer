@@ -31,20 +31,20 @@ class TestExplorer(SQLHelper):
 
     def update_database(self):
 
-        # #close old connection
+        #close old connection
 
-        # self.engine.dispose()
+        self.engine.dispose()
 
-        # #copy the db file on the network
-        # shutil.copy(r'W:\Python3\vdi_ssp\sql\db\SSP_DB.db', SSP_DB_FILE)
+        #copy the db file on the network
+        shutil.copy(r'W:\Python3\vdi_ssp\sql\db\SSP_DB.db', SSP_DB_FILE)
 
-        # #reconnect to the new file
-        # self.connect_db()
+        #reconnect to the new file
+        self.connect_db()
 
-        # #add the new columns
-        # self.add_columns()
-        # #redefine classes in case we added columns
-        # self.define_classes()
+        #add the new columns
+        self.add_columns()
+        #redefine classes in case we added columns
+        self.define_classes()
 
         print("Populating test.test_type column for Short-Loads")
         self.rename_shortloads()

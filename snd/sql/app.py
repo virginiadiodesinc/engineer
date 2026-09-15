@@ -81,7 +81,8 @@ def homepage():
 
 @app.route('/reload')
 def reload():
-    sync_database(sql_helper)
+    #sync_database(sql_helper)
+    sql_helper.update_database()
     return redirect('/')
 
 @app.route('/<sn1>/<sn2>/<rev>')
