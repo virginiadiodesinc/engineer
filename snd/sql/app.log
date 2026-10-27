@@ -1,0 +1,1655 @@
+2026-09-08 10:49:24,353 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-08 10:49:24,353 INFO [33mPress CTRL+C to quit[0m
+2026-09-08 10:49:26,549 INFO 10.1.10.197 - - [08/Sep/2026 10:49:26] "GET / HTTP/1.1" 200 -
+2026-09-08 10:49:39,285 INFO 10.1.10.197 - - [08/Sep/2026 10:49:39] "[31m[1mPOST / HTTP/1.1[0m" 400 -
+2026-09-08 10:49:51,610 INFO 10.1.10.197 - - [08/Sep/2026 10:49:51] "POST / HTTP/1.1" 200 -
+2026-09-08 10:49:54,526 INFO 10.1.10.197 - - [08/Sep/2026 10:49:54] "GET / HTTP/1.1" 200 -
+2026-09-08 10:49:58,160 INFO 10.1.10.197 - - [08/Sep/2026 10:49:58] "POST / HTTP/1.1" 200 -
+2026-09-08 10:50:00,936 INFO 10.1.10.197 - - [08/Sep/2026 10:50:00] "GET / HTTP/1.1" 200 -
+2026-09-08 10:50:02,633 INFO 10.1.10.197 - - [08/Sep/2026 10:50:02] "[31m[1mPOST / HTTP/1.1[0m" 400 -
+2026-09-08 10:50:27,192 INFO 10.1.10.197 - - [08/Sep/2026 10:50:27] "[31m[1mPOST / HTTP/1.1[0m" 400 -
+2026-09-08 10:53:50,510 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-08 10:53:50,510 INFO [33mPress CTRL+C to quit[0m
+2026-09-08 10:53:52,786 INFO 10.1.10.197 - - [08/Sep/2026 10:53:52] "GET / HTTP/1.1" 200 -
+2026-09-08 10:53:55,841 INFO 10.1.10.197 - - [08/Sep/2026 10:53:55] "POST / HTTP/1.1" 200 -
+2026-09-08 10:53:59,023 INFO 10.1.10.197 - - [08/Sep/2026 10:53:59] "GET / HTTP/1.1" 200 -
+2026-09-08 10:56:08,924 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-08 10:56:08,924 INFO [33mPress CTRL+C to quit[0m
+2026-09-08 10:56:10,366 INFO 10.1.10.197 - - [08/Sep/2026 10:56:10] "GET / HTTP/1.1" 200 -
+2026-09-08 10:56:13,432 INFO 10.1.10.197 - - [08/Sep/2026 10:56:13] "POST / HTTP/1.1" 200 -
+2026-09-08 10:56:15,904 INFO 10.1.10.197 - - [08/Sep/2026 10:56:15] "GET / HTTP/1.1" 200 -
+2026-09-08 10:56:18,412 INFO 10.1.10.197 - - [08/Sep/2026 10:56:18] "POST /lazy HTTP/1.1" 200 -
+2026-09-08 11:03:38,067 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-08 11:03:38,068 INFO [33mPress CTRL+C to quit[0m
+2026-09-08 11:03:43,177 INFO 10.1.10.197 - - [08/Sep/2026 11:03:43] "GET / HTTP/1.1" 200 -
+2026-09-08 11:03:56,824 INFO 10.1.10.197 - - [08/Sep/2026 11:03:56] "POST /lazy HTTP/1.1" 200 -
+2026-09-08 11:05:33,639 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-08 11:05:33,640 INFO [33mPress CTRL+C to quit[0m
+2026-09-08 11:05:35,423 INFO 10.1.10.197 - - [08/Sep/2026 11:05:35] "GET / HTTP/1.1" 200 -
+2026-09-08 11:05:39,705 INFO 10.1.10.197 - - [08/Sep/2026 11:05:39] "POST /lazy HTTP/1.1" 200 -
+2026-09-08 11:05:51,980 INFO 10.1.10.197 - - [08/Sep/2026 11:05:51] "GET / HTTP/1.1" 200 -
+2026-09-08 11:06:11,033 INFO 10.1.10.197 - - [08/Sep/2026 11:06:11] "POST /lazy HTTP/1.1" 200 -
+2026-09-08 11:07:48,145 INFO 10.1.10.197 - - [08/Sep/2026 11:07:48] "POST / HTTP/1.1" 200 -
+2026-09-08 11:10:14,906 INFO 10.1.10.197 - - [08/Sep/2026 11:10:14] "GET / HTTP/1.1" 200 -
+2026-09-08 11:10:23,653 INFO 10.1.10.197 - - [08/Sep/2026 11:10:23] "POST /lazy HTTP/1.1" 200 -
+2026-09-08 11:12:43,320 INFO 10.1.10.197 - - [08/Sep/2026 11:12:43] "GET / HTTP/1.1" 200 -
+2026-09-08 11:12:46,940 INFO 10.1.10.197 - - [08/Sep/2026 11:12:46] "POST /lazy HTTP/1.1" 200 -
+2026-09-08 11:13:25,062 INFO 10.1.10.197 - - [08/Sep/2026 11:13:25] "GET / HTTP/1.1" 200 -
+2026-09-08 11:13:47,097 INFO 10.1.10.197 - - [08/Sep/2026 11:13:47] "POST / HTTP/1.1" 200 -
+2026-09-08 11:14:05,689 INFO 10.1.10.197 - - [08/Sep/2026 11:14:05] "GET / HTTP/1.1" 200 -
+2026-09-08 11:14:22,583 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-08 11:14:22,584 INFO [33mPress CTRL+C to quit[0m
+2026-09-08 11:14:33,873 INFO 10.1.10.197 - - [08/Sep/2026 11:14:33] "POST /lazy HTTP/1.1" 200 -
+2026-09-08 11:15:43,097 INFO 10.1.10.197 - - [08/Sep/2026 11:15:43] "GET / HTTP/1.1" 200 -
+2026-09-08 11:16:04,162 INFO 10.1.10.197 - - [08/Sep/2026 11:16:04] "[32mGET /reload HTTP/1.1[0m" 302 -
+2026-09-08 11:16:05,442 INFO 10.1.10.197 - - [08/Sep/2026 11:16:05] "GET / HTTP/1.1" 200 -
+2026-09-08 11:16:16,373 INFO 10.1.10.197 - - [08/Sep/2026 11:16:16] "POST /lazy HTTP/1.1" 200 -
+2026-09-08 11:17:32,178 INFO 10.1.10.197 - - [08/Sep/2026 11:17:32] "GET / HTTP/1.1" 200 -
+2026-09-08 11:17:38,659 INFO 10.1.10.197 - - [08/Sep/2026 11:17:38] "POST /lazy HTTP/1.1" 200 -
+2026-09-08 11:18:43,270 INFO 10.1.10.197 - - [08/Sep/2026 11:18:43] "POST /lazy HTTP/1.1" 200 -
+2026-09-08 11:19:40,509 INFO 10.1.10.197 - - [08/Sep/2026 11:19:40] "GET / HTTP/1.1" 200 -
+2026-09-08 11:19:44,518 INFO 10.1.10.197 - - [08/Sep/2026 11:19:44] "POST /lazy HTTP/1.1" 200 -
+2026-09-08 11:21:58,288 INFO 10.1.10.197 - - [08/Sep/2026 11:21:58] "GET / HTTP/1.1" 200 -
+2026-09-08 11:22:24,172 ERROR Exception on /lazy [POST]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 36, in lazy
+    plot_array = sql_helper.generate_approval_plots(\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 576, in generate_approval_plots
+    return self.generate_vnax_approval_plots(serial_number,rev,match_subtype,num_comparisons)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 559, in generate_vnax_approval_plots
+    self.process_plhrm(plh_data,5),\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 444, in process_plhrm
+    melts = pd.concat(melted_dfs)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\reshape\concat.py", line 382, in concat
+    op = _Concatenator(
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\reshape\concat.py", line 445, in __init__
+    objs, keys = self._clean_keys_and_objs(objs, keys)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\reshape\concat.py", line 507, in _clean_keys_and_objs
+    raise ValueError("No objects to concatenate")
+ValueError: No objects to concatenate
+2026-09-08 11:22:24,187 INFO 10.1.10.197 - - [08/Sep/2026 11:22:24] "[35m[1mPOST /lazy HTTP/1.1[0m" 500 -
+2026-09-08 11:23:15,202 INFO 10.1.10.197 - - [08/Sep/2026 11:23:15] "POST /lazy HTTP/1.1" 200 -
+2026-09-08 11:23:43,260 INFO 10.1.10.197 - - [08/Sep/2026 11:23:43] "POST / HTTP/1.1" 200 -
+2026-09-08 11:24:09,127 INFO 10.1.10.197 - - [08/Sep/2026 11:24:09] "GET / HTTP/1.1" 200 -
+2026-09-08 11:24:12,329 INFO 10.1.10.197 - - [08/Sep/2026 11:24:12] "POST /lazy HTTP/1.1" 200 -
+2026-09-08 11:25:32,793 INFO 10.1.10.197 - - [08/Sep/2026 11:25:32] "GET / HTTP/1.1" 200 -
+2026-09-08 11:25:34,031 INFO 10.1.10.197 - - [08/Sep/2026 11:25:34] "GET / HTTP/1.1" 200 -
+2026-09-08 11:26:29,441 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-08 11:26:29,441 INFO [33mPress CTRL+C to quit[0m
+2026-09-08 11:26:37,381 INFO 10.1.10.197 - - [08/Sep/2026 11:26:37] "POST / HTTP/1.1" 200 -
+2026-09-08 11:34:15,367 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-08 11:34:15,375 INFO [33mPress CTRL+C to quit[0m
+2026-09-08 11:34:22,775 INFO 10.1.10.197 - - [08/Sep/2026 11:34:22] "GET / HTTP/1.1" 200 -
+2026-09-08 11:34:26,715 INFO 10.1.10.197 - - [08/Sep/2026 11:34:26] "POST /lazy HTTP/1.1" 200 -
+2026-09-08 11:36:23,267 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-08 11:36:23,267 INFO [33mPress CTRL+C to quit[0m
+2026-09-08 11:36:40,833 INFO 10.1.10.197 - - [08/Sep/2026 11:36:40] "POST / HTTP/1.1" 200 -
+2026-09-08 11:36:48,540 INFO 10.1.10.197 - - [08/Sep/2026 11:36:48] "GET / HTTP/1.1" 200 -
+2026-09-08 11:37:58,242 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-08 11:37:58,242 INFO [33mPress CTRL+C to quit[0m
+2026-09-08 11:38:03,298 INFO 10.1.10.197 - - [08/Sep/2026 11:38:03] "GET / HTTP/1.1" 200 -
+2026-09-08 11:38:09,442 INFO 10.1.10.197 - - [08/Sep/2026 11:38:09] "POST /lazy HTTP/1.1" 200 -
+2026-09-08 11:58:23,831 INFO 10.1.10.197 - - [08/Sep/2026 11:58:23] "GET / HTTP/1.1" 200 -
+2026-09-08 11:58:25,891 INFO 10.1.10.197 - - [08/Sep/2026 11:58:25] "GET / HTTP/1.1" 200 -
+2026-09-08 13:00:31,649 INFO 10.2.9.2 - - [08/Sep/2026 13:00:31] "GET / HTTP/1.1" 200 -
+2026-09-08 13:00:32,440 INFO 10.2.9.2 - - [08/Sep/2026 13:00:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-09-08 13:01:27,340 INFO 10.2.9.2 - - [08/Sep/2026 13:01:27] "POST / HTTP/1.1" 200 -
+2026-09-09 05:39:29,368 INFO 10.2.9.2 - - [09/Sep/2026 05:39:29] "GET / HTTP/1.1" 200 -
+2026-09-09 05:39:29,449 INFO 10.2.9.2 - - [09/Sep/2026 05:39:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-09-09 05:40:57,249 INFO 10.2.9.2 - - [09/Sep/2026 05:40:57] "POST /lazy HTTP/1.1" 200 -
+2026-09-09 05:44:16,020 INFO 10.2.9.2 - - [09/Sep/2026 05:44:16] "GET / HTTP/1.1" 200 -
+2026-09-09 09:06:43,978 INFO 10.1.10.197 - - [09/Sep/2026 09:06:43] "POST /lazy HTTP/1.1" 200 -
+2026-09-09 10:35:46,548 INFO 10.1.10.197 - - [09/Sep/2026 10:35:46] "GET / HTTP/1.1" 200 -
+2026-09-09 10:51:31,843 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 10:51:31,843 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 10:51:42,303 INFO 10.1.10.197 - - [09/Sep/2026 10:51:42] "GET / HTTP/1.1" 200 -
+2026-09-09 10:51:59,647 INFO 10.1.10.197 - - [09/Sep/2026 10:51:59] "POST / HTTP/1.1" 200 -
+2026-09-09 10:56:01,737 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 10:56:01,738 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 10:56:06,675 INFO 10.1.10.197 - - [09/Sep/2026 10:56:06] "GET / HTTP/1.1" 200 -
+2026-09-09 10:57:03,872 INFO 10.1.10.197 - - [09/Sep/2026 10:57:03] "POST / HTTP/1.1" 200 -
+2026-09-09 10:57:10,326 INFO 10.1.10.197 - - [09/Sep/2026 10:57:10] "GET / HTTP/1.1" 200 -
+2026-09-09 10:58:09,345 INFO 10.1.10.197 - - [09/Sep/2026 10:58:09] "GET / HTTP/1.1" 200 -
+2026-09-09 11:01:57,246 INFO 10.1.10.197 - - [09/Sep/2026 11:01:57] "POST / HTTP/1.1" 200 -
+2026-09-09 11:04:31,408 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 11:04:31,408 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 11:04:41,239 INFO 10.1.10.197 - - [09/Sep/2026 11:04:41] "POST / HTTP/1.1" 200 -
+2026-09-09 11:13:48,686 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 11:13:48,686 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 11:13:58,742 INFO 10.1.10.197 - - [09/Sep/2026 11:13:58] "POST / HTTP/1.1" 200 -
+2026-09-09 11:48:51,836 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 11:48:51,838 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 11:48:54,475 INFO 10.1.10.197 - - [09/Sep/2026 11:48:54] "GET / HTTP/1.1" 200 -
+2026-09-09 11:48:59,985 ERROR Exception on /reload [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 99, in reload
+    sql_helper.update_database()
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 48, in update_database
+    self.populate_test_sn_field()
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 128, in populate_test_sn_field
+    sn = re.search(r'\((\w+\s+\d+)\)',row[0].test_name).group(1)
+AttributeError: 'NoneType' object has no attribute 'group'
+2026-09-09 11:48:59,995 INFO 10.1.10.197 - - [09/Sep/2026 11:48:59] "[35m[1mGET /reload HTTP/1.1[0m" 500 -
+2026-09-09 12:00:46,143 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 12:00:46,143 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 12:00:48,819 INFO 10.1.10.197 - - [09/Sep/2026 12:00:48] "GET / HTTP/1.1" 200 -
+2026-09-09 12:01:09,979 INFO 10.1.10.197 - - [09/Sep/2026 12:01:09] "[32mGET /reload HTTP/1.1[0m" 302 -
+2026-09-09 12:01:11,460 INFO 10.1.10.197 - - [09/Sep/2026 12:01:11] "GET / HTTP/1.1" 200 -
+2026-09-09 12:01:46,048 ERROR Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 74, in homepage
+    plot_array = sql_helper.generate_approval_plots(\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 641, in generate_approval_plots
+    return self.generate_vnax_approval_plots(serial_number,serial_number2,rev,match_subtype,num_comparisons)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 600, in generate_vnax_approval_plots
+    shortload_data = self.get_similar_test_type(serial_number, rev, 'SL', sn2=serial_number2)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 267, in get_similar_test_type
+    my_band, my_type, my_arch, my_subtype = self.get_attributes_from_sn(sn1)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 207, in get_attributes_from_sn
+    my_band = q[0][0].Band
+IndexError: list index out of range
+2026-09-09 12:01:46,063 INFO 10.1.10.197 - - [09/Sep/2026 12:01:46] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-09-09 12:01:50,192 INFO 10.1.10.197 - - [09/Sep/2026 12:01:50] "GET / HTTP/1.1" 200 -
+2026-09-09 12:02:12,042 INFO 10.1.10.197 - - [09/Sep/2026 12:02:12] "POST / HTTP/1.1" 200 -
+2026-09-09 12:06:48,732 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 12:06:48,732 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 12:06:50,627 INFO 10.1.10.197 - - [09/Sep/2026 12:06:50] "GET / HTTP/1.1" 200 -
+2026-09-09 12:07:07,931 INFO 10.1.10.197 - - [09/Sep/2026 12:07:07] "POST / HTTP/1.1" 200 -
+2026-09-09 12:12:12,896 INFO 10.1.10.197 - - [09/Sep/2026 12:12:12] "GET / HTTP/1.1" 200 -
+2026-09-09 12:12:25,870 INFO 10.1.10.197 - - [09/Sep/2026 12:12:25] "POST / HTTP/1.1" 200 -
+2026-09-09 13:24:16,271 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 13:24:16,271 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 13:24:22,830 ERROR Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 74, in homepage
+    plot_array = sql_helper.generate_approval_plots(\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 679, in generate_approval_plots
+    return self.generate_vnax_approval_plots(serial_number,serial_number2,rev,match_subtype,num_comparisons)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 656, in generate_vnax_approval_plots
+    if len(trl_cal_data) > len(solt_cal_data):
+TypeError: object of type 'NoneType' has no len()
+2026-09-09 13:24:22,841 INFO 10.1.10.197 - - [09/Sep/2026 13:24:22] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-09-09 13:24:32,907 INFO 10.1.10.197 - - [09/Sep/2026 13:24:32] "GET / HTTP/1.1" 200 -
+2026-09-09 13:24:41,058 ERROR Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 74, in homepage
+    plot_array = sql_helper.generate_approval_plots(\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 679, in generate_approval_plots
+    return self.generate_vnax_approval_plots(serial_number,serial_number2,rev,match_subtype,num_comparisons)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 656, in generate_vnax_approval_plots
+    if len(trl_cal_data) > len(solt_cal_data):
+TypeError: object of type 'NoneType' has no len()
+2026-09-09 13:24:41,071 INFO 10.1.10.197 - - [09/Sep/2026 13:24:41] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-09-09 13:26:44,364 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 13:26:44,364 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 13:26:48,899 INFO 10.1.10.197 - - [09/Sep/2026 13:26:48] "POST / HTTP/1.1" 200 -
+2026-09-09 13:28:47,340 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 13:28:47,340 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 13:28:51,160 INFO 10.1.10.197 - - [09/Sep/2026 13:28:51] "POST / HTTP/1.1" 200 -
+2026-09-09 13:29:01,710 INFO 10.1.10.197 - - [09/Sep/2026 13:29:01] "GET / HTTP/1.1" 200 -
+2026-09-09 13:29:14,890 INFO 10.1.10.197 - - [09/Sep/2026 13:29:14] "POST / HTTP/1.1" 200 -
+2026-09-09 13:34:45,477 INFO 10.1.10.197 - - [09/Sep/2026 13:34:45] "GET / HTTP/1.1" 200 -
+2026-09-09 13:34:49,961 INFO 10.1.10.197 - - [09/Sep/2026 13:34:49] "POST / HTTP/1.1" 200 -
+2026-09-09 13:34:58,052 INFO 10.1.10.197 - - [09/Sep/2026 13:34:58] "GET / HTTP/1.1" 200 -
+2026-09-09 13:35:01,220 INFO 10.1.10.197 - - [09/Sep/2026 13:35:01] "POST / HTTP/1.1" 200 -
+2026-09-09 13:35:25,112 INFO 10.1.10.197 - - [09/Sep/2026 13:35:25] "GET / HTTP/1.1" 200 -
+2026-09-09 13:35:26,642 INFO 10.1.10.197 - - [09/Sep/2026 13:35:26] "GET / HTTP/1.1" 200 -
+2026-09-09 13:35:57,172 INFO 10.1.10.197 - - [09/Sep/2026 13:35:57] "POST / HTTP/1.1" 200 -
+2026-09-09 13:39:35,767 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 13:39:35,767 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 13:39:38,547 INFO 10.1.10.197 - - [09/Sep/2026 13:39:38] "POST / HTTP/1.1" 200 -
+2026-09-09 13:39:46,385 INFO 10.1.10.197 - - [09/Sep/2026 13:39:46] "GET / HTTP/1.1" 200 -
+2026-09-09 13:40:02,826 INFO 10.1.10.197 - - [09/Sep/2026 13:40:02] "POST / HTTP/1.1" 200 -
+2026-09-09 13:49:33,750 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 13:49:33,751 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 13:49:43,485 ERROR Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 86, in homepage
+    return render_template('plots.html',sn1=sn1, sn2=sn2, rev=rev, html_plots=html_plots,\
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\templates\plots.html", line 6, in template
+    <a href="{{ url_for('lazy_traverse',sn1={{sn1}},sn2={{sn2}},rev=b) }}"> <h1>b</h1>
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+2026-09-09 13:49:43,503 INFO 10.1.10.197 - - [09/Sep/2026 13:49:43] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-09-09 13:52:49,116 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 13:52:49,117 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 13:52:52,788 INFO 10.1.10.197 - - [09/Sep/2026 13:52:52] "GET / HTTP/1.1" 200 -
+2026-09-09 13:52:54,085 INFO 10.1.10.197 - - [09/Sep/2026 13:52:54] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-09 13:52:54,101 ERROR Exception on /<sn1>/<sn2>/<rev> [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 96, in getdata_simple
+    my_band,my_type,my_arch,my_subtype = sql_helper.get_attributes_from_sn(sn1, sn2)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 207, in get_attributes_from_sn
+    my_band = q[0][0].Band
+IndexError: list index out of range
+2026-09-09 13:52:54,112 INFO 10.1.10.197 - - [09/Sep/2026 13:52:54] "[35m[1mGET /<sn1>/<sn2>/<rev> HTTP/1.1[0m" 500 -
+2026-09-09 13:53:27,741 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 13:53:27,741 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 13:53:30,273 INFO 10.1.10.197 - - [09/Sep/2026 13:53:30] "GET / HTTP/1.1" 200 -
+2026-09-09 13:53:32,048 INFO 10.1.10.197 - - [09/Sep/2026 13:53:32] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-09 13:53:34,148 ERROR Exception on /WR5.1X6SHM-IR5 4-004/None/a [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 100, in getdata_simple
+    return render_template('plots.html',sn1=sn1, sn2=sn2, rev=rev, html_plots=html_plots,\
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\templates\plots.html", line 6, in template
+    <a href="{{ url_for('getdata_simple',sn1={{sn1}},sn2={{sn2}},rev=b) }}"> <h1>b</h1>
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+2026-09-09 13:53:34,148 INFO 10.1.10.197 - - [09/Sep/2026 13:53:34] "[35m[1mGET /WR5.1X6SHM-IR5%204-004/None/a HTTP/1.1[0m" 500 -
+2026-09-09 13:54:42,603 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 13:54:42,603 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 13:54:45,440 ERROR Exception on /WR5.1X6SHM-IR5 4-004/None/a [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 100, in getdata_simple
+    return render_template('plots.html',sn1=sn1, sn2=sn2, rev=rev, html_plots=html_plots,\
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\templates\plots.html", line 6, in template
+    <!-- <a href="{{ url_for('getdata_simple',sn1={{sn1}},sn2={{sn2}},rev=b) }}"> <h1>b</h1> -->
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+2026-09-09 13:54:45,450 INFO 10.1.10.197 - - [09/Sep/2026 13:54:45] "[35m[1mGET /WR5.1X6SHM-IR5%204-004/None/a HTTP/1.1[0m" 500 -
+2026-09-09 13:54:51,590 INFO 10.1.10.197 - - [09/Sep/2026 13:54:51] "GET / HTTP/1.1" 200 -
+2026-09-09 13:54:53,606 INFO 10.1.10.197 - - [09/Sep/2026 13:54:53] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-09 13:54:54,289 ERROR Exception on /WR5.1X6SHM-IR5 4-004/None/a [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 100, in getdata_simple
+    return render_template('plots.html',sn1=sn1, sn2=sn2, rev=rev, html_plots=html_plots,\
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\templates\plots.html", line 6, in template
+    <!-- <a href="{{ url_for('getdata_simple',sn1={{sn1}},sn2={{sn2}},rev=b) }}"> <h1>b</h1> -->
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+2026-09-09 13:54:54,289 INFO 10.1.10.197 - - [09/Sep/2026 13:54:54] "[35m[1mGET /WR5.1X6SHM-IR5%204-004/None/a HTTP/1.1[0m" 500 -
+2026-09-09 13:55:01,661 ERROR Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 70, in homepage
+    return render_template('plots.html',sn1=sn1, sn2=sn2, rev=rev, html_plots=html_plots,\
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\templates\plots.html", line 6, in template
+    <!-- <a href="{{ url_for('getdata_simple',sn1={{sn1}},sn2={{sn2}},rev=b) }}"> <h1>b</h1> -->
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+2026-09-09 13:55:01,666 INFO 10.1.10.197 - - [09/Sep/2026 13:55:01] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-09-09 13:55:21,078 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 13:55:21,078 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 13:55:23,377 INFO 10.1.10.197 - - [09/Sep/2026 13:55:23] "GET / HTTP/1.1" 200 -
+2026-09-09 13:55:25,498 INFO 10.1.10.197 - - [09/Sep/2026 13:55:25] "POST / HTTP/1.1" 200 -
+2026-09-09 13:55:29,798 INFO 10.1.10.197 - - [09/Sep/2026 13:55:29] "GET / HTTP/1.1" 200 -
+2026-09-09 13:55:31,626 INFO 10.1.10.197 - - [09/Sep/2026 13:55:31] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-09 13:55:32,439 INFO 10.1.10.197 - - [09/Sep/2026 13:55:32] "GET /WR5.1X6SHM-IR5%204-004/None/a HTTP/1.1" 200 -
+2026-09-09 13:55:50,092 INFO 10.1.10.197 - - [09/Sep/2026 13:55:50] "GET /WR5.1X6SHM-IR5%204-004/None/b HTTP/1.1" 200 -
+2026-09-09 13:55:56,579 INFO 10.1.10.197 - - [09/Sep/2026 13:55:56] "GET / HTTP/1.1" 200 -
+2026-09-09 14:00:43,883 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 14:00:43,885 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 14:00:44,251 INFO 10.1.10.197 - - [09/Sep/2026 14:00:44] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-09 14:00:46,433 INFO 10.1.10.197 - - [09/Sep/2026 14:00:46] "GET /WR5.1X6SHM-IR5%204-004/None/a HTTP/1.1" 200 -
+2026-09-09 14:00:51,088 ERROR Exception on /test/test2/b [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 96, in getdata_simple
+    my_band,my_type,my_arch,my_subtype = sql_helper.get_attributes_from_sn(sn1, sn2)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 207, in get_attributes_from_sn
+    my_band = q[0][0].Band
+IndexError: list index out of range
+2026-09-09 14:00:51,099 INFO 10.1.10.197 - - [09/Sep/2026 14:00:51] "[35m[1mGET /test/test2/b HTTP/1.1[0m" 500 -
+2026-09-09 14:01:20,569 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 14:01:20,569 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 14:01:23,721 INFO 10.1.10.197 - - [09/Sep/2026 14:01:23] "GET / HTTP/1.1" 200 -
+2026-09-09 14:01:29,627 INFO 10.1.10.197 - - [09/Sep/2026 14:01:29] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-09 14:01:31,820 ERROR Exception on /WR5.1X6SHM-IR5 4-004/None/a [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 100, in getdata_simple
+    return render_template('plots.html',sn1=sn1, sn2=sn2, rev=rev, html_plots=html_plots,\
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\templates\plots.html", line 6, in template
+    <a href="{{ url_for('getdata_simple',sn1={{sn1}},sn2={{sn2}},rev='b') }}"> <h1>b</h1> </a>
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+2026-09-09 14:01:31,833 INFO 10.1.10.197 - - [09/Sep/2026 14:01:31] "[35m[1mGET /WR5.1X6SHM-IR5%204-004/None/a HTTP/1.1[0m" 500 -
+2026-09-09 14:02:01,333 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 14:02:01,341 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 14:02:09,602 INFO 10.1.10.197 - - [09/Sep/2026 14:02:09] "GET / HTTP/1.1" 200 -
+2026-09-09 14:02:14,696 INFO 10.1.10.197 - - [09/Sep/2026 14:02:14] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-09 14:02:16,701 ERROR Exception on /WR5.1X6SHM-IR5 4-004/None/a [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 100, in getdata_simple
+    return render_template('plots.html',sn1=sn1, sn2=sn2, rev=rev, html_plots=html_plots,\
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\templates\plots.html", line 6, in template
+    <a href="{{ url_for('getdata_simple',sn1={sn1},sn2={sn2},rev='b') }}"> <h1>b</h1> </a>
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+2026-09-09 14:02:16,711 INFO 10.1.10.197 - - [09/Sep/2026 14:02:16] "[35m[1mGET /WR5.1X6SHM-IR5%204-004/None/a HTTP/1.1[0m" 500 -
+2026-09-09 14:22:08,991 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 14:22:08,991 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 14:22:20,687 INFO 10.1.10.197 - - [09/Sep/2026 14:22:20] "GET / HTTP/1.1" 200 -
+2026-09-09 14:22:23,229 INFO 10.1.10.197 - - [09/Sep/2026 14:22:23] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-09 14:22:25,317 INFO 10.1.10.197 - - [09/Sep/2026 14:22:25] "GET /WR5.1X6SHM-IR5%204-004/None/a HTTP/1.1" 200 -
+2026-09-09 14:22:28,690 ERROR Exception on /sn1/sn2/b [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 96, in getdata_simple
+    my_band,my_type,my_arch,my_subtype = sql_helper.get_attributes_from_sn(sn1, sn2)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 207, in get_attributes_from_sn
+    my_band = q[0][0].Band
+IndexError: list index out of range
+2026-09-09 14:22:28,702 INFO 10.1.10.197 - - [09/Sep/2026 14:22:28] "[35m[1mGET /sn1/sn2/b HTTP/1.1[0m" 500 -
+2026-09-09 14:22:51,152 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 14:22:51,152 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 14:22:53,416 INFO 10.1.10.197 - - [09/Sep/2026 14:22:53] "GET / HTTP/1.1" 200 -
+2026-09-09 14:22:54,795 INFO 10.1.10.197 - - [09/Sep/2026 14:22:54] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-09 14:22:56,717 INFO 10.1.10.197 - - [09/Sep/2026 14:22:56] "GET /WR5.1X6SHM-IR5%204-004/None/a HTTP/1.1" 200 -
+2026-09-09 14:23:05,977 ERROR Exception on /{{sn1}}/{{sn2}}/b [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 96, in getdata_simple
+    my_band,my_type,my_arch,my_subtype = sql_helper.get_attributes_from_sn(sn1, sn2)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 207, in get_attributes_from_sn
+    my_band = q[0][0].Band
+IndexError: list index out of range
+2026-09-09 14:23:05,988 INFO 10.1.10.197 - - [09/Sep/2026 14:23:05] "[35m[1mGET /{{sn1}}/{{sn2}}/b HTTP/1.1[0m" 500 -
+2026-09-09 14:24:45,115 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 14:24:45,115 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 14:24:58,282 INFO 10.1.10.197 - - [09/Sep/2026 14:24:58] "GET / HTTP/1.1" 200 -
+2026-09-09 14:25:01,373 INFO 10.1.10.197 - - [09/Sep/2026 14:25:01] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-09 14:25:03,428 INFO 10.1.10.197 - - [09/Sep/2026 14:25:03] "GET /WR5.1X6SHM-IR5%204-004/None/a HTTP/1.1" 200 -
+2026-09-09 14:25:05,598 INFO 10.1.10.197 - - [09/Sep/2026 14:25:05] "GET /WR5.1X6SHM-IR5%204-004/None/b HTTP/1.1" 200 -
+2026-09-09 14:25:09,774 INFO 10.1.10.197 - - [09/Sep/2026 14:25:09] "GET /WR5.1X6SHM-IR5%204-004/None/b HTTP/1.1" 200 -
+2026-09-09 14:25:11,365 INFO 10.1.10.197 - - [09/Sep/2026 14:25:11] "GET /WR5.1X6SHM-IR5%204-004/None/b HTTP/1.1" 200 -
+2026-09-09 14:25:15,445 INFO 10.1.10.197 - - [09/Sep/2026 14:25:15] "GET / HTTP/1.1" 200 -
+2026-09-09 14:30:00,837 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 14:30:00,837 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 14:30:01,555 INFO 10.1.10.197 - - [09/Sep/2026 14:30:01] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-09 14:30:03,603 INFO 10.1.10.197 - - [09/Sep/2026 14:30:03] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-09 14:30:03,979 ERROR Exception on /WR5.1X6SHM-IR5 4-004/None/a [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 102, in getdata_simple
+    return render_template('plots.html',sn1=sn1, sn2=sn2, rev=rev, html_plots=html_plots,\
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\templates\plots.html", line 20, in template
+    {% endfor %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+2026-09-09 14:30:03,995 INFO 10.1.10.197 - - [09/Sep/2026 14:30:03] "[35m[1mGET /WR5.1X6SHM-IR5%204-004/None/a HTTP/1.1[0m" 500 -
+2026-09-09 14:30:04,300 ERROR Exception on /WR5.1X6SHM-IR5 4-004/None/a [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 102, in getdata_simple
+    return render_template('plots.html',sn1=sn1, sn2=sn2, rev=rev, html_plots=html_plots,\
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\jinja2\environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\templates\plots.html", line 20, in template
+    {% endfor %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+2026-09-09 14:30:04,300 INFO 10.1.10.197 - - [09/Sep/2026 14:30:04] "[35m[1mGET /WR5.1X6SHM-IR5%204-004/None/a HTTP/1.1[0m" 500 -
+2026-09-09 14:30:29,380 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 14:30:29,382 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 14:30:31,764 INFO 10.1.10.197 - - [09/Sep/2026 14:30:31] "GET / HTTP/1.1" 200 -
+2026-09-09 14:30:34,640 INFO 10.1.10.197 - - [09/Sep/2026 14:30:34] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-09 14:30:36,630 INFO 10.1.10.197 - - [09/Sep/2026 14:30:36] "GET /WR5.1X6SHM-IR5%204-004/None/a HTTP/1.1" 200 -
+2026-09-09 14:30:50,808 INFO 10.1.10.197 - - [09/Sep/2026 14:30:50] "GET / HTTP/1.1" 200 -
+2026-09-09 14:31:01,740 INFO 10.1.10.197 - - [09/Sep/2026 14:31:01] "POST / HTTP/1.1" 200 -
+2026-09-09 14:31:21,010 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 14:31:21,010 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 14:31:24,955 INFO 10.1.10.197 - - [09/Sep/2026 14:31:24] "POST / HTTP/1.1" 200 -
+2026-09-09 14:31:45,799 INFO 10.1.10.197 - - [09/Sep/2026 14:31:45] "GET / HTTP/1.1" 200 -
+2026-09-09 14:31:47,562 INFO 10.1.10.197 - - [09/Sep/2026 14:31:47] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-09 14:31:48,370 INFO 10.1.10.197 - - [09/Sep/2026 14:31:48] "GET /WR5.1X6SHM-IR5%204-004/None/a HTTP/1.1" 200 -
+2026-09-09 14:33:55,443 INFO 10.1.10.197 - - [09/Sep/2026 14:33:55] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-09 14:33:57,243 INFO 10.1.10.197 - - [09/Sep/2026 14:33:57] "GET /VNAX%204148/VNAX%204149/d HTTP/1.1" 200 -
+2026-09-09 14:34:09,338 INFO 10.1.10.197 - - [09/Sep/2026 14:34:09] "GET /VNAX%204148/VNAX%204149/('c',) HTTP/1.1" 200 -
+2026-09-09 14:34:14,512 INFO 10.1.10.197 - - [09/Sep/2026 14:34:14] "GET /VNAX%204148/VNAX%204149/('b',) HTTP/1.1" 200 -
+2026-09-09 14:34:19,794 INFO 10.1.10.197 - - [09/Sep/2026 14:34:19] "GET /VNAX%204148/VNAX%204149/('a',) HTTP/1.1" 200 -
+2026-09-09 14:35:15,312 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 14:35:15,312 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 14:35:25,832 INFO 10.1.10.197 - - [09/Sep/2026 14:35:25] "GET /VNAX%204148/VNAX%204149/a HTTP/1.1" 200 -
+2026-09-09 14:35:36,352 INFO 10.1.10.197 - - [09/Sep/2026 14:35:36] "GET /VNAX%204148/VNAX%204149/d HTTP/1.1" 200 -
+2026-09-09 14:35:45,464 INFO 10.1.10.197 - - [09/Sep/2026 14:35:45] "GET /VNAX%204148/VNAX%204149/c HTTP/1.1" 200 -
+2026-09-09 14:35:53,058 INFO 10.1.10.197 - - [09/Sep/2026 14:35:53] "GET /VNAX%204148/VNAX%204149/b HTTP/1.1" 200 -
+2026-09-09 14:36:16,452 INFO 10.1.10.197 - - [09/Sep/2026 14:36:16] "GET / HTTP/1.1" 200 -
+2026-09-09 14:36:38,682 INFO 10.1.10.197 - - [09/Sep/2026 14:36:38] "POST / HTTP/1.1" 200 -
+2026-09-09 14:38:41,714 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-09 14:38:41,718 INFO [33mPress CTRL+C to quit[0m
+2026-09-09 14:38:45,345 INFO 10.1.10.197 - - [09/Sep/2026 14:38:45] "POST / HTTP/1.1" 200 -
+2026-09-09 14:38:48,493 INFO 10.1.10.197 - - [09/Sep/2026 14:38:48] "GET / HTTP/1.1" 200 -
+2026-09-09 14:38:49,796 INFO 10.1.10.197 - - [09/Sep/2026 14:38:49] "GET / HTTP/1.1" 200 -
+2026-09-09 14:38:54,481 INFO 10.1.10.197 - - [09/Sep/2026 14:38:54] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-09 14:38:55,283 INFO 10.1.10.197 - - [09/Sep/2026 14:38:55] "GET /WR5.1X6SHM-IR5%204-004/None/a HTTP/1.1" 200 -
+2026-09-09 14:45:49,687 INFO 10.1.10.197 - - [09/Sep/2026 14:45:49] "GET /WR5.1X6SHM-IR5%204-004/None/a HTTP/1.1" 200 -
+2026-09-09 15:01:46,349 INFO 10.1.10.197 - - [09/Sep/2026 15:01:46] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-09 15:01:47,041 INFO 10.1.10.197 - - [09/Sep/2026 15:01:47] "GET /WR5.1X6SHM-IR5%204-004/None/a HTTP/1.1" 200 -
+2026-09-09 15:02:10,991 INFO 10.1.10.197 - - [09/Sep/2026 15:02:10] "GET / HTTP/1.1" 200 -
+2026-09-09 15:02:14,399 INFO 10.1.10.197 - - [09/Sep/2026 15:02:14] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-09 15:02:15,178 INFO 10.1.10.197 - - [09/Sep/2026 15:02:15] "GET /WR5.1X6SHM-IR5%204-004/None/a HTTP/1.1" 200 -
+2026-09-09 15:07:13,457 INFO 10.1.10.197 - - [09/Sep/2026 15:07:13] "GET / HTTP/1.1" 200 -
+2026-09-09 16:14:52,376 INFO 10.1.11.173 - - [09/Sep/2026 16:14:52] "GET / HTTP/1.1" 200 -
+2026-09-09 16:14:52,476 INFO 10.1.11.173 - - [09/Sep/2026 16:14:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-09-09 16:14:56,276 INFO 10.1.11.173 - - [09/Sep/2026 16:14:56] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-09 16:14:56,296 ERROR Exception on /CCD 370/None/a [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 96, in getdata_simple
+    my_band,my_type,my_arch,my_subtype = sql_helper.get_attributes_from_sn(sn1, sn2)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 216, in get_attributes_from_sn
+    my_band = q[0][0].Band
+IndexError: list index out of range
+2026-09-09 16:14:56,316 INFO 10.1.11.173 - - [09/Sep/2026 16:14:56] "[35m[1mGET /CCD%20370/None/a HTTP/1.1[0m" 500 -
+2026-09-10 08:23:18,041 INFO 10.1.11.173 - - [10/Sep/2026 08:23:18] "GET / HTTP/1.1" 200 -
+2026-09-10 09:08:08,490 INFO 10.1.10.197 - - [10/Sep/2026 09:08:08] "GET / HTTP/1.1" 200 -
+2026-09-10 09:08:32,663 INFO 10.1.10.197 - - [10/Sep/2026 09:08:32] "[32mGET /reload HTTP/1.1[0m" 302 -
+2026-09-10 09:08:34,190 INFO 10.1.10.197 - - [10/Sep/2026 09:08:34] "GET / HTTP/1.1" 200 -
+2026-09-10 10:28:39,620 INFO 10.1.10.197 - - [10/Sep/2026 10:28:39] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-10 10:28:41,167 INFO 10.1.10.197 - - [10/Sep/2026 10:28:41] "GET /VNAX%204134/VNAX%204135/b HTTP/1.1" 200 -
+2026-09-10 10:33:29,845 INFO 10.1.10.197 - - [10/Sep/2026 10:33:29] "[32mGET /reload HTTP/1.1[0m" 302 -
+2026-09-10 10:33:31,154 INFO 10.1.10.197 - - [10/Sep/2026 10:33:31] "GET / HTTP/1.1" 200 -
+2026-09-10 10:33:38,285 INFO 10.1.10.197 - - [10/Sep/2026 10:33:38] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-10 10:33:43,243 INFO 10.1.10.197 - - [10/Sep/2026 10:33:43] "GET /VNAX%204134/VNAX%204135/b HTTP/1.1" 200 -
+2026-09-10 10:34:05,408 INFO 10.1.10.197 - - [10/Sep/2026 10:34:05] "POST / HTTP/1.1" 200 -
+2026-09-10 10:34:11,088 INFO 10.1.10.197 - - [10/Sep/2026 10:34:11] "GET / HTTP/1.1" 200 -
+2026-09-10 10:34:19,087 INFO 10.1.10.197 - - [10/Sep/2026 10:34:19] "POST / HTTP/1.1" 200 -
+2026-09-10 10:34:50,769 INFO 10.1.10.197 - - [10/Sep/2026 10:34:50] "GET / HTTP/1.1" 200 -
+2026-09-10 10:34:58,660 INFO 10.1.10.197 - - [10/Sep/2026 10:34:58] "POST / HTTP/1.1" 200 -
+2026-09-10 10:43:06,617 INFO 10.1.11.173 - - [10/Sep/2026 10:43:06] "GET / HTTP/1.1" 200 -
+2026-09-10 10:43:11,896 INFO 10.1.11.173 - - [10/Sep/2026 10:43:11] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-10 10:43:18,895 INFO 10.1.11.173 - - [10/Sep/2026 10:43:18] "GET /VNAX%204142/VNAX%204143/b HTTP/1.1" 200 -
+2026-09-10 10:45:17,877 INFO 10.1.11.173 - - [10/Sep/2026 10:45:17] "GET /VNAX%204142/VNAX%204143/a HTTP/1.1" 200 -
+2026-09-10 11:12:52,060 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-10 11:12:52,060 INFO [33mPress CTRL+C to quit[0m
+2026-09-10 11:13:01,082 INFO 10.1.10.197 - - [10/Sep/2026 11:13:01] "GET / HTTP/1.1" 200 -
+2026-09-10 11:13:03,512 INFO 10.1.10.197 - - [10/Sep/2026 11:13:03] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-10 11:13:05,423 INFO 10.1.10.197 - - [10/Sep/2026 11:13:05] "GET /CCD%20370/None/a HTTP/1.1" 200 -
+2026-09-10 11:13:36,784 INFO 10.1.10.197 - - [10/Sep/2026 11:13:36] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-10 11:13:37,286 INFO 10.1.10.197 - - [10/Sep/2026 11:13:37] "GET /CCU%20568/None/a HTTP/1.1" 200 -
+2026-09-10 11:14:30,716 INFO 10.1.11.173 - - [10/Sep/2026 11:14:30] "GET /CCD%20370/None/a HTTP/1.1" 200 -
+2026-09-10 11:18:57,453 INFO 10.1.10.197 - - [10/Sep/2026 11:18:57] "GET / HTTP/1.1" 200 -
+2026-09-10 11:18:59,568 INFO 10.1.10.197 - - [10/Sep/2026 11:18:59] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-10 11:19:01,063 INFO 10.1.10.197 - - [10/Sep/2026 11:19:01] "GET /VNAX%201846/None/c HTTP/1.1" 200 -
+2026-09-10 11:52:36,737 INFO 10.1.11.173 - - [10/Sep/2026 11:52:36] "GET /CCD%20370/None/a HTTP/1.1" 200 -
+2026-09-10 11:52:40,829 INFO 10.1.11.173 - - [10/Sep/2026 11:52:40] "GET / HTTP/1.1" 200 -
+2026-09-10 14:35:31,850 INFO 10.1.10.197 - - [10/Sep/2026 14:35:31] "GET / HTTP/1.1" 200 -
+2026-09-10 16:18:50,984 INFO 10.2.9.10 - - [10/Sep/2026 16:18:50] "GET / HTTP/1.1" 200 -
+2026-09-10 16:19:42,671 INFO 10.2.9.10 - - [10/Sep/2026 16:19:42] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-10 16:19:43,697 INFO 10.2.9.10 - - [10/Sep/2026 16:19:43] "GET /SAX%201314/None/b HTTP/1.1" 200 -
+2026-09-11 16:15:02,222 INFO 10.1.10.197 - - [11/Sep/2026 16:15:02] "GET / HTTP/1.1" 200 -
+2026-09-11 16:20:52,814 INFO 10.1.10.197 - - [11/Sep/2026 16:20:52] "[32mGET /reload HTTP/1.1[0m" 302 -
+2026-09-11 16:20:55,091 INFO 10.1.10.197 - - [11/Sep/2026 16:20:55] "GET / HTTP/1.1" 200 -
+2026-09-11 16:23:52,734 INFO 10.1.10.197 - - [11/Sep/2026 16:23:52] "[32mGET /reload HTTP/1.1[0m" 302 -
+2026-09-11 16:23:54,888 INFO 10.1.10.197 - - [11/Sep/2026 16:23:54] "GET / HTTP/1.1" 200 -
+2026-09-11 16:25:25,853 INFO 10.1.10.197 - - [11/Sep/2026 16:25:25] "[32mGET /reload HTTP/1.1[0m" 302 -
+2026-09-11 16:25:28,097 INFO 10.1.10.197 - - [11/Sep/2026 16:25:28] "GET / HTTP/1.1" 200 -
+2026-09-11 16:38:38,378 INFO 10.1.10.197 - - [11/Sep/2026 16:38:38] "[32mGET /reload HTTP/1.1[0m" 302 -
+2026-09-11 16:38:39,798 INFO 10.1.10.197 - - [11/Sep/2026 16:38:39] "GET / HTTP/1.1" 200 -
+2026-09-14 11:51:40,669 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-14 11:51:40,670 INFO [33mPress CTRL+C to quit[0m
+2026-09-14 11:51:42,765 INFO 10.1.10.197 - - [14/Sep/2026 11:51:42] "GET / HTTP/1.1" 200 -
+2026-09-14 11:51:44,774 INFO 10.1.10.197 - - [14/Sep/2026 11:51:44] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-14 11:51:48,534 INFO 10.1.10.197 - - [14/Sep/2026 11:51:48] "GET /WR5.1X6SHM-IR5%204-004/None/a HTTP/1.1" 200 -
+2026-09-14 11:51:52,600 INFO 10.1.10.197 - - [14/Sep/2026 11:51:52] "GET / HTTP/1.1" 200 -
+2026-09-14 11:51:59,645 INFO 10.1.10.197 - - [14/Sep/2026 11:51:59] "[32mGET /reload HTTP/1.1[0m" 302 -
+2026-09-14 11:52:00,833 INFO 10.1.10.197 - - [14/Sep/2026 11:52:00] "GET / HTTP/1.1" 200 -
+2026-09-14 11:52:13,190 INFO 10.1.10.197 - - [14/Sep/2026 11:52:13] "[32mGET /reload HTTP/1.1[0m" 302 -
+2026-09-14 11:52:14,353 INFO 10.1.10.197 - - [14/Sep/2026 11:52:14] "GET / HTTP/1.1" 200 -
+2026-09-14 11:53:45,617 INFO 10.1.10.197 - - [14/Sep/2026 11:53:45] "[32mGET /reload HTTP/1.1[0m" 302 -
+2026-09-14 11:53:46,806 INFO 10.1.10.197 - - [14/Sep/2026 11:53:46] "GET / HTTP/1.1" 200 -
+2026-09-14 11:53:50,818 INFO 10.1.10.197 - - [14/Sep/2026 11:53:50] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-14 11:53:51,597 INFO 10.1.10.197 - - [14/Sep/2026 11:53:51] "GET /WR5.1X6SHM-IR5%204-004/None/a HTTP/1.1" 200 -
+2026-09-14 11:54:00,463 INFO 10.1.10.197 - - [14/Sep/2026 11:54:00] "GET / HTTP/1.1" 200 -
+2026-09-14 12:32:23,695 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-14 12:32:23,695 INFO [33mPress CTRL+C to quit[0m
+2026-09-14 12:32:27,996 INFO 10.1.10.197 - - [14/Sep/2026 12:32:27] "GET / HTTP/1.1" 200 -
+2026-09-14 12:32:35,184 INFO 10.1.10.197 - - [14/Sep/2026 12:32:35] "[32mGET /reload HTTP/1.1[0m" 302 -
+2026-09-14 12:32:37,320 INFO 10.1.10.197 - - [14/Sep/2026 12:32:37] "GET / HTTP/1.1" 200 -
+2026-09-14 12:34:29,190 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-14 12:34:29,190 INFO [33mPress CTRL+C to quit[0m
+2026-09-14 12:35:07,792 INFO 10.1.10.197 - - [14/Sep/2026 12:35:07] "[32mGET /reload HTTP/1.1[0m" 302 -
+2026-09-14 12:35:09,939 INFO 10.1.10.197 - - [14/Sep/2026 12:35:09] "GET / HTTP/1.1" 200 -
+2026-09-15 11:26:48,198 INFO 10.1.10.197 - - [15/Sep/2026 11:26:48] "[32mGET /reload HTTP/1.1[0m" 302 -
+2026-09-15 11:26:50,528 INFO 10.1.10.197 - - [15/Sep/2026 11:26:50] "GET / HTTP/1.1" 200 -
+2026-09-15 11:27:05,249 INFO 10.1.10.197 - - [15/Sep/2026 11:27:05] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-15 11:27:05,264 ERROR Exception on /WM250X3SHM-IR2 2-008C, WR6.0IAMC-HPR2 4-021/None/a [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 89, in getdata_simple
+    plot_array = sql_helper.generate_approval_plots(\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 781, in generate_approval_plots
+    return self.generate_mixamci_approval_plots(serial_number,rev,match_subtype,num_comparisons)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 633, in generate_mixamci_approval_plots
+    current_data = self.get_similar_tests(serial_number,\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 244, in get_similar_tests
+    my_band, my_type, my_arch, my_subtype = self.get_attributes_from_sn(sn1)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 227, in get_attributes_from_sn
+    my_band = q[0][0].Band
+IndexError: list index out of range
+2026-09-15 11:27:05,303 INFO 10.1.10.197 - - [15/Sep/2026 11:27:05] "[35m[1mGET /WM250X3SHM-IR2%202-008C,%20WR6.0IAMC-HPR2%204-021/None/a HTTP/1.1[0m" 500 -
+2026-09-15 11:31:55,979 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-15 11:31:55,979 INFO [33mPress CTRL+C to quit[0m
+2026-09-15 11:31:59,601 INFO 10.1.10.197 - - [15/Sep/2026 11:31:59] "GET / HTTP/1.1" 200 -
+2026-09-15 11:32:04,091 INFO 10.1.10.197 - - [15/Sep/2026 11:32:04] "[32mGET /reload HTTP/1.1[0m" 302 -
+2026-09-15 11:32:06,413 INFO 10.1.10.197 - - [15/Sep/2026 11:32:06] "GET / HTTP/1.1" 200 -
+2026-09-15 11:32:57,465 INFO 10.1.10.197 - - [15/Sep/2026 11:32:57] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-15 11:32:59,222 INFO 10.1.10.197 - - [15/Sep/2026 11:32:59] "GET /WM250X3SHM-IR2%202-008C,%20WR6.0IAMC-HPR2%204-021/None/a HTTP/1.1" 200 -
+2026-09-15 11:43:28,412 INFO 10.1.10.197 - - [15/Sep/2026 11:43:28] "[32mGET /reload HTTP/1.1[0m" 302 -
+2026-09-15 11:43:30,861 INFO 10.1.10.197 - - [15/Sep/2026 11:43:30] "GET / HTTP/1.1" 200 -
+2026-09-15 11:44:18,067 INFO 10.1.10.197 - - [15/Sep/2026 11:44:18] "[32mGET /reload HTTP/1.1[0m" 302 -
+2026-09-15 11:44:20,477 INFO 10.1.10.197 - - [15/Sep/2026 11:44:20] "GET / HTTP/1.1" 200 -
+2026-09-15 11:45:25,305 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-15 11:45:25,312 INFO [33mPress CTRL+C to quit[0m
+2026-09-15 11:45:29,858 INFO 10.1.10.197 - - [15/Sep/2026 11:45:29] "GET / HTTP/1.1" 200 -
+2026-09-15 11:46:02,313 INFO 10.1.10.197 - - [15/Sep/2026 11:46:02] "[32mGET /reload HTTP/1.1[0m" 302 -
+2026-09-15 11:46:04,575 INFO 10.1.10.197 - - [15/Sep/2026 11:46:04] "GET / HTTP/1.1" 200 -
+2026-09-15 11:46:15,770 INFO 10.1.10.197 - - [15/Sep/2026 11:46:15] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-15 11:46:19,275 INFO 10.1.10.197 - - [15/Sep/2026 11:46:19] "GET /WM250X3SHM-IR2%202-008C,%20WR6.0IAMC-HPR2%204-021/None/a HTTP/1.1" 200 -
+2026-09-15 11:56:01,652 INFO 10.1.11.168 - - [15/Sep/2026 11:56:01] "GET /WM250X3SHM-IR2%202-008C,%20WR6.0IAMC-HPR2%204-021/None/a HTTP/1.1" 200 -
+2026-09-15 11:56:03,904 INFO 10.1.11.168 - - [15/Sep/2026 11:56:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-09-15 15:51:48,145 INFO 10.1.10.197 - - [15/Sep/2026 15:51:48] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-15 15:51:48,157 ERROR Exception on /SAX 1317/None/a [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 90, in getdata_simple
+    plot_array = sql_helper.generate_approval_plots(\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 777, in generate_approval_plots
+    return self.generate_sax_approval_plots(serial_number,rev,match_subtype,low_drive,num_comparisons)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 669, in generate_sax_approval_plots
+    cl_data = self.get_similar_tests(serial_number,\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 244, in get_similar_tests
+    my_band, my_type, my_arch, my_subtype = self.get_attributes_from_sn(sn1)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 227, in get_attributes_from_sn
+    my_band = q[0][0].Band
+IndexError: list index out of range
+2026-09-15 15:51:48,194 INFO 10.1.10.197 - - [15/Sep/2026 15:51:48] "[35m[1mGET /SAX%201317/None/a HTTP/1.1[0m" 500 -
+2026-09-15 15:52:22,577 INFO 10.1.10.197 - - [15/Sep/2026 15:52:22] "[32mGET /reload HTTP/1.1[0m" 302 -
+2026-09-15 15:52:24,841 INFO 10.1.10.197 - - [15/Sep/2026 15:52:24] "GET / HTTP/1.1" 200 -
+2026-09-15 15:53:05,517 INFO 10.1.10.197 - - [15/Sep/2026 15:53:05] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-15 15:53:08,614 INFO 10.1.10.197 - - [15/Sep/2026 15:53:08] "GET /SAX%201317/None/a HTTP/1.1" 200 -
+2026-09-15 15:54:36,824 INFO 10.1.10.197 - - [15/Sep/2026 15:54:36] "GET / HTTP/1.1" 200 -
+2026-09-15 15:55:14,869 INFO 10.1.10.197 - - [15/Sep/2026 15:55:14] "POST / HTTP/1.1" 200 -
+2026-09-15 15:55:30,949 INFO 10.1.10.197 - - [15/Sep/2026 15:55:30] "POST / HTTP/1.1" 200 -
+2026-09-15 15:55:31,166 INFO 10.1.10.197 - - [15/Sep/2026 15:55:31] "POST / HTTP/1.1" 200 -
+2026-09-15 15:55:32,159 INFO 10.1.10.197 - - [15/Sep/2026 15:55:32] "POST / HTTP/1.1" 200 -
+2026-09-15 15:55:33,099 INFO 10.1.10.197 - - [15/Sep/2026 15:55:33] "POST / HTTP/1.1" 200 -
+2026-09-15 15:55:33,809 INFO 10.1.10.197 - - [15/Sep/2026 15:55:33] "POST / HTTP/1.1" 200 -
+2026-09-15 15:56:59,598 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-15 15:56:59,600 INFO [33mPress CTRL+C to quit[0m
+2026-09-15 15:57:02,929 INFO 10.1.10.197 - - [15/Sep/2026 15:57:02] "GET / HTTP/1.1" 200 -
+2026-09-15 15:57:20,838 ERROR Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 59, in homepage
+    plot_array = sql_helper.generate_approval_plots(\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 780, in generate_approval_plots
+    return self.generate_vnax_approval_plots(serial_number,serial_number2,rev,match_subtype,num_comparisons)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 743, in generate_vnax_approval_plots
+    return self.process_shortload(shortload_data,num_comparisons),\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 510, in process_shortload
+    return line(dfs,color='serial_number', markers=True,title='Short Load')
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 22, in line
+    return px.line(data, \
+TypeError: plotly.express._chart_types.line() got multiple values for keyword argument 'markers'
+2026-09-15 15:57:20,862 INFO 10.1.10.197 - - [15/Sep/2026 15:57:20] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-09-15 15:57:44,067 ERROR Exception on /SAX 1317/None/a [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 90, in getdata_simple
+    plot_array = sql_helper.generate_approval_plots(\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 778, in generate_approval_plots
+    return self.generate_sax_approval_plots(serial_number,rev,match_subtype,low_drive,num_comparisons)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 678, in generate_sax_approval_plots
+    return self.process_cl(cl_data,num_comparisons), \
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 460, in process_cl
+    return line(dfs,color='serial_number',markers=True, title=name)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 22, in line
+    return px.line(data, \
+TypeError: plotly.express._chart_types.line() got multiple values for keyword argument 'markers'
+2026-09-15 15:57:44,072 INFO 10.1.10.197 - - [15/Sep/2026 15:57:44] "[35m[1mGET /SAX%201317/None/a HTTP/1.1[0m" 500 -
+2026-09-15 15:58:44,037 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-15 15:58:44,038 INFO [33mPress CTRL+C to quit[0m
+2026-09-15 15:58:52,592 INFO 10.1.10.197 - - [15/Sep/2026 15:58:52] "GET /SAX%201317/None/a HTTP/1.1" 200 -
+2026-09-15 15:59:27,908 INFO 10.1.10.197 - - [15/Sep/2026 15:59:27] "GET / HTTP/1.1" 200 -
+2026-09-15 15:59:52,954 ERROR Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 59, in homepage
+    plot_array = sql_helper.generate_approval_plots(\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 780, in generate_approval_plots
+    return self.generate_vnax_approval_plots(serial_number,serial_number2,rev,match_subtype,num_comparisons)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 744, in generate_vnax_approval_plots
+    self.process_plhrm(plh_data,5),\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 619, in process_plhrm
+    return line(melts,x=melts.index,y='value',
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 22, in line
+    return px.line(data, \
+TypeError: plotly.express._chart_types.line() got multiple values for keyword argument 'height'
+2026-09-15 15:59:52,968 INFO 10.1.10.197 - - [15/Sep/2026 15:59:52] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-09-15 16:00:19,675 ERROR Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 59, in homepage
+    plot_array = sql_helper.generate_approval_plots(\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 780, in generate_approval_plots
+    return self.generate_vnax_approval_plots(serial_number,serial_number2,rev,match_subtype,num_comparisons)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 744, in generate_vnax_approval_plots
+    self.process_plhrm(plh_data,5),\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 619, in process_plhrm
+    return line(melts,x=melts.index,y='value',
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 22, in line
+    return px.line(data, \
+TypeError: plotly.express._chart_types.line() got multiple values for keyword argument 'height'
+2026-09-15 16:00:19,681 INFO 10.1.10.197 - - [15/Sep/2026 16:00:19] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-09-15 16:00:47,419 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-15 16:00:47,419 INFO [33mPress CTRL+C to quit[0m
+2026-09-15 16:01:02,329 ERROR Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 59, in homepage
+    plot_array = sql_helper.generate_approval_plots(\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 782, in generate_approval_plots
+    return self.generate_vnax_approval_plots(serial_number,serial_number2,rev,match_subtype,num_comparisons)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 745, in generate_vnax_approval_plots
+    return self.process_shortload(shortload_data,num_comparisons),\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 512, in process_shortload
+    return line(dfs,color='serial_number', markers=True,title='Short Load')
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 22, in line
+    kwargs.pop('height')
+KeyError: 'height'
+2026-09-15 16:01:02,341 INFO 10.1.10.197 - - [15/Sep/2026 16:01:02] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-09-15 16:01:10,998 ERROR Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 59, in homepage
+    plot_array = sql_helper.generate_approval_plots(\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 782, in generate_approval_plots
+    return self.generate_vnax_approval_plots(serial_number,serial_number2,rev,match_subtype,num_comparisons)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 745, in generate_vnax_approval_plots
+    return self.process_shortload(shortload_data,num_comparisons),\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 512, in process_shortload
+    return line(dfs,color='serial_number', markers=True,title='Short Load')
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 22, in line
+    kwargs.pop('height')
+KeyError: 'height'
+2026-09-15 16:01:11,002 INFO 10.1.10.197 - - [15/Sep/2026 16:01:11] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-09-15 16:01:32,677 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-15 16:01:32,677 INFO [33mPress CTRL+C to quit[0m
+2026-09-15 16:01:37,988 INFO 10.1.10.197 - - [15/Sep/2026 16:01:37] "GET / HTTP/1.1" 200 -
+2026-09-15 16:01:59,382 ERROR Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 59, in homepage
+    plot_array = sql_helper.generate_approval_plots(\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 784, in generate_approval_plots
+    return self.generate_vnax_approval_plots(serial_number,serial_number2,rev,match_subtype,num_comparisons)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 748, in generate_vnax_approval_plots
+    self.process_plhrm(plh_data,5),\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 623, in process_plhrm
+    return line(melts,x=melts.index,y='value',
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 26, in line
+    return px.line(data, \
+TypeError: line() got an unexpected keyword argument 'range_color'
+2026-09-15 16:01:59,394 INFO 10.1.10.197 - - [15/Sep/2026 16:01:59] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-09-15 16:02:50,028 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-15 16:02:50,030 INFO [33mPress CTRL+C to quit[0m
+2026-09-15 16:03:12,920 INFO 10.1.10.197 - - [15/Sep/2026 16:03:12] "GET / HTTP/1.1" 200 -
+2026-09-15 16:03:20,760 INFO 10.1.10.197 - - [15/Sep/2026 16:03:20] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-15 16:03:22,994 INFO 10.1.10.197 - - [15/Sep/2026 16:03:22] "GET /WR5.1X6SHM-IR5%204-004/None/a HTTP/1.1" 200 -
+2026-09-15 16:03:46,728 INFO 10.1.10.197 - - [15/Sep/2026 16:03:46] "POST / HTTP/1.1" 200 -
+2026-09-15 16:33:16,505 INFO 10.1.10.176 - - [15/Sep/2026 16:33:16] "GET /SAX%201317/None/a HTTP/1.1" 200 -
+2026-09-15 16:33:17,346 INFO 10.1.10.176 - - [15/Sep/2026 16:33:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-09-15 17:57:52,566 INFO 10.2.9.7 - - [15/Sep/2026 17:57:52] "GET /SAX%201317/None/a HTTP/1.1" 200 -
+2026-09-15 17:57:55,571 INFO 10.2.9.7 - - [15/Sep/2026 17:57:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-09-16 05:50:17,956 INFO 10.1.11.53 - - [16/Sep/2026 05:50:17] "GET /SAX%201317/None/a HTTP/1.1" 200 -
+2026-09-16 05:50:18,780 INFO 10.1.11.53 - - [16/Sep/2026 05:50:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-09-16 09:06:25,410 INFO 10.1.11.145 - - [16/Sep/2026 09:06:25] "GET /SAX%201317/None/a HTTP/1.1" 200 -
+2026-09-16 09:06:26,462 INFO 10.1.11.145 - - [16/Sep/2026 09:06:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-09-16 09:28:33,540 INFO 10.1.11.168 - - [16/Sep/2026 09:28:33] "GET /SAX%201317/None/a HTTP/1.1" 200 -
+2026-09-16 09:28:34,565 INFO 10.1.11.168 - - [16/Sep/2026 09:28:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-09-16 09:49:29,372 INFO 10.1.11.155 - - [16/Sep/2026 09:49:29] "GET / HTTP/1.1" 200 -
+2026-09-16 09:49:29,454 INFO 10.1.11.155 - - [16/Sep/2026 09:49:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-09-16 09:49:55,429 INFO 10.1.11.155 - - [16/Sep/2026 09:49:55] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-16 09:49:57,011 INFO 10.1.11.155 - - [16/Sep/2026 09:49:57] "GET /SAX%201316/None/a HTTP/1.1" 200 -
+2026-09-16 09:55:56,227 INFO 10.1.11.168 - - [16/Sep/2026 09:55:56] "GET / HTTP/1.1" 200 -
+2026-09-16 09:56:06,985 INFO 10.1.11.168 - - [16/Sep/2026 09:56:06] "POST / HTTP/1.1" 200 -
+2026-09-16 09:59:22,931 INFO 10.1.11.155 - - [16/Sep/2026 09:59:22] "GET / HTTP/1.1" 200 -
+2026-09-16 09:59:30,841 INFO 10.1.11.155 - - [16/Sep/2026 09:59:30] "POST / HTTP/1.1" 200 -
+2026-09-16 10:12:20,994 INFO 10.1.10.141 - - [16/Sep/2026 10:12:20] "GET /SAX%201317/None/a HTTP/1.1" 200 -
+2026-09-16 10:12:22,190 INFO 10.1.10.141 - - [16/Sep/2026 10:12:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-09-16 10:55:44,292 INFO 10.1.10.197 - - [16/Sep/2026 10:55:44] "GET / HTTP/1.1" 200 -
+2026-09-16 10:55:56,052 INFO 10.1.10.197 - - [16/Sep/2026 10:55:56] "POST / HTTP/1.1" 200 -
+2026-09-16 10:56:02,492 INFO 10.1.10.197 - - [16/Sep/2026 10:56:02] "GET / HTTP/1.1" 200 -
+2026-09-16 10:56:22,722 INFO 10.1.10.197 - - [16/Sep/2026 10:56:22] "POST / HTTP/1.1" 200 -
+2026-09-16 10:56:55,356 INFO 10.1.10.197 - - [16/Sep/2026 10:56:55] "GET / HTTP/1.1" 200 -
+2026-09-16 10:56:57,667 INFO 10.1.10.197 - - [16/Sep/2026 10:56:57] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-16 10:56:59,531 INFO 10.1.10.197 - - [16/Sep/2026 10:56:59] "GET /VNAX%203437/VNAX%203438/i HTTP/1.1" 200 -
+2026-09-16 10:57:08,442 INFO 10.1.10.197 - - [16/Sep/2026 10:57:08] "GET /VNAX%203437/VNAX%203438/h HTTP/1.1" 200 -
+2026-09-16 13:28:33,356 INFO 10.1.10.197 - - [16/Sep/2026 13:28:33] "GET / HTTP/1.1" 200 -
+2026-09-16 17:19:18,588 INFO 10.2.9.2 - - [16/Sep/2026 17:19:18] "GET / HTTP/1.1" 200 -
+2026-09-17 12:20:39,297 INFO 10.1.10.197 - - [17/Sep/2026 12:20:39] "GET / HTTP/1.1" 200 -
+2026-09-17 12:20:54,469 INFO 10.1.10.197 - - [17/Sep/2026 12:20:54] "POST / HTTP/1.1" 200 -
+2026-09-17 12:21:06,206 INFO 10.1.10.197 - - [17/Sep/2026 12:21:06] "GET / HTTP/1.1" 200 -
+2026-09-17 12:21:27,176 INFO 10.1.10.197 - - [17/Sep/2026 12:21:27] "POST / HTTP/1.1" 200 -
+2026-09-17 12:21:42,057 INFO 10.1.10.197 - - [17/Sep/2026 12:21:42] "GET / HTTP/1.1" 200 -
+2026-09-17 12:22:13,537 INFO 10.1.10.197 - - [17/Sep/2026 12:22:13] "[32mGET /reload HTTP/1.1[0m" 302 -
+2026-09-17 12:22:15,828 INFO 10.1.10.197 - - [17/Sep/2026 12:22:15] "GET / HTTP/1.1" 200 -
+2026-09-17 12:26:01,673 INFO 10.1.10.197 - - [17/Sep/2026 12:26:01] "POST / HTTP/1.1" 200 -
+2026-09-17 12:26:43,161 INFO 10.1.10.197 - - [17/Sep/2026 12:26:43] "GET / HTTP/1.1" 200 -
+2026-09-17 12:26:56,084 INFO 10.1.10.197 - - [17/Sep/2026 12:26:56] "POST / HTTP/1.1" 200 -
+2026-09-17 12:27:21,507 INFO 10.1.10.197 - - [17/Sep/2026 12:27:21] "GET / HTTP/1.1" 200 -
+2026-09-17 12:27:34,266 INFO 10.1.10.197 - - [17/Sep/2026 12:27:34] "POST / HTTP/1.1" 200 -
+2026-09-17 12:27:43,499 INFO 10.1.10.197 - - [17/Sep/2026 12:27:43] "GET / HTTP/1.1" 200 -
+2026-09-17 12:28:07,583 INFO 10.1.10.197 - - [17/Sep/2026 12:28:07] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-17 12:28:20,649 ERROR Exception on /VNAX 3803/VNAX 4154/b [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 90, in getdata_simple
+    plot_array = sql_helper.generate_approval_plots(\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 779, in generate_approval_plots
+    return self.generate_vnax_approval_plots(serial_number,serial_number2,rev,match_subtype,num_comparisons)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 743, in generate_vnax_approval_plots
+    self.process_plhrm(plh_data,5),\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 576, in process_plhrm
+    systemdf = read_plhrm_xlsx_with_calamine(j[0],speed_factor)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\calamine_helper.py", line 6, in read_plhrm_xlsx_with_calamine
+    workbook = CalamineWorkbook.from_path(filename)
+python_calamine.CalamineError: Cannot detect file format
+2026-09-17 12:28:20,678 INFO 10.1.10.197 - - [17/Sep/2026 12:28:20] "[35m[1mGET /VNAX%203803/VNAX%204154/b HTTP/1.1[0m" 500 -
+2026-09-17 12:28:46,692 ERROR Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 59, in homepage
+    plot_array = sql_helper.generate_approval_plots(\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 779, in generate_approval_plots
+    return self.generate_vnax_approval_plots(serial_number,serial_number2,rev,match_subtype,num_comparisons)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 743, in generate_vnax_approval_plots
+    self.process_plhrm(plh_data,5),\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 576, in process_plhrm
+    systemdf = read_plhrm_xlsx_with_calamine(j[0],speed_factor)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\calamine_helper.py", line 6, in read_plhrm_xlsx_with_calamine
+    workbook = CalamineWorkbook.from_path(filename)
+python_calamine.CalamineError: Cannot detect file format
+2026-09-17 12:28:46,698 INFO 10.1.10.197 - - [17/Sep/2026 12:28:46] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-09-17 12:29:00,163 ERROR Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 59, in homepage
+    plot_array = sql_helper.generate_approval_plots(\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 779, in generate_approval_plots
+    return self.generate_vnax_approval_plots(serial_number,serial_number2,rev,match_subtype,num_comparisons)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 743, in generate_vnax_approval_plots
+    self.process_plhrm(plh_data,5),\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 576, in process_plhrm
+    systemdf = read_plhrm_xlsx_with_calamine(j[0],speed_factor)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\calamine_helper.py", line 6, in read_plhrm_xlsx_with_calamine
+    workbook = CalamineWorkbook.from_path(filename)
+python_calamine.CalamineError: Cannot detect file format
+2026-09-17 12:29:00,170 INFO 10.1.10.197 - - [17/Sep/2026 12:29:00] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2026-09-17 13:06:20,015 INFO 10.1.10.197 - - [17/Sep/2026 13:06:20] "GET / HTTP/1.1" 200 -
+2026-09-17 13:06:22,671 INFO 10.1.10.197 - - [17/Sep/2026 13:06:22] "GET / HTTP/1.1" 200 -
+2026-09-17 13:06:30,502 INFO 10.1.10.197 - - [17/Sep/2026 13:06:30] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-17 13:06:31,886 INFO 10.1.10.197 - - [17/Sep/2026 13:06:31] "GET /WM570X3SHM-IR1%201-003,%20WR13IAMCR2%201-029/None/a HTTP/1.1" 200 -
+2026-09-17 13:08:41,657 INFO 10.1.10.197 - - [17/Sep/2026 13:08:41] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-17 13:08:42,829 INFO 10.1.10.197 - - [17/Sep/2026 13:08:42] "GET /WM570X3SHM-IR1%201-010,%20WR13IAMCR1%205-09/None/a HTTP/1.1" 200 -
+2026-09-17 13:19:45,385 INFO 10.1.11.53 - - [17/Sep/2026 13:19:45] "GET /WM570X3SHM-IR1%201-003,%20WR13IAMCR2%201-029/None/a HTTP/1.1" 200 -
+2026-09-17 16:32:30,826 INFO 10.1.11.84 - - [17/Sep/2026 16:32:30] "GET /WM570X3SHM-IR1%201-003,%20WR13IAMCR2%201-029/None/a HTTP/1.1" 200 -
+2026-09-17 16:32:33,170 INFO 10.1.11.84 - - [17/Sep/2026 16:32:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-09-17 16:33:48,268 INFO 10.1.11.84 - - [17/Sep/2026 16:33:48] "GET / HTTP/1.1" 200 -
+2026-09-18 11:37:20,894 INFO 10.1.10.197 - - [18/Sep/2026 11:37:20] "GET / HTTP/1.1" 200 -
+2026-09-18 11:37:23,527 INFO 10.1.10.197 - - [18/Sep/2026 11:37:23] "GET / HTTP/1.1" 200 -
+2026-09-18 11:38:00,243 INFO 10.1.10.197 - - [18/Sep/2026 11:38:00] "[32mGET /reload HTTP/1.1[0m" 302 -
+2026-09-18 11:38:03,089 INFO 10.1.10.197 - - [18/Sep/2026 11:38:03] "GET / HTTP/1.1" 200 -
+2026-09-18 11:38:08,469 INFO 10.1.10.197 - - [18/Sep/2026 11:38:08] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-18 11:38:08,488 ERROR Exception on /WR6.5IAMC-HPR9.5 3-058/None/a [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 102, in getdata_simple
+    html_plots = [plot.to_html(full_html=False,auto_play=False) for plot in plot_array]
+TypeError: 'NoneType' object is not iterable
+2026-09-18 11:38:08,491 INFO 10.1.10.197 - - [18/Sep/2026 11:38:08] "[35m[1mGET /WR6.5IAMC-HPR9.5%203-058/None/a HTTP/1.1[0m" 500 -
+2026-09-18 11:48:25,355 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-18 11:48:25,355 INFO [33mPress CTRL+C to quit[0m
+2026-09-18 11:48:28,450 INFO 10.1.10.197 - - [18/Sep/2026 11:48:28] "[32mPOST /lazy HTTP/1.1[0m" 301 -
+2026-09-18 11:48:29,503 ERROR Exception on /WR6.5IAMC-HPR9.5 3-058/None/a [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 90, in getdata_simple
+    plot_array = sql_helper.generate_approval_plots(\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 806, in generate_approval_plots
+    return self.generate_iamc_approval_plots(serial_number,rev,match_subtype,num_comparisons)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 712, in generate_iamc_approval_plots
+    return self.process_tpp(tpp_data,num_comparisons), \
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 536, in process_tpp
+    temp = readFile(j[0])
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\FileReader.py", line 10, in readFile
+    df = fr.get_df()
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\FileReader.py", line 265, in get_df
+    dfs = pd.read_excel(self.path, sheet_name=None, index_col=0)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\io\excel\_base.py", line 1567, in __init__
+    self._reader = self._engines[engine](
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\io\excel\_openpyxl.py", line 552, in __init__
+    import_optional_dependency("openpyxl")
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\compat\_optional.py", line 164, in import_optional_dependency
+    raise ImportError(msg)
+ImportError: Pandas requires version '3.1.0' or newer of 'openpyxl' (version '3.0.10' currently installed).
+2026-09-18 11:48:29,538 INFO 10.1.10.197 - - [18/Sep/2026 11:48:29] "[35m[1mGET /WR6.5IAMC-HPR9.5%203-058/None/a HTTP/1.1[0m" 500 -
+2026-09-18 11:51:08,726 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-18 11:51:08,728 INFO [33mPress CTRL+C to quit[0m
+2026-09-18 11:51:13,662 ERROR Exception on /WR6.5IAMC-HPR9.5 3-058/None/a [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 90, in getdata_simple
+    plot_array = sql_helper.generate_approval_plots(\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 806, in generate_approval_plots
+    return self.generate_iamc_approval_plots(serial_number,rev,match_subtype,num_comparisons)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 712, in generate_iamc_approval_plots
+    return self.process_tpp(tpp_data,num_comparisons), \
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 540, in process_tpp
+    dfs = pd.concat(df_list)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\reshape\concat.py", line 382, in concat
+    op = _Concatenator(
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\reshape\concat.py", line 448, in __init__
+    ndims = self._get_ndims(objs)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\reshape\concat.py", line 489, in _get_ndims
+    raise TypeError(msg)
+TypeError: cannot concatenate object of type '<class 'dict'>'; only Series and DataFrame objs are valid
+2026-09-18 11:51:13,677 INFO 10.1.10.197 - - [18/Sep/2026 11:51:13] "[35m[1mGET /WR6.5IAMC-HPR9.5%203-058/None/a HTTP/1.1[0m" 500 -
+2026-09-18 12:13:57,469 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-18 12:13:57,470 INFO [33mPress CTRL+C to quit[0m
+2026-09-18 12:14:00,647 ERROR Exception on /WR6.5IAMC-HPR9.5 3-058/None/a [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 90, in getdata_simple
+    plot_array = sql_helper.generate_approval_plots(\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 812, in generate_approval_plots
+    return self.generate_iamc_approval_plots(serial_number,rev,match_subtype,num_comparisons)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 718, in generate_iamc_approval_plots
+    return self.process_tpp(tpp_data,num_comparisons), \
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 540, in process_tpp
+    dfs = pd.concat(df_list)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\reshape\concat.py", line 382, in concat
+    op = _Concatenator(
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\reshape\concat.py", line 448, in __init__
+    ndims = self._get_ndims(objs)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\reshape\concat.py", line 489, in _get_ndims
+    raise TypeError(msg)
+TypeError: cannot concatenate object of type '<class 'dict'>'; only Series and DataFrame objs are valid
+2026-09-18 12:14:00,663 INFO 10.1.10.197 - - [18/Sep/2026 12:14:00] "[35m[1mGET /WR6.5IAMC-HPR9.5%203-058/None/a HTTP/1.1[0m" 500 -
+2026-09-18 12:15:26,675 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-18 12:15:26,676 INFO [33mPress CTRL+C to quit[0m
+2026-09-18 12:15:40,254 ERROR Exception on /WR6.5IAMC-HPR9.5 3-058/None/a [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 90, in getdata_simple
+    plot_array = sql_helper.generate_approval_plots(\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 814, in generate_approval_plots
+    return len(data)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 720, in generate_iamc_approval_plots
+    rev='a', match_subtype=True, low_drive=True, num_comparisons=5):
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 542, in process_tpp
+    dfs = pd.concat(df_list)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\reshape\concat.py", line 382, in concat
+    op = _Concatenator(
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\reshape\concat.py", line 445, in __init__
+    objs, keys = self._clean_keys_and_objs(objs, keys)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\reshape\concat.py", line 507, in _clean_keys_and_objs
+    raise ValueError("No objects to concatenate")
+ValueError: No objects to concatenate
+2026-09-18 12:15:40,264 INFO 10.1.10.197 - - [18/Sep/2026 12:15:40] "[35m[1mGET /WR6.5IAMC-HPR9.5%203-058/None/a HTTP/1.1[0m" 500 -
+2026-09-18 12:16:36,909 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-18 12:16:36,909 INFO [33mPress CTRL+C to quit[0m
+2026-09-18 12:16:37,175 ERROR Exception on /WR6.5IAMC-HPR9.5 3-058/None/a [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\app.py", line 90, in getdata_simple
+    plot_array = sql_helper.generate_approval_plots(\
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 810, in generate_approval_plots
+    return self.generate_iamc_approval_plots(serial_number,rev,match_subtype,num_comparisons)
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 716, in generate_iamc_approval_plots
+    return self.process_tpp(tpp_data,num_comparisons), \
+  File "\\linkserver\PythonDrive\durant\github\engineer\snd\sql\test_explorer.py", line 544, in process_tpp
+    dfs = pd.concat(df_list)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\reshape\concat.py", line 382, in concat
+    op = _Concatenator(
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\reshape\concat.py", line 445, in __init__
+    objs, keys = self._clean_keys_and_objs(objs, keys)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\reshape\concat.py", line 507, in _clean_keys_and_objs
+    raise ValueError("No objects to concatenate")
+ValueError: No objects to concatenate
+2026-09-18 12:16:37,185 INFO 10.1.10.197 - - [18/Sep/2026 12:16:37] "[35m[1mGET /WR6.5IAMC-HPR9.5%203-058/None/a HTTP/1.1[0m" 500 -
+2026-09-18 12:17:19,511 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://10.1.10.197:5000
+2026-09-18 12:17:19,512 INFO [33mPress CTRL+C to quit[0m
+2026-09-18 12:17:22,898 INFO 10.1.10.197 - - [18/Sep/2026 12:17:22] "GET /WR6.5IAMC-HPR9.5%203-058/None/a HTTP/1.1" 200 -
+2026-09-18 12:18:31,760 INFO 10.1.11.3 - - [18/Sep/2026 12:18:31] "GET /WR6.5IAMC-HPR9.5%203-058/None/a HTTP/1.1" 200 -
+2026-09-18 12:18:32,585 INFO 10.1.11.3 - - [18/Sep/2026 12:18:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-09-18 12:18:37,849 INFO 10.1.11.53 - - [18/Sep/2026 12:18:37] "GET /WR6.5IAMC-HPR9.5%203-058/None/a HTTP/1.1" 200 -
+2026-09-18 12:44:37,923 INFO 10.10.1.103 - - [18/Sep/2026 12:44:37] "GET /WR6.5IAMC-HPR9.5%203-058/None/a HTTP/1.1" 200 -
+2026-09-18 12:44:39,327 INFO 10.10.1.103 - - [18/Sep/2026 12:44:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-09-18 12:48:33,247 INFO 10.1.11.84 - - [18/Sep/2026 12:48:33] "GET /WR6.5IAMC-HPR9.5%203-058/None/a HTTP/1.1" 200 -
+2026-09-18 13:40:59,444 INFO 10.10.1.192 - - [18/Sep/2026 13:40:59] "GET /WR6.5IAMC-HPR9.5%203-058/None/a HTTP/1.1" 200 -
+2026-09-18 13:41:00,587 INFO 10.10.1.192 - - [18/Sep/2026 13:41:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-09-18 13:41:40,925 INFO 10.10.1.192 - - [18/Sep/2026 13:41:40] "GET / HTTP/1.1" 200 -
+2026-09-18 13:42:47,987 INFO 10.10.1.192 - - [18/Sep/2026 13:42:47] "GET /WR6.5IAMC-HPR9.5%203-058/None/a HTTP/1.1" 200 -
+2026-09-18 15:18:14,835 INFO 10.1.11.168 - - [18/Sep/2026 15:18:14] "GET /WR6.5IAMC-HPR9.5%203-058/None/a HTTP/1.1" 200 -
+2026-09-18 15:18:15,996 INFO 10.1.11.168 - - [18/Sep/2026 15:18:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-09-21 09:55:32,445 INFO Serving on http://10.1.10.197:5000
+2026-10-01 08:17:07,355 ERROR Exception on /SAX 1146/None/b [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "W:\durant\github\engineer\snd\sql\app.py", line 90, in getdata_simple
+    plot_array = sql_helper.generate_approval_plots(\
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 800, in generate_approval_plots
+    return self.generate_sax_approval_plots(serial_number,rev,match_subtype,low_drive,num_comparisons)
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 680, in generate_sax_approval_plots
+    self.process_harmonics(hrm_data,num_comparisons)
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 429, in process_harmonics
+    temp = readFile(j[0]).reset_index()
+  File "W:\durant\github\engineer\snd\sql\FileReader.py", line 9, in readFile
+    fr = FileReader(path, UCA=UCA)
+  File "W:\durant\github\engineer\snd\sql\FileReader.py", line 51, in __new__
+    subclass = subclass_dict[my_ext]
+KeyError: '.jpg'
+2026-10-01 08:27:31,139 ERROR Exception on /SAX 1146/None/b [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "W:\durant\github\engineer\snd\sql\app.py", line 90, in getdata_simple
+    plot_array = sql_helper.generate_approval_plots(\
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 800, in generate_approval_plots
+    return self.generate_sax_approval_plots(serial_number,rev,match_subtype,low_drive,num_comparisons)
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 680, in generate_sax_approval_plots
+    self.process_harmonics(hrm_data,num_comparisons)
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 429, in process_harmonics
+    temp = readFile(j[0]).reset_index()
+  File "W:\durant\github\engineer\snd\sql\FileReader.py", line 9, in readFile
+    fr = FileReader(path, UCA=UCA)
+  File "W:\durant\github\engineer\snd\sql\FileReader.py", line 51, in __new__
+    subclass = subclass_dict[my_ext]
+KeyError: '.jpg'
+2026-10-06 13:35:44,503 ERROR Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'mixer cl'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "W:\durant\github\engineer\snd\sql\app.py", line 59, in homepage
+    plot_array = sql_helper.generate_approval_plots(\
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 804, in generate_approval_plots
+    elif 'VNAX' in serial_number:
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 658, in generate_mixamci_approval_plots
+    self.process_ifbw(ifbw_data,num_comparisons),\
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 484, in process_ifbw
+    output = temp.pop('mixer cl').to_frame()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\frame.py", line 5841, in pop
+    return super().pop(item=item)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\generic.py", line 950, in pop
+    result = self[item]
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'mixer cl'
+2026-10-06 13:35:51,321 ERROR Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'mixer cl'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "W:\durant\github\engineer\snd\sql\app.py", line 59, in homepage
+    plot_array = sql_helper.generate_approval_plots(\
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 804, in generate_approval_plots
+    elif 'VNAX' in serial_number:
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 658, in generate_mixamci_approval_plots
+    self.process_ifbw(ifbw_data,num_comparisons),\
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 484, in process_ifbw
+    output = temp.pop('mixer cl').to_frame()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\frame.py", line 5841, in pop
+    return super().pop(item=item)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\generic.py", line 950, in pop
+    result = self[item]
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'mixer cl'
+2026-10-06 13:35:59,396 ERROR Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'mixer cl'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "W:\durant\github\engineer\snd\sql\app.py", line 59, in homepage
+    plot_array = sql_helper.generate_approval_plots(\
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 804, in generate_approval_plots
+    elif 'VNAX' in serial_number:
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 658, in generate_mixamci_approval_plots
+    self.process_ifbw(ifbw_data,num_comparisons),\
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 484, in process_ifbw
+    output = temp.pop('mixer cl').to_frame()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\frame.py", line 5841, in pop
+    return super().pop(item=item)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\generic.py", line 950, in pop
+    result = self[item]
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'mixer cl'
+2026-10-06 13:36:04,094 ERROR Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'mixer cl'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "W:\durant\github\engineer\snd\sql\app.py", line 59, in homepage
+    plot_array = sql_helper.generate_approval_plots(\
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 804, in generate_approval_plots
+    elif 'VNAX' in serial_number:
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 658, in generate_mixamci_approval_plots
+    self.process_ifbw(ifbw_data,num_comparisons),\
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 484, in process_ifbw
+    output = temp.pop('mixer cl').to_frame()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\frame.py", line 5841, in pop
+    return super().pop(item=item)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\generic.py", line 950, in pop
+    result = self[item]
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'mixer cl'
+2026-10-06 14:49:29,086 ERROR Exception on /WR9.0IAMC-HPX9R6 1-004/None/a [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "W:\durant\github\engineer\snd\sql\app.py", line 90, in getdata_simple
+    plot_array = sql_helper.generate_approval_plots(\
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 808, in generate_approval_plots
+    elif 'CC' in serial_number:
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 702, in generate_iamc_approval_plots
+    tpp_data = self.get_similar_tests(serial_number,\
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 244, in get_similar_tests
+    my_band, my_type, my_arch, my_subtype = self.get_attributes_from_sn(sn1)
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 227, in get_attributes_from_sn
+    my_band = q[0][0].Band
+IndexError: list index out of range
+2026-10-06 14:50:27,615 ERROR Exception on /WR9.0IAMC-HPX9R6 1-004/None/a [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "W:\durant\github\engineer\snd\sql\app.py", line 90, in getdata_simple
+    plot_array = sql_helper.generate_approval_plots(\
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 808, in generate_approval_plots
+    elif 'CC' in serial_number:
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 715, in generate_iamc_approval_plots
+    self.process_harmonics(hrm_data,num_comparisons), \
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 429, in process_harmonics
+    temp = readFile(j[0]).reset_index()
+AttributeError: 'dict' object has no attribute 'reset_index'
+2026-10-08 12:05:08,553 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-10-08 12:05:08,553 INFO [33mPress CTRL+C to quit[0m
+2026-10-08 12:06:45,593 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-10-08 12:06:45,593 INFO [33mPress CTRL+C to quit[0m
+2026-10-08 12:11:06,775 INFO Serving on http://10.1.10.197:5000
+2026-10-08 12:12:39,073 ERROR Exception on /AMC 638/None/a [GET]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "W:\durant\github\engineer\snd\sql\app.py", line 102, in getdata_simple
+    html_plots = [plot.to_html(full_html=False,auto_play=False) for plot in plot_array]
+TypeError: 'NoneType' object is not iterable
+2026-10-08 12:12:56,951 ERROR Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "W:\durant\github\engineer\snd\sql\app.py", line 69, in homepage
+    html_plots = [plot.to_html(full_html=False,auto_play=False) for plot in plot_array]
+TypeError: 'NoneType' object is not iterable
+2026-10-15 13:29:52,878 ERROR Exception on / [POST]
+Traceback (most recent call last):
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\sdurant\Anaconda3\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "W:\durant\github\engineer\snd\sql\app.py", line 67, in homepage
+    my_band,my_type,my_arch,my_subtype = sql_helper.get_attributes_from_sn(sn1, sn2)
+  File "W:\durant\github\engineer\snd\sql\test_explorer.py", line 227, in get_attributes_from_sn
+    my_band = q[0][0].Band
+IndexError: list index out of range

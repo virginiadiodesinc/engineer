@@ -1,5 +1,10 @@
 import ctypes
-from picosdk.usbtc08 import usbtc08 as tc08
+
+try:
+	from picosdk.usbtc08 import usbtc08 as tc08
+
+except:
+	pass
 
 class TC08:
 

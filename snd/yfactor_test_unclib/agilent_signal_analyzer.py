@@ -73,7 +73,7 @@ class PXA():
 
 		return pd.DataFrame(trace, index=xaxis)
 
-	def get_trace(self, premeasure_delay = 0.5, single_sweep_mode = False):
+	def get_trace(self, premeasure_delay = 1, single_sweep_mode = False):
 		#over GPIB
 		if single_sweep_mode:
 			#get continuous state'

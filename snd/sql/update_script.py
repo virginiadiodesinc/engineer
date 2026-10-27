@@ -1,5 +1,5 @@
 import shutil
-from snd.sql.test_explorer import TestExplorer
+from .test_explorer import TestExplorer
 
 from sqlalchemy import select
 from sqlalchemy.orm import Session

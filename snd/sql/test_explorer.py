@@ -531,8 +531,10 @@ class TestExplorer(SQLHelper):
         if not data:
             return px.scatter(title='Test Port Power')
 
+        csv_data = [j for j in data if '.csv' in j[0]]
+
         df_list = []
-        for j in data[:num_comparisons+1]:
+        for j in csv_data[:num_comparisons+1]:
             temp = readFile(j[0])
             temp['serial_number']=j[1]
             df_list.append(temp)
@@ -691,7 +693,28 @@ class TestExplorer(SQLHelper):
 
         return self.process_cl(cl_data,num_comparisons), \
         self.process_harmonics(hrm_data,num_comparisons)
-        
+    
+    def generate_iamc_approval_plots(self, serial_number, rev,match_subtype,num_comparisons):
+        current_name="Current Sweep (Post RT)"
+        hrm_test_name="Harmonics"
+        tpp_test_name="Power Sweep (Post RT)"
+
+        tpp_data = self.get_similar_tests(serial_number,\
+            rev, tpp_test_name,\
+            match_subtype=match_subtype)
+
+        hrm_data = self.get_similar_tests(serial_number,\
+            rev, hrm_test_name,\
+            match_subtype=match_subtype)
+
+        current_data = self.get_similar_tests(serial_number,\
+            rev, current_name,\
+            match_subtype=match_subtype)
+
+        return self.process_tpp(tpp_data,num_comparisons), \
+        self.process_harmonics(hrm_data,num_comparisons), \
+        self.process_current(current_data,num_comparisons)
+
 
     def generate_sgx_approval_plots(self, serial_number='SGX 123', \
         rev='a', match_subtype=True, low_drive=True, num_comparisons=5):
@@ -754,6 +777,8 @@ class TestExplorer(SQLHelper):
         trl_cal_data = self.get_all_tests(serial_number, rev, 'TRL')
         solt_cal_data = self.get_all_tests(serial_number, rev, 'SOLT')
 
+        cl_data=self.get_all_tests(serial_number,rev,'Low-IF Conversion Loss')
+
         if len(trl_cal_data) > len(solt_cal_data):
             cal_data = trl_cal_data
         else:
@@ -762,7 +787,8 @@ class TestExplorer(SQLHelper):
         return self.process_shortload(shortload_data,num_comparisons),\
         self.process_plhrm(plh_data,5),\
         self.process_vnax_tpp(tpp_data,num_comparisons),\
-        self.process_j10(cal_data,num_comparisons)
+        self.process_j10(cal_data,num_comparisons),\
+        self.process_cl(cl_data,num_comparisons)
 
     def generate_approval_plots(self, serial_number,
     serial_number2=None,
@@ -781,6 +807,8 @@ class TestExplorer(SQLHelper):
             return self.generate_mixamci_approval_plots(serial_number,rev,match_subtype,num_comparisons)
         elif 'CC' in serial_number:
             return self.generate_cc_approval_plots(serial_number,rev,match_subtype,num_comparisons)
+        elif "IAMC" in serial_number:
+            return self.generate_iamc_approval_plots(serial_number,rev,match_subtype,num_comparisons)
 
     def get_test_count(self):
 
